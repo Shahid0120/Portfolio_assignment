@@ -1,0 +1,17 @@
+commit 493952c4a309e753710e31c1bad2372b091fe1a5
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 7 23:15:49 2021 +1000
+
+    second commit, create basic index layout with links to scss files with mapping for css file
+
+commit 297d23b773a4c029e17e8c61afcc6cbe2f54a64f
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 7 23:02:11 2021 +1000
+
+    Second commit, create files wireframes, html, css and images with empyty folders
+
+commit ff388eeb4d0f67edc1772164290b7a7652cb8b59
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 7 23:00:46 2021 +1000
+
+    first commit
