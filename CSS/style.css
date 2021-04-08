@@ -29,9 +29,13 @@ nav {
           align-items: center;
 }
 
-nav p {
+nav #icon {
   font-style: italic;
   font-size: 5rem;
+}
+
+nav #inspo--header {
+  display: none;
 }
 
 header {
@@ -71,6 +75,8 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main--pictures .picture {
@@ -89,6 +95,63 @@ header h1 {
   width: 100%;
   height: 150rem;
   background-color: coral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects .project {
+  width: 100%;
+  height: 30rem;
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project__background {
+  width: 80%;
+  height: 90%;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .project__name {
+  width: 15%;
+  height: 10%;
+  background-color: aliceblue;
+}
+
+.projects .project__picture {
+  width: 60%;
+  height: 60%;
+  background-color: aliceblue;
 }
 
 .life--history--why {
@@ -97,22 +160,115 @@ header h1 {
   background-color: #ece179;
 }
 
-.blog {
+.life--history--why #hi__quote {
+  /* incline quote Hi */
+  width: 100%;
+  height: 15rem;
+  background-color: aqua;
+}
+
+.life--history--why #reasoning__ux_design {
+  width: 100%;
+  height: 50rem;
+  background-color: antiquewhite;
+}
+
+.life--history--why #brief__history {
+  width: 100%;
+  height: 35rem;
+  background-color: pink;
+}
+
+.blog--container {
   width: 100%;
   height: 200rem;
   background-color: #64a5da;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.inspirations--hobbies {
+.blog--container .blog__post {
+  width: 100%;
+  height: 20%;
+  background-color: #81feca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog--container .blog__post .blog__picture {
+  width: 80%;
+  height: 20rem;
+  background-color: antiquewhite;
+}
+
+.blog--container .blog__post .blog__name__date {
+  width: 80%;
+  height: 5rem;
+  background-color: burlywood;
+}
+
+.inspirations--hobbies--container {
   width: 100%;
   height: 50rem;
   background-color: #c28fa0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inspirations--hobbies--container .inspirations__hobbies {
+  width: 40%;
+  height: 40rem;
+  background-color: aquamarine;
+  margin: 1rem;
 }
 
 .contact {
   width: 100%;
   height: 100rem;
   background-color: #e9b4b4;
+}
+
+.contact .contact__questions {
+  width: 100%;
+  height: 16.67rem;
+  background-color: chartreuse;
+}
+
+.contact #footer__icon {
+  width: 100%;
+  height: 50rem;
+  background-color: darkorange;
 }
 
 footer {
@@ -139,5 +295,44 @@ footer .quote {
 
 footer .icon {
   background-color: red;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Target all devices from 600px to 769px */
+}
+
+@media only screen and (min-width: 769px) {
+  /* Target all devices from 769px up */
+  nav {
+    font-size: 5rem;
+  }
+  nav #icon {
+    display: none;
+  }
+  nav #inspo--header {
+    display: contents;
+  }
+  .main--pictures {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100rem;
+    padding-bottom: 26rem;
+  }
+  .main--pictures .picture {
+    width: 55rem;
+    height: 55rem;
+    background-color: black;
+    margin: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
