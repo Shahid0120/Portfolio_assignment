@@ -6,8 +6,8 @@
 
 html {
     font-size: 62.5%; /* This means 1 rem is 10 pixels */
-    background-color:rgb(255,240,245);
-    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(255, 255, 255);
+    font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -15,7 +15,7 @@ html {
 nav {
     width: 100%;
     height: 10vh;
-    background:transparent rgb(245,245,245);
+    background:transparent rgb(255, 255, 255);
     position: fixed;
     display:flex;
     justify-content: space-between;
@@ -32,21 +32,21 @@ nav {
 
 header {
     width: 100%;
-    height: 20rem;
+    height: 30rem;
     background-color:rgb(250,235,215);
     display: flex;
     justify-content: center;
     align-items: flex-end;
     h1 {
         font-size: 5rem;
-        font-family: cursive;
+        position: relative;
     }
 }
 
 .main--pictures { 
     width: 100%;
     height: 150rem;
-    background: rgb(255,245,238);
+    background: #17181C;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -55,14 +55,14 @@ header {
     .picture {
         width: 30rem;
         height: 30rem;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
     }
 }
 
 .inspirational--quote {
     width:100%;
     height: 25rem;
-    background-color: aqua;
+    background-color:rgb(255, 255, 255);
 }
 
 .projects {
@@ -224,27 +224,40 @@ footer {
     nav {
         width: 100%;
         justify-content: space-between;
-        font-size: 5rem;
-        padding:0;
+        font-size: 3.5rem;
+        font-weight: 300;
+        background-color: rgb(255, 255, 255);
         #icon {
             display: none;
         }
         #inspo--header {
             display: contents;
-            font-size: 2rem;
+            font-style: italic;
 
         }
-        #abbreviation--name {
-            padding:0;
+        #abbreviation--name {  
+            span {
+                font-weight: 550;
+            }
         }
     }
     nav {
         padding-right: 8rem;
         padding-left: 8rem;
+        background-color: rgb(255, 255, 255);
     }
     header {
         padding-right: 8rem;
         padding-left: 8rem;
+        background-color: rgb(255, 255, 255);
+        height: 22.5rem;
+        #title {
+            font-style: sofia-pro, sans-serif;
+            font-size: 5rem;
+            font-style: normal;
+            color: black;
+        }
+
     }
     .main--pictures {
         justify-content: center;
@@ -252,16 +265,37 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         height: 110rem;
-        padding-bottom: 26rem;
+        padding-bottom: 20rem;
         .picture {
             width: 25%;
             height: 50%;
-            background-color: black;
             margin: 1rem;
         }
     }
     .inspirational--quote {
-        height: 75rem;
+        height: 90vh;
+        font-size: 10rem;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 35rem;
+        #inspire {
+            font-style: italic;
+            text-decoration:line-through;
+            line-height: 3;
+        }
+        #quote {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 6rem;
+            line-height: 1;
+            span {
+                font-weight: 700;
+                font-style: normal;
+            }
+        }
     }
 
     .inspirations--hobbies--container {
@@ -300,11 +334,16 @@ footer {
     .life--history--why {
         height: 100rem;
         #hi__quote {
-            /* incline quote Hi */
+            padding-left: 8rem;
+            padding-right: 8rem;
         }
         #reasoning__ux_design {
+            padding-left: 8rem;
+            padding-right: 8rem;
         }
         #brief__history {
+            padding-left: 8rem;
+            padding-right: 8rem;
         }
     }
 
@@ -352,4 +391,6 @@ footer {
             padding-right: 8rem;
         }
     }
+
+
 }

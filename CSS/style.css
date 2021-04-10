@@ -8,15 +8,15 @@
 html {
   font-size: 62.5%;
   /* This means 1 rem is 10 pixels */
-  background-color: lavenderblush;
-  font-family: 'Courier New', Courier, monospace;
+  background-color: white;
+  font-family: sofia-pro, sans-serif;
   scroll-behavior: smooth;
 }
 
 nav {
   width: 100%;
   height: 10vh;
-  background: transparent whitesmoke;
+  background: transparent white;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +40,7 @@ nav #inspo--header {
 
 header {
   width: 100%;
-  height: 20rem;
+  height: 30rem;
   background-color: antiquewhite;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,13 +55,13 @@ header {
 
 header h1 {
   font-size: 5rem;
-  font-family: cursive;
+  position: relative;
 }
 
 .main--pictures {
   width: 100%;
   height: 150rem;
-  background: seashell;
+  background: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,13 +82,13 @@ header h1 {
 .main--pictures .picture {
   width: 30rem;
   height: 30rem;
-  background-color: black;
+  background-color: white;
 }
 
 .inspirational--quote {
   width: 100%;
   height: 25rem;
-  background-color: aqua;
+  background-color: white;
 }
 
 .projects {
@@ -308,26 +308,36 @@ footer .icon {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    font-size: 5rem;
-    padding: 0;
+    font-size: 3.5rem;
+    font-weight: 300;
+    background-color: white;
   }
   nav #icon {
     display: none;
   }
   nav #inspo--header {
     display: contents;
-    font-size: 2rem;
+    font-style: italic;
   }
-  nav #abbreviation--name {
-    padding: 0;
+  nav #abbreviation--name span {
+    font-weight: 550;
   }
   nav {
     padding-right: 8rem;
     padding-left: 8rem;
+    background-color: white;
   }
   header {
     padding-right: 8rem;
     padding-left: 8rem;
+    background-color: white;
+    height: 22.5rem;
+  }
+  header #title {
+    font-style: sofia-pro, sans-serif;
+    font-size: 5rem;
+    font-style: normal;
+    color: black;
   }
   .main--pictures {
     -webkit-box-pack: center;
@@ -343,16 +353,46 @@ footer .icon {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 110rem;
-    padding-bottom: 26rem;
+    padding-bottom: 20rem;
   }
   .main--pictures .picture {
     width: 25%;
     height: 50%;
-    background-color: black;
     margin: 1rem;
   }
   .inspirational--quote {
-    height: 75rem;
+    height: 90vh;
+    font-size: 10rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 35rem;
+  }
+  .inspirational--quote #inspire {
+    font-style: italic;
+    text-decoration: line-through;
+    line-height: 3;
+  }
+  .inspirational--quote #quote {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 6rem;
+    line-height: 1;
+  }
+  .inspirational--quote #quote span {
+    font-weight: 700;
+    font-style: normal;
   }
   .inspirations--hobbies--container {
     height: 75rem;
@@ -394,7 +434,16 @@ footer .icon {
     height: 100rem;
   }
   .life--history--why #hi__quote {
-    /* incline quote Hi */
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .life--history--why #reasoning__ux_design {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .life--history--why #brief__history {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
   .blog--container {
     height: 300rem;
