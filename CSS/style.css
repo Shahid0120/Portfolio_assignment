@@ -507,6 +507,17 @@ footer .icon {
   }
   .blog--container {
     height: 300rem;
+    text-align: left;
+    background-color: #17181C;
+  }
+  .blog--container #blogs__title {
+    font-size: 10rem;
+    font-weight: 700;
+    color: white;
+    background-color: #17181C;
+  }
+  .blog--container #blogs__title span {
+    font-style: italic;
   }
   .blog--container .blog__post {
     padding-right: 8rem;
@@ -515,12 +526,45 @@ footer .icon {
         -ms-flex-align: start;
             align-items: flex-start;
     height: 25%;
+    background-color: #17181C;
   }
   .blog--container .blog__post .blog__picture {
     height: 80%;
   }
-  .blog--container .blog__post .blog__name__date {
+  .blog--container .blog__post .blog__name__date, .blog--container .blog__post .blog__name__date--two {
     height: 20%;
+  }
+  .blog--container .blog__post .blog__name__date .blog__name, .blog--container .blog__post .blog__name__date--two .blog__name {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+    color: white;
+    font-size: 5rem;
+  }
+  .blog--container .blog__post .blog__name__date .blog__summary, .blog--container .blog__post .blog__name__date--two .blog__summary {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+    color: white;
+    font-size: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blog--container .blog__post .blog__name__date .blog__summary .blog__sum, .blog--container .blog__post .blog__name__date--two .blog__summary .blog__sum {
+    width: 30%;
+    height: 100%;
+    background-color: #17181C;
+    color: yellow;
+    font-size: 2.4rem;
+  }
+  .blog--container .blog__post .blog__name__date .blog__summary .blog__date, .blog--container .blog__post .blog__name__date--two .blog__summary .blog__date {
+    width: 70%;
+    height: 100%;
+    background-color: #17181C;
+    color: yellow;
+    text-align: end;
+    font-size: 2.4rem;
   }
   #blog--two {
     -webkit-box-align: end;
@@ -539,13 +583,64 @@ footer .icon {
     height: 20%;
     background-color: burlywood;
   }
+  .contact {
+    height: 80vh;
+  }
   .contact .contact__questions {
     padding-left: 8rem;
     padding-right: 8rem;
+    font-size: 5rem;
+    color: white;
+    line-height: 4;
+    background-color: #17181C;
+  }
+  .contact .contact__questions span {
+    font-style: italic;
+    font-size: 5.5rem;
+  }
+  .contact .contact__questions #someting--tag {
+    font-weight: 700;
   }
   .contact #footer__icon {
     padding-left: 8rem;
     padding-right: 8rem;
+    height: 58%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact #footer__icon #email {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact #footer__icon #email #email__text {
+    width: 100%;
+    height: 40%;
+  }
+  .contact #footer__icon #email #email__text p {
+    font-size: 5rem;
+    text-align: left;
+  }
+  .contact #footer__icon #email #email__text p a {
+    font-size: 2.4rem;
+  }
+  .contact #footer__icon #email #email__text span {
+    font-style: italic;
+  }
+  .contact #footer__icon #icon__section {
+    width: 70%;
+    height: 100%;
+    background-color: aqua;
   }
 }
 /*# sourceMappingURL=style.css.map */
