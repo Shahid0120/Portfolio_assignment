@@ -304,13 +304,30 @@ footer .icon {
 @media only screen and (min-width: 769px) {
   /* Target all devices from 769px up */
   nav {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 5rem;
+    padding: 0;
   }
   nav #icon {
     display: none;
   }
   nav #inspo--header {
     display: contents;
+    font-size: 2rem;
+  }
+  nav #abbreviation--name {
+    padding: 0;
+  }
+  nav {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+  header {
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
   .main--pictures {
     -webkit-box-pack: center;
@@ -325,12 +342,12 @@ footer .icon {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 100rem;
+    height: 110rem;
     padding-bottom: 26rem;
   }
   .main--pictures .picture {
-    width: 55rem;
-    height: 55rem;
+    width: 25%;
+    height: 50%;
     background-color: black;
     margin: 1rem;
   }
@@ -339,6 +356,12 @@ footer .icon {
   }
   .inspirations--hobbies--container {
     height: 75rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .inspirations--hobbies--container .inspirations__hobbies {
+    width: 50%;
+    margin: 0;
   }
   .projects {
     height: 500rem;
@@ -355,11 +378,17 @@ footer .icon {
   .projects .project .project__background {
     justify-self: flex-end;
     height: 95%;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
   .projects .project .project__background .project__name {
     background-color: aqua;
     height: 60%;
     width: 30%;
+  }
+  .projects .project .project__background .project__picture {
+    width: 70%;
   }
   .life--history--why {
     height: 100rem;
@@ -371,6 +400,8 @@ footer .icon {
     height: 300rem;
   }
   .blog--container .blog__post {
+    padding-right: 8rem;
+    padding-left: 8rem;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -398,6 +429,14 @@ footer .icon {
     width: 30%;
     height: 20%;
     background-color: burlywood;
+  }
+  .contact .contact__questions {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .contact #footer__icon {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
