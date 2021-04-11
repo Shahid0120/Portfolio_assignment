@@ -254,8 +254,8 @@ header h1 {
 
 .blog--container {
   width: 100%;
-  height: 200rem;
-  background-color: #64a5da;
+  height: 300rem;
+  background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,10 +271,42 @@ header h1 {
           flex-direction: column;
 }
 
+.blog--container h2 {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+.blog--container h2 span {
+  font-style: italic;
+}
+
+.blog--container #blog__two {
+  width: 100%;
+  height: 25%;
+}
+
+.blog--container #blog__two #blog__two__one {
+  width: 100%;
+  height: 25%;
+}
+
+.blog--container #blog__two #blog__two__one .blog__picture__two {
+  width: 100%;
+  height: 50%;
+  background-color: antiquewhite;
+}
+
+.blog--container #blog__two #blog__two__one .blog__name__date--two {
+  width: 100%;
+  height: 5rem;
+  background-color: burlywood;
+}
+
 .blog--container .blog__post {
   width: 100%;
-  height: 20%;
-  background-color: #81feca;
+  height: 25%;
+  background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,16 +320,48 @@ header h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.blog--container .blog__post .blog__name__date {
+  background-color: #17181C;
+}
+
+.blog--container .blog__post .blog__name__date .blog__name {
+  font-size: 3.5rem;
+  color: white;
+  background-color: #17181C;
+}
+
+.blog--container .blog__post .blog__name__date .blog__summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #17181C;
+}
+
+.blog--container .blog__post .blog__name__date .blog__summary .blog__sum {
+  font-size: 2rem;
+  color: yellow;
+}
+
+.blog--container .blog__post .blog__name__date .blog__summary .blog__date {
+  font-size: 2rem;
+  color: yellow;
 }
 
 .blog--container .blog__post .blog__picture {
-  width: 80%;
-  height: 20rem;
+  width: 100%;
+  height: 50%;
   background-color: antiquewhite;
 }
 
 .blog--container .blog__post .blog__name__date {
-  width: 80%;
+  width: 100%;
   height: 5rem;
   background-color: burlywood;
 }
@@ -699,13 +763,14 @@ footer .icon {
             align-items: flex-end;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    height: 25%;
   }
-  .blog__picture__two {
+  #blog--two .blog__picture__two {
     width: 30%;
     height: 80%;
     background-color: antiquewhite;
   }
-  .blog__name__date--two {
+  #blog--two .blog__name__date--two {
     width: 30%;
     height: 20%;
     background-color: burlywood;
