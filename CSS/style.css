@@ -87,8 +87,31 @@ header h1 {
 
 .inspirational--quote {
   width: 100%;
-  height: 25rem;
+  height: 75vh;
   background-color: white;
+  text-align: center;
+  padding-top: 28em;
+}
+
+.inspirational--quote #inspire {
+  font-style: italic;
+  text-decoration: line-through;
+  line-height: 3;
+  font-size: 4.5rem;
+}
+
+.inspirational--quote .quote {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.inspirational--quote .quote span {
+  font-weight: 700;
+  font-style: normal;
 }
 
 .projects {
