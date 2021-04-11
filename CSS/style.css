@@ -105,8 +105,8 @@ header h1 {
   font-style: italic;
   font-size: 3rem;
   line-height: 1;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .inspirational--quote .quote span {
@@ -116,8 +116,8 @@ header h1 {
 
 .projects {
   width: 100%;
-  height: 150rem;
-  background-color: coral;
+  height: 370vh;
+  background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,9 +135,14 @@ header h1 {
       flex-wrap: wrap;
 }
 
+.projects #title__header {
+  font-size: 5rem;
+  color: white;
+}
+
 .projects .project {
   width: 100%;
-  height: 30rem;
+  height: 20%;
   background-color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,9 +156,9 @@ header h1 {
 }
 
 .projects .project .project__background {
-  width: 80%;
-  height: 90%;
-  background-color: red;
+  width: 100%;
+  height: 100%;
+  background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,16 +168,59 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .projects .project .project__background .project__name {
-  width: 15%;
-  height: 10%;
-  background-color: aliceblue;
+  width: 100%;
+  height: 30%;
+  font-size: 2.5rem;
+  background-color: #17181C;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.projects .project .project__background .project__name h2 {
+  font-size: 5rem;
+  color: yellow;
+}
+
+.projects .project .project__background .project__name .project--decription {
+  line-height: 1.6;
+}
+
+.projects .project .project__background .project__name .project--decription .project__name {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.projects .project .project__background .project__name .project--decription .project__description__tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.projects .project .project__background .project__name .project--decription .project__description__tag .project--tag {
+  font-weight: 500;
 }
 
 .projects .project .project__background .project__picture {
-  width: 60%;
+  width: 100%;
   height: 60%;
   background-color: aliceblue;
 }
@@ -452,8 +500,15 @@ footer .icon {
     padding-left: 8rem;
     padding-right: 8rem;
     background-color: #17181C;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .projects .project .project__background .project__name {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
     background-color: #17181C;
     height: 60%;
     width: 30%;
