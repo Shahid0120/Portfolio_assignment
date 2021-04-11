@@ -229,15 +229,42 @@ header {
     width: 100%;
     height: 100rem;
     background-color: rgb(233, 180, 180);
-    .contact__questions {
+    font-size: 4.5rem;
+    line-height: 1.3;
+    .contact__questions__upper {
         width: 100%;
-        height: 16.67rem; 
-        background-color: chartreuse ; 
+        height: 30%; 
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color:#17181C;
+        color: white;
+        padding-top: 5rem;
+        line-height: 1.2;
+    }
+    .contact__questions__lower {
+        height: 10%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: yellow;
+        background-color: #17181C;
     }
     #footer__icon {
         width: 100%;
-        height:50rem;
-        background-color: darkorange;
+        height: 60%;
+        font-size: 4.5rem;
+        background-color:#17181C;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 5rem;
+        #email {
+            color: white;
+            #email__text {
+            
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 
 
@@ -566,7 +593,6 @@ footer {
                 font-weight: 700;
             }
         }
-    
         .contact__questions__lower {
             padding-left: 8rem;
             padding-right: 8rem;
@@ -577,12 +603,13 @@ footer {
             line-height: 4;
             background-color: #17181C;
             line-height: 1.6;
-    }
+        }
 
         #footer__icon {
             padding-left: 8rem;
             padding-right: 8rem;
             padding-bottom: 11rem;
+            padding-top: 0;
             height: 60%;
             display: flex;
             background-color:#17181C;
@@ -599,7 +626,8 @@ footer {
                     color: rgb(255, 255, 255);
                     p {
                         font-size: 5rem;
-                        text-align: left;
+                        text-align: left;;
+
                         a {
                             font-size: 2.4rem;
                             font-weight: 700;
