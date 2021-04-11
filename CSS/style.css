@@ -228,26 +228,28 @@ header h1 {
 .life--history--why {
   width: 100%;
   height: 100rem;
-  background-color: #ece179;
+  font-size: 4.5rem;
+  background-color: yellow;
+  text-align: center;
+  padding-top: 35rem;
 }
 
-.life--history--why #hi__quote {
-  /* incline quote Hi */
-  width: 100%;
-  height: 15%;
-  background-color: aqua;
+.life--history--why #history {
+  font-style: italic;
+  text-decoration: overline;
+  line-height: 3;
 }
 
-.life--history--why #reasoning__ux_design {
-  width: 100%;
-  height: 50%;
-  background-color: antiquewhite;
+.life--history--why .quote {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1;
 }
 
-.life--history--why #brief__history {
-  width: 100%;
-  height: 35%;
-  background-color: pink;
+.life--history--why .quote span {
+  font-weight: 700;
+  font-style: normal;
 }
 
 .blog--container {
@@ -454,6 +456,7 @@ footer .icon {
     font-style: italic;
     text-decoration: line-through;
     line-height: 3;
+    font-size: 10rem;
   }
   .inspirational--quote .quote {
     font-weight: 300;
