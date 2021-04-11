@@ -15,11 +15,13 @@ html {
 nav {
     width: 100%;
     height: 10vh;
-    background:transparent rgb(255, 255, 255);
+    background: scroll transparent rgb(255, 255, 255);
     position: fixed;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
     #icon {
         font-style: italic;
         font-size: 5rem;
@@ -32,8 +34,8 @@ nav {
 
 header {
     width: 100%;
-    height: 30rem;
-    background-color:rgb(250,235,215);
+    height: 20vh;
+    background-color:white;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -45,7 +47,7 @@ header {
 
 .main--pictures { 
     width: 100%;
-    height: 150rem;
+    height: 200vh;
     background: #17181C;
     display:flex;
     flex-direction: column;
@@ -53,8 +55,8 @@ header {
     align-items: center;
     flex-wrap: wrap;
     .picture {
-        width: 30rem;
-        height: 30rem;
+        width: 100%;
+        height: 25%;
         background-color: rgb(255, 255, 255);
     }
 }
@@ -327,21 +329,54 @@ header {
 footer {
     width: 100%;
     height: 10vh;
-    background-color:rgb(250,235,215);
+    background-color:#17181C;
     display:flex;
-    
+    padding-left: 2rem;
+    padding-right: 2rem;
     .name, .quote , .icon {
         width: 33.3%;
         height:100%;
     }
     .name {
-        background-color: aliceblue;
+        background-color:#17181C;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+        .name__container {
+            width: 100%;
+            height:50%;
+            background-color: #17181C;
+            p {
+                color: aliceblue;
+                text-align: center;
+            }
+        }
     }
     .quote {
-        background-color: pink;
+        background-color:#17181C;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .quote__container {
+            width: 100%;
+            height: 50%;
+            background-color: #17181C;
+            p {
+                color: white;
+                text-align: center;
+
+            }
+            span {
+                font-style: italic;
+                font-weight: 700;
+            }
+        }
     }
     .icon {
-        background-color: red;
+        background-color:#17181C;
     }
 }
 
@@ -351,7 +386,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1200px) {
 /* Target all devices from 769px up */ 
     nav {
         width: 100%;
@@ -397,7 +432,7 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         height: 110rem;
-        padding-bottom: 20rem;
+        /* padding-bottom: 20rem; */
         .picture {
             width: 25%;
             height: 50%;

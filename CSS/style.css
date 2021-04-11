@@ -16,7 +16,7 @@ html {
 nav {
   width: 100%;
   height: 10vh;
-  background: transparent white;
+  background: scroll transparent white;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +27,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 nav #icon {
@@ -40,8 +42,8 @@ nav #inspo--header {
 
 header {
   width: 100%;
-  height: 30rem;
-  background-color: antiquewhite;
+  height: 20vh;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +62,7 @@ header h1 {
 
 .main--pictures {
   width: 100%;
-  height: 150rem;
+  height: 200vh;
   background: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,8 +82,8 @@ header h1 {
 }
 
 .main--pictures .picture {
-  width: 30rem;
-  height: 30rem;
+  width: 100%;
+  height: 25%;
   background-color: white;
 }
 
@@ -438,10 +440,12 @@ header h1 {
 footer {
   width: 100%;
   height: 10vh;
-  background-color: antiquewhite;
+  background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 footer .name, footer .quote, footer .icon {
@@ -450,22 +454,69 @@ footer .name, footer .quote, footer .icon {
 }
 
 footer .name {
-  background-color: aliceblue;
+  background-color: #17181C;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+footer .name .name__container {
+  width: 100%;
+  height: 50%;
+  background-color: #17181C;
+}
+
+footer .name .name__container p {
+  color: aliceblue;
+  text-align: center;
 }
 
 footer .quote {
-  background-color: pink;
+  background-color: #17181C;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .quote .quote__container {
+  width: 100%;
+  height: 50%;
+  background-color: #17181C;
+}
+
+footer .quote .quote__container p {
+  color: white;
+  text-align: center;
+}
+
+footer .quote .quote__container span {
+  font-style: italic;
+  font-weight: 700;
 }
 
 footer .icon {
-  background-color: red;
+  background-color: #17181C;
 }
 
 @media only screen and (min-width: 600px) {
   /* Target all devices from 600px to 769px */
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1200px) {
   /* Target all devices from 769px up */
   nav {
     width: 100%;
@@ -517,7 +568,7 @@ footer .icon {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 110rem;
-    padding-bottom: 20rem;
+    /* padding-bottom: 20rem; */
   }
   .main--pictures .picture {
     width: 25%;
