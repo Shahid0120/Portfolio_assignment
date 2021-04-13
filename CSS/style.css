@@ -13,33 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-nav {
-  width: 100%;
-  height: 10vh;
-  background: scroll transparent white;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-
-nav #icon {
-  font-style: italic;
-  font-size: 5rem;
-}
-
-nav #inspo--header {
-  display: none;
-}
-
 header {
   width: 100%;
   height: 15vh;
@@ -304,6 +277,8 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .life--history--why #history__quote {
@@ -325,6 +300,8 @@ header h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .life--history--why #history__quote a {
@@ -655,8 +632,8 @@ footer .icon {
     padding-right: 2rem;
   }
   .life--history--why {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
   .blog--container {
     padding-left: 2rem;
@@ -680,7 +657,7 @@ footer .icon {
     font-weight: 300;
     background-color: white;
   }
-  nav #icon {
+  nav .hamburger {
     display: none;
   }
   nav #inspo--header {
@@ -894,6 +871,8 @@ footer .icon {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 0;
+    padding-right: 0;
   }
   .life--history--why #history__quote {
     width: 100%;

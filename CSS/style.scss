@@ -13,24 +13,10 @@ html {
 
 
 nav {
-    width: 100%;
-    height: 10vh;
-    background: scroll transparent rgb(255, 255, 255);
-    position: fixed;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    #icon {
-        font-style: italic;
-        font-size: 5rem;
-    }
-    #inspo--header {
-        display:none;
-    }
+    
 
 }
+
 
 header {
     width: 100%;
@@ -205,6 +191,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
     #history__quote {
         width: 100%;
         height: 100%;
@@ -215,6 +203,8 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
         a {
             font-style: italic;
             text-decoration:overline;
@@ -480,8 +470,8 @@ footer {
         padding-right: 2rem;
     }
     .life--history--why {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     .blog--container {
         padding-left: 2rem;
@@ -502,7 +492,7 @@ footer {
         font-size: 3.5rem;
         font-weight: 300;
         background-color: rgb(255, 255, 255);
-        #icon {
+        .hamburger {
             display: none;
         }
         #inspo--header {
@@ -690,6 +680,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 0;
+        padding-right: 0;
         #history__quote {
             width: 100%;
             height: 50%;
