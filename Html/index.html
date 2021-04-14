@@ -10,24 +10,27 @@
         <link rel="stylesheet" href="../CSS/style.css" type='text/css'>
     </head>
     <body>
-        <nav>
-            <p id='inspo--header'>Take a dive with me</p>
-            <input type='checkbox' class='toggler'>
-            <div class= 'hamburgur'></div>
-            <div class='menu'>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
                 <div>
-                    <div>
-                        <ul>
-                            <li>HOME</li>
-                            <li>ABOUT</li>
-                            <li>ME</li>
-                        </ul>
-                    </div>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
                 </div>
+              </div>
             </div>
-        </nav>
-        <header>
-            <h1 id='title'>SHAHID HUSSAIN</h1>
+        </div>
+            
+        <header class='main--attraction'>
+            <div class='main--attraction--inner'>
+                <h2>Shahid Hussain</h2>
+            </div>
         </header>
         <section class = 'main--pictures'>
             <div class='picture'></div>
@@ -154,7 +157,7 @@
             </div>
         </section>
         <section class = 'life--history--why'>
-            <div id='history__quote'>
+            <div class='inspiration__container'>
                 <a href='./about_me.html'id='history'>History</a>
                 <p class='quote'><span>"</span>All <span>we</span> have is</p>
                 <p class='quote'><span>now</span><span>"</span></p>
@@ -214,11 +217,58 @@
             <div id='footer__icon'>
                 <div id='email'>
                     <div id='email__text'>
-                        <p>Lets get <span>in touch</span>:<br><a>Shahid.hussain0120@gmail.com</a></p>
+                        <p>Lets get <span>in touch</span>:<br><a href="mailto:shahid.hussain@gmail.com?subject=Enquiries">Shahid.hussain0120@gmail.com</a></p>
                     </div>
                     
                 </div>
                 <div id='icon__section'>
+                    <div class="grid-container">
+                        <div class="facebook">
+                          <div class="logo__container">
+                            <p>Facebook</p>
+                            <span>
+                              <a href="http://www.google.com">
+                                <img src='../images/white_logo/facebook-icon-18-256.png' alt='facebook logo' id='facebook__image'>
+                                </a>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="Github">
+                          <div class="logo__container">
+                            <p>Github</p>
+                            <span>
+                              <a href="http://www.google.com">
+                              <img src='../images/white_logo/github-logo-white.png' alt='github logo' id='github__image'>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="Linkin">
+                          <div class="logo__container">
+                            <p>LinkIn</p>
+                            <span>
+                              <a href="http://www.google.com"><img src='../images/white_logo/linkedin-icon-18-256.png' alt='github logo'/></a>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="Resume">
+                          <div class='logo__container'>
+                            <div class='resume_downloader'>
+                              <p>Would you like to download my resume?</p>
+                              <div class='resume__button'>
+                                <a href='#'>Resume</a>
+                                <a></a>
+                              </div>
+                            </div>
+                            <span>
+                              <a href="http://www.google.com">
+                              <img src='../images/white_logo/logo-white.png' alt='github logo'/>
+                              </a>
+                            </span>
+                          </div>
+                          
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
