@@ -345,7 +345,6 @@ header {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        
                         transition: all 0.5s ease in;
                         transform: scale(1);
                         background-size: cover;
@@ -357,6 +356,29 @@ header {
     }
 }
 
+.projects {
+    z-index: 3; 
+    .project {
+        z-index: 2;
+        position:relative;
+        .project__picture:hover {
+            z-index: 1;
+            position: relative;
+            a:hover {
+                overflow: hidden;
+                img {
+                    opacity: 0.5;
+                    transform: scale(1.2);
+                    transition: all 0.5s ease in;
+                    overflow:hidden;
+                    background-size: cover;
+                    position:relative;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
 .life--history--why {
     width: 100%;
     height: 100vh;
@@ -570,191 +592,163 @@ header {
             height: 60%;
             background-color:#17181C;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-            .grid-container {
-                padding-top: 18rem;
-                padding-left: 20rem;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                gap: 0px 0px;
-                grid-template-areas:
-                  "facebook Instagram Linkin ."
-                  "Resume Resume Resume ."
-                  ". . . .";
-            }
-            .facebook { 
-                grid-area: facebook;
-                width: 20rem;
-                height: 20rem;
-                background-color:#17181C;
-                .logo__container {
-                    display: flexbox;
-                    justify-content: center;
-                    align-items: center;
-                    background-color:#17181C;
-                    width: 100%;
-                    height:100%;
-                    p {
+            .top__row {
+                width: 100%;
+                height: 80%;
+                background-color: #17181C;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                .top__row__box__one {
+                    width: 35%;
+                    height: 33.3%;
+                    background-color: aliceblue;
+                    /* Bad image */
+                    .facebook {
                         width: 100%;
-                        height: 5rem;
-                        font-family: Verdana, Geneva, Tahoma, sans-serif;
-                        font-size: 2rem;
-                        background-color: transparent;
-                        border-radius: 50%;
-                        opacity: 0;
-                        transition: all 0.4s ease-in;
-                        text-align: center;
-                        padding-top: 2rem;
-                        color: white;
-                    }
-                    span {
-                        width: 100%;
-                        height: 100%;
-                        background-color:#17181C;
-                        border-radius: 50%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        a {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            #facebook__image {
-                                width: 50%;
-                                height: 50%;
-                            }
-                        }
-                        
-                    }
-                    
-            
-                }
-             }
-            
-            
-            .Github { 
-                grid-area: Instagram;
-                width: 20rem;
-                height: 20rem;
-                
-            }
-            .Linkin { 
-                grid-area: Linkin;
-                width: 20rem;
-                height: 20rem;
-                background-color: palegoldenrod;
-            }
-            .Resume { 
-                grid-area: Resume;
-                width: 60rem;
-                height: 20rem;
-                background-color:plum;
-             }
-            
-            .Github , .Linkin, .Resume {
-                .logo__container {
-                    display: flexbox;
-                    justify-content: center;
-                    align-items: center;
-                    background-color:#17181C;
-                    width: 100%;
-                    height:100%;
-                    p {
-                        width: 100%;
-                        height: 5rem;
-                        font-family: Verdana, Geneva, Tahoma, sans-serif;
-                        font-size: 2rem;
-                        background-color: transparent;
-                        border-radius: 50%;
-                        opacity: 0;
-                        transition: all 0.4s ease-in;
-                        text-align: center;
-                        padding-top: 2rem;
-                        color: white;
-                    }
-                    span {
-                        width: 100%;
-                        height: 100%;
-                        background-color:#17181C;
-                        border-radius: 50%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        a {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            #github__image {
-                                width: 85%;
-                                height: 85%;
-                            }
-                        }
-                        
-                    }
-                  
-            
-                }
-             }
-            
-            
-            .facebook, .Github , .Linkin, .Resume {
-                .logo__container:hover{
-                    p {
-                    opacity: 1;
-                    }
-                }
-            }
-            
-            .Resume {
-                .logo__container {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    padding-top: 3rem;
-                    background-color: #17181C;
-                    span {
-                        width: 33.3%;
-                        height: 100%;
-                    }
-                    .resume_downloader {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
+                        height:100%;
+                        background-color: #17181C;
                         p {
                             width: 100%;
-                            height: 50%;
-                            padding-bottom: 3rem;
-                        }
-                        .resume__button {
-                            a {
-                                text-decoration: underline;
-                                color: white;
-                                font-size: 3rem;
-                                font-weight: 700;
-                                opacity: 0;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            font-size: 2rem;
+                            opacity: 0;
                             transition: all 0.4s ease-in;
-                            }
+                            text-align: center;
+                            color: white;
                         }
-                    }
-                }
-            }
-            .Resume {
-                .logo__container:hover {
-                    .resume_downloader {
-                        .resume__button {
+                        span {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
                             a {
-                                opacity: 1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                img {
+                                    width: 7rem;
+                                    height: 7rem;
+                                    
+                                }
+                            }
+                            
+                        }
+                    }
+                    
+                }
+                .top__row__box__two {
+                    width: 35%;
+                    height: 33.3%;
+                    background-color: bisque;
+                    .Github { 
+                        width: 100%;
+                        height: 100%;
+                        background-color: #17181C;;
+                        p {
+                            text-align: center;
+                            font-size: 2rem;
+                            color: white;
+                            opacity: 0;
+                        }
+                        span {
+                            a {
+                               
+                                display:flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {
+                                    width: 12rem;
+                                    height: 8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .top__row__box__three {
+                    width: 33.3%;
+                    height: 33.3%;
+                    background-color:#17181C;
+                    .Linkin { 
+                        width: 100%;
+                        height: 100%;
+                        background-color: #17181C;
+                        p {
+                            text-align: center;
+                            color: aliceblue;
+                    
+                            font-size: 2rem;
+                            opacity: 0;
+                        }
+                        span {
+                            a {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {
+                                    width: 7rem;
+                                    height: 7rem;
+                                }
                             }
                         }
                     }
                 }
             }
-            
-        }
+            /* .bottom__row {
+                width: 100%;
+                height: 100%;
+                background-color:beige;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                .Resume { 
+                    width: 100%;
+                    height: 100%;
+                    background-color:#17181C;
+                    
+                    .resume_downloader {
+                        text-align: center;
+                        
+                        p {
+                            opacity: 1;
+                            text-align: center;
+                            color: white;
+                            font-size: 2rem;
+                        }
+                        .resume_downloader {
+                            .resume__button {
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    span {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                    
+                }
+            } */
+        } 
     }
-
-
 }
 
 

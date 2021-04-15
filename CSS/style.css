@@ -481,6 +481,36 @@ header .main--attraction--inner h2 {
   background-size: cover;
 }
 
+.projects {
+  z-index: 3;
+}
+
+.projects .project {
+  z-index: 2;
+  position: relative;
+}
+
+.projects .project .project__picture:hover {
+  z-index: 1;
+  position: relative;
+}
+
+.projects .project .project__picture:hover a:hover {
+  overflow: hidden;
+}
+
+.projects .project .project__picture:hover a:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s ease in;
+  transition: all 0.5s ease in;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
 .life--history--why {
   width: 100%;
   height: 100vh;
@@ -768,67 +798,67 @@ header .main--attraction--inner h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* .bottom__row {
+                width: 100%;
+                height: 100%;
+                background-color:beige;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                .Resume { 
+                    width: 100%;
+                    height: 100%;
+                    background-color:#17181C;
+                    
+                    .resume_downloader {
+                        text-align: center;
+                        
+                        p {
+                            opacity: 1;
+                            text-align: center;
+                            color: white;
+                            font-size: 2rem;
+                        }
+                        .resume_downloader {
+                            .resume__button {
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    span {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                    
+                }
+            } */
 }
 
-.contact #footer__icon #icon__section .grid-container {
-  padding-top: 18rem;
-  padding-left: 20rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-      grid-template-areas: "facebook Instagram Linkin ." "Resume Resume Resume ." ". . . .";
-}
-
-.contact #footer__icon #icon__section .facebook {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: facebook;
-  width: 20rem;
-  height: 20rem;
-  background-color: #17181C;
-}
-
-.contact #footer__icon #icon__section .facebook .logo__container {
-  display: flexbox;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #17181C;
+.contact #footer__icon #icon__section .top__row {
   width: 100%;
-  height: 100%;
-}
-
-.contact #footer__icon #icon__section .facebook .logo__container p {
-  width: 100%;
-  height: 5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
-  background-color: transparent;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
-  text-align: center;
-  padding-top: 2rem;
-  color: white;
-}
-
-.contact #footer__icon #icon__section .facebook .logo__container span {
-  width: 100%;
-  height: 100%;
+  height: 80%;
   background-color: #17181C;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,135 +868,89 @@ header .main--attraction--inner h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.contact #footer__icon #icon__section .facebook .logo__container span a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact #footer__icon #icon__section .facebook .logo__container span a #facebook__image {
-  width: 50%;
-  height: 50%;
-}
-
-.contact #footer__icon #icon__section .Github {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: Instagram;
-  width: 20rem;
-  height: 20rem;
-}
-
-.contact #footer__icon #icon__section .Linkin {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: Linkin;
-  width: 20rem;
-  height: 20rem;
-  background-color: palegoldenrod;
-}
-
-.contact #footer__icon #icon__section .Resume {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: Resume;
-  width: 60rem;
-  height: 20rem;
-  background-color: plum;
-}
-
-.contact #footer__icon #icon__section .Github .logo__container, .contact #footer__icon #icon__section .Linkin .logo__container, .contact #footer__icon #icon__section .Resume .logo__container {
-  display: flexbox;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #17181C;
-  width: 100%;
-  height: 100%;
-}
-
-.contact #footer__icon #icon__section .Github .logo__container p, .contact #footer__icon #icon__section .Linkin .logo__container p, .contact #footer__icon #icon__section .Resume .logo__container p {
-  width: 100%;
-  height: 5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
-  background-color: transparent;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
-  text-align: center;
-  padding-top: 2rem;
-  color: white;
-}
-
-.contact #footer__icon #icon__section .Github .logo__container span, .contact #footer__icon #icon__section .Linkin .logo__container span, .contact #footer__icon #icon__section .Resume .logo__container span {
-  width: 100%;
-  height: 100%;
-  background-color: #17181C;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contact #footer__icon #icon__section .Github .logo__container span a, .contact #footer__icon #icon__section .Linkin .logo__container span a, .contact #footer__icon #icon__section .Resume .logo__container span a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contact #footer__icon #icon__section .Github .logo__container span a #github__image, .contact #footer__icon #icon__section .Linkin .logo__container span a #github__image, .contact #footer__icon #icon__section .Resume .logo__container span a #github__image {
-  width: 85%;
-  height: 85%;
-}
-
-.contact #footer__icon #icon__section .facebook .logo__container:hover p, .contact #footer__icon #icon__section .Github .logo__container:hover p, .contact #footer__icon #icon__section .Linkin .logo__container:hover p, .contact #footer__icon #icon__section .Resume .logo__container:hover p {
-  opacity: 1;
-}
-
-.contact #footer__icon #icon__section .Resume .logo__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  padding-top: 3rem;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__one {
+  width: 35%;
+  height: 33.3%;
+  background-color: aliceblue;
+  /* Bad image */
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook {
+  width: 100%;
+  height: 100%;
   background-color: #17181C;
 }
 
-.contact #footer__icon #icon__section .Resume .logo__container span {
-  width: 33.3%;
-  height: 100%;
+.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook p {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  text-align: center;
+  color: white;
 }
 
-.contact #footer__icon #icon__section .Resume .logo__container .resume_downloader {
+.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook span a img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__two {
+  width: 35%;
+  height: 33.3%;
+  background-color: bisque;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__two .Github {
+  width: 100%;
+  height: 100%;
+  background-color: #17181C;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__two .Github p {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__two .Github span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,30 +960,47 @@ header .main--attraction--inner h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.contact #footer__icon #icon__section .Resume .logo__container .resume_downloader p {
+.contact #footer__icon #icon__section .top__row .top__row__box__two .Github span a img {
+  width: 12rem;
+  height: 8rem;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__three {
+  width: 33.3%;
+  height: 33.3%;
+  background-color: #17181C;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__three .Linkin {
   width: 100%;
-  height: 50%;
-  padding-bottom: 3rem;
+  height: 100%;
+  background-color: #17181C;
 }
 
-.contact #footer__icon #icon__section .Resume .logo__container .resume_downloader .resume__button a {
-  text-decoration: underline;
-  color: white;
-  font-size: 3rem;
-  font-weight: 700;
+.contact #footer__icon #icon__section .top__row .top__row__box__three .Linkin p {
+  text-align: center;
+  color: aliceblue;
+  font-size: 2rem;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
 }
 
-.contact #footer__icon #icon__section .Resume .logo__container:hover .resume_downloader .resume__button a {
-  opacity: 1;
+.contact #footer__icon #icon__section .top__row .top__row__box__three .Linkin span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact #footer__icon #icon__section .top__row .top__row__box__three .Linkin span a img {
+  width: 7rem;
+  height: 7rem;
 }
 
 footer {
