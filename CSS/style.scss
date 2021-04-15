@@ -337,6 +337,20 @@ header {
                 width : 100%;
                 height: 60%;
                 background-color: aliceblue;
+                a {
+                    text-decoration: none;
+                    overflow:hidden;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        
+                        transition: all 0.5s ease in;
+                        transform: scale(1);
+                        background-size: cover;
+                    }
+                }
                 
             }
         }
