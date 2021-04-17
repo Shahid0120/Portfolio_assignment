@@ -15,8 +15,8 @@ html {
 
 .background {
   width: 100vw;
-  height: 100vh;
-  background-image: url("https://images.pexels.com/photos/114820/pexels-photo-114820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 120vh;
+  background-color: #f4d03f;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -24,18 +24,24 @@ html {
 .background .nav {
   width: 100vw;
   height: 10vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 2rem;
   color: #fff;
-  padding-left: 2rem;
-  /* Question mark? */
-  /* This is the content inside the box  (aka links)*/
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /* Middle line */
   /* Top and middle line again */
   /* hidden menu */
-}
-
-.background .nav .initials {
-  position: fixed;
 }
 
 .background .nav .initials h4 {
@@ -50,18 +56,13 @@ html {
   max-width: 960px;
   margin: auto;
   overflow: hidden;
-  padding: 0 3rem;
+  margin-right: 2rem;
   background-color: white;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
 }
 
 .background .nav .menu-wrap {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .background .nav .menu-wrap .toggler {
@@ -75,12 +76,16 @@ html {
   opacity: 0;
 }
 
+.background .nav .toggler {
+  margin-right: 2rem;
+}
+
 .background .nav .menu-wrap .hamburger {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
-  background: black;
+  background: transparent;
   width: 5rem;
   height: 5rem;
   display: -webkit-box;
@@ -108,7 +113,7 @@ html {
           align-items: center;
   width: 100%;
   height: 0.25em;
-  background: yellow;
+  background: white;
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -122,7 +127,7 @@ html {
   z-index: 1;
   width: 100%;
   height: 0.25rem;
-  background: yellow;
+  background: black;
 }
 
 .background .nav .menu-wrap .hamburger > div::after {
@@ -239,132 +244,278 @@ html {
   transition: color 0.2s ease;
 }
 
+.background #nav_non_responsive {
+  width: 100%;
+  height: 10vh;
+  background-color: #f4d03f;
+}
+
 .background header {
   width: 100%;
-  height: 8vh;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  font-size: 3.5rem;
-  padding-left: 2rem;
+  height: 90vh;
 }
 
-.background header .main--attraction--inner {
-  padding-right: 1rem;
-}
-
-.background header .main--attraction--inner h2 {
-  padding-top: rem;
-  font-size: 5rem;
-}
-
-.background .main--pictures {
+.background header .pictures {
   width: 100%;
-  height: 82vh;
+  height: 60%;
+  background-color: #f4d03f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
-.background .main--pictures .picture {
-  width: 80%;
-  height: 30%;
-  background-color: #3b3b3b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.background .main--pictures #picture__one {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 10rem;
-     object-position: 10rem;
-}
-
-.background .main--pictures #picture__one img {
-  width: 100%;
+.background header .pictures .name {
+  width: 10%;
   height: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-color: #f4d03f;
+  padding-bottom: 2rem;
 }
 
-.background .main--pictures #picture__two {
-  background-color: #3b3b3b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.background .main--pictures #picture__two p {
-  color: #fff;
-  justify-self: flex-end;
-  font-size: 2rem;
-  color: grey;
-}
-
-.background .main--pictures #picture__two #bottom__paragraph {
-  word-spacing: 2.5rem;
-  text-align: center;
-}
-
-.background .main--pictures #picture__two img {
-  width: 50%;
+.background header .pictures .name .first--name {
+  width: 100%;
   height: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  color: #fff;
 }
 
-.background .main--pictures #picture__three img {
+.background header .pictures .name .second--name {
   width: 100%;
+  height: 50%;
+  color: #fff;
+}
+
+.background header .pictures .name .second--name, .background header .pictures .name .first--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background header .pictures .name .second--name p, .background header .pictures .name .first--name p {
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+.background header .pictures .pictures__section {
+  width: 90%;
   height: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.background header .pictures .pictures__section #picture--one {
+  width: 20%;
+  height: 100%;
+  background-color: #f4d03f;
+}
+
+.background header .pictures .pictures__section #picture--one #image {
+  width: 155%;
+  height: 40%;
+  background-color: #f4d03f;
+  position: relative;
+  z-index: 9;
+}
+
+.background header .pictures .pictures__section #picture--one #image img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.background header .pictures .pictures__section #picture--two {
+  width: 30%;
+  height: 100%;
+  background-color: #f4d03f;
+  padding-top: 15rem;
+}
+
+.background header .pictures .pictures__section #picture--two #image {
+  width: 120%;
+  height: 90%;
+  background-color: #f4d03f;
+  position: relative;
+  z-index: 10;
+}
+
+.background header .pictures .pictures__section #picture--two #image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.background header .pictures .pictures__section #picture--three {
+  width: 40%;
+  height: 100%;
+  background-color: #f4d03f;
+  padding-top: 20rem;
+}
+
+.background header .pictures .pictures__section #picture--three #image {
+  width: 120%;
+  height: 40%;
+  background-color: #f4d03f;
+  position: relative;
+  z-index: 9;
+}
+
+.background header .pictures .pictures__section #picture--three #image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.background header .pictures .pictures__section #picture--four {
+  width: 10%;
+  height: 100%;
+  background-color: #f4d03f;
+  padding-top: 15rem;
+}
+
+.background header .pictures .pictures__section #picture--four #image {
+  width: 100%;
+  height: 20%;
+  background-color: #f4d03f;
+  position: relative;
+  z-index: 10;
+}
+
+.background header .pictures .pictures__section #picture--four #image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  width: 100%;
+  height: 100%;
+}
+
+.background header .text {
+  width: 100%;
+  height: 60%;
+  background-color: #f4d03f;
+}
+
+.background header .text #designer__syd {
+  width: 100%;
+  height: 25%;
+  background-color: #f4d03f;
+  color: white;
+}
+
+.background header .text #designer__syd h4 {
+  font-size: 7.5rem;
+  letter-spacing: 2.3rem;
+}
+
+.background header .text #designer__syd p {
+  letter-spacing: 2rem;
+  font-size: 2rem;
+  padding-left: 2rem;
+  color: black;
+}
+
+.background header .text #contact__link {
+  width: 100%;
+  height: 25%;
+  background-color: #f4d03f;
+  text-align: right;
+  color: #cf000f;
+}
+
+.background header .text #contact__link p {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.background header .text #contact__link #contact {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.background header .text #projects__about__me__link {
+  width: 100%;
+  height: 25%;
+  background-color: #f4d03f;
+}
+
+.background header .text #projects__about__me__link .projects__names__header {
+  color: #fff;
+}
+
+.background header .text #projects__about__me__link .projects__names__header p {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.background header .text #projects__about__me__link .projects__names__header #last__project {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1rem;
+}
+
+.background header .text #projects__about__me__link .contact__me__header {
+  text-align: right;
+}
+
+.background header .text #projects__about__me__link .contact__me__header p {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
+  line-height: 1;
+  font-weight: 800;
+  color: #cf000f;
+}
+
+.background header .text #stuff__i__line {
+  width: 100%;
+  height: 25%;
+  background-color: #f4d03f;
+  padding-top: 6rem;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+.background header .text #stuff__i__line p {
+  font-size: 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.background header .text #stuff__i__line p #ux {
+  font-size: 2rem;
+}
+
+.background header .text #stuff__i__line p #coffee {
+  font-style: italic;
+  font-size: 3rem;
 }
 
 .inspirational--quote {
   width: 100%;
   height: 100vh;
-  background: url("../images/background/sky-5841177_1920.jpg") no-repeat center;
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -617,7 +768,7 @@ html {
   width: 100%;
   height: 100vh;
   font-size: 4.5rem;
-  background: url("../images/background/fruits-1193727_1920.png") no-repeat center;
+  background: url("https://i.pinimg.com/564x/0a/9b/89/0a9b8927343ee33f55a18e9e64313c72.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -632,6 +783,7 @@ html {
           justify-content: center;
   padding-left: 0;
   padding-right: 0;
+  color: #fff;
 }
 
 .life--history--why .inspiration__container {
@@ -661,7 +813,7 @@ html {
   font-style: italic;
   text-decoration: overline;
   line-height: 3;
-  color: #17181C;
+  color: #fff;
   font-size: 4.5rem;
   z-index: 1;
   position: relative;
@@ -674,7 +826,7 @@ html {
   top: -0.25rem;
   bottom: -0.25rem;
   left: -2rem;
-  background-color: white;
+  background-color: #f4d03f;
   width: calc(100% + 5rem);
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -706,7 +858,7 @@ html {
 
 .blog--container {
   width: 100%;
-  height: 300rem;
+  height: 260rem;
   background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -714,9 +866,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -724,6 +876,10 @@ html {
 }
 
 .blog--container h2 {
+  text-align: center;
+  padding-top: 2rem;
+  width: 100%;
+  height: 20rem;
   font-size: 4.5rem;
   color: white;
   font-weight: 700;
@@ -733,41 +889,19 @@ html {
   font-style: italic;
 }
 
-.blog--container #blog__two {
-  width: 100%;
-  height: 25%;
-}
-
-.blog--container #blog__two #blog__two__one {
-  width: 100%;
-  height: 25%;
-}
-
-.blog--container #blog__two #blog__two__one .blog__picture__two {
-  width: 100%;
-  height: 50%;
-  background-color: antiquewhite;
-}
-
-.blog--container #blog__two #blog__two__one .blog__name__date--two {
-  width: 100%;
-  height: 5rem;
-  background-color: burlywood;
-}
-
 .blog--container .blog__post {
   width: 100%;
-  height: 25%;
+  height: 50rem;
   background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -808,8 +942,15 @@ html {
 
 .blog--container .blog__post .blog__picture {
   width: 100%;
-  height: 50%;
+  height: 70%;
   background-color: antiquewhite;
+}
+
+.blog--container .blog__post #blog--one img, .blog--container .blog__post #blog--four img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog--container .blog__post .blog__name__date {
