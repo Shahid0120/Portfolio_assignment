@@ -13,7 +13,40 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/114820/pexels-photo-114820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background .nav {
+  width: 100vw;
+  height: 10vh;
+  padding-top: 2rem;
+  color: #fff;
+  padding-left: 2rem;
+  /* Question mark? */
+  /* This is the content inside the box  (aka links)*/
+  /* Middle line */
+  /* Top and middle line again */
+  /* hidden menu */
+}
+
+.background .nav .initials {
+  position: fixed;
+}
+
+.background .nav .initials h4 {
+  font-size: 4rem;
+}
+
+.background .nav .initials h4 span {
+  font-style: italic;
+}
+
+.background .nav .container {
   max-width: 960px;
   margin: auto;
   overflow: hidden;
@@ -21,39 +54,17 @@ html {
   background-color: white;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 2rem;
 }
 
-/* Question mark? */
-header {
-  width: 100%;
-  height: 9vh;
-  background-color: antiquewhite;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-header .main--attraction--inner h2 {
-  padding-top: rem;
-  font-size: 10rem;
-}
-
-.menu-wrap {
+.background .nav .menu-wrap {
   position: fixed;
   right: 0;
   top: 0;
   z-index: 1;
 }
 
-.menu-wrap .toggler {
+.background .nav .menu-wrap .toggler {
   position: absolute;
   cursor: pointer;
   z-index: 2;
@@ -64,8 +75,7 @@ header .main--attraction--inner h2 {
   opacity: 0;
 }
 
-/* This is the content inside the box  (aka links)*/
-.menu-wrap .hamburger {
+.background .nav .menu-wrap .hamburger {
   position: absolute;
   top: 0;
   right: 0;
@@ -84,8 +94,7 @@ header .main--attraction--inner h2 {
           justify-content: center;
 }
 
-/* Middle line */
-.menu-wrap .hamburger > div {
+.background .nav .menu-wrap .hamburger > div {
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   display: -webkit-box;
@@ -106,8 +115,7 @@ header .main--attraction--inner h2 {
           flex: none;
 }
 
-/* Top and middle line again */
-.menu-wrap .hamburger > div::before {
+.background .nav .menu-wrap .hamburger > div::before {
   content: '';
   position: absolute;
   top: -1rem;
@@ -117,7 +125,7 @@ header .main--attraction--inner h2 {
   background: yellow;
 }
 
-.menu-wrap .hamburger > div::after {
+.background .nav .menu-wrap .hamburger > div::after {
   content: '';
   position: absolute;
   top: 1rem;
@@ -127,13 +135,12 @@ header .main--attraction--inner h2 {
   background: yellow;
 }
 
-.menu-wrap .toggler:checked + .hamburger > div {
+.background .nav .menu-wrap .toggler:checked + .hamburger > div {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-/* hidden menu */
-.xmenu-wrap .menu {
+.background .nav .xmenu-wrap .menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -150,24 +157,24 @@ header .main--attraction--inner h2 {
           justify-content: center;
 }
 
-.menu-wrap .toggler:checked ~ .menu {
+.background .nav .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
 
-.menu-wrap .toggler:checked ~ .menu > div {
+.background .nav .menu-wrap .toggler:checked ~ .menu > div {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-duration: 3s;
           transition-duration: 3s;
 }
 
-.menu-wrap .toggler:checked ~ .menu > div > div {
+.background .nav .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
   -webkit-transition: opacity 0.4s ease 0.2s;
   transition: opacity 0.4s ease 0.2s;
 }
 
-.menu-wrap .menu {
+.background .nav .menu-wrap .menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -186,7 +193,7 @@ header .main--attraction--inner h2 {
           justify-content: center;
 }
 
-.menu-wrap .menu > div {
+.background .nav .menu-wrap .menu > div {
   background: black;
   width: 100vw;
   height: 100vh;
@@ -208,7 +215,7 @@ header .main--attraction--inner h2 {
   transition: all 0.2 ease;
 }
 
-.menu-wrap .menu > div > div {
+.background .nav .menu-wrap .menu > div > div {
   text-align: center;
   max-width: 100vw;
   max-height: 100vh;
@@ -218,24 +225,50 @@ header .main--attraction--inner h2 {
   transition: opacity 0.2s ease;
 }
 
-.menu-wrap .menu > div > div > ul > li {
+.background .nav .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
   font-size: 2rem;
   padding: 1rem;
 }
 
-.menu-wrap .menu > div > div > ul > li > a {
+.background .nav .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
-.main--pictures {
+.background header {
   width: 100%;
-  height: 200vh;
-  background: #17181C;
+  height: 8vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-size: 3.5rem;
+  padding-left: 2rem;
+}
+
+.background header .main--attraction--inner {
+  padding-right: 1rem;
+}
+
+.background header .main--attraction--inner h2 {
+  padding-top: rem;
+  font-size: 5rem;
+}
+
+.background .main--pictures {
+  width: 100%;
+  height: 82vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,12 +284,81 @@ header .main--attraction--inner h2 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.main--pictures .picture {
+.background .main--pictures .picture {
+  width: 80%;
+  height: 30%;
+  background-color: #3b3b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .main--pictures #picture__one {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 10rem;
+     object-position: 10rem;
+}
+
+.background .main--pictures #picture__one img {
   width: 100%;
-  height: 25%;
-  background-color: white;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.background .main--pictures #picture__two {
+  background-color: #3b3b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.background .main--pictures #picture__two p {
+  color: #fff;
+  justify-self: flex-end;
+  font-size: 2rem;
+  color: grey;
+}
+
+.background .main--pictures #picture__two #bottom__paragraph {
+  word-spacing: 2.5rem;
+  text-align: center;
+}
+
+.background .main--pictures #picture__two img {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.background .main--pictures #picture__three img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .inspirational--quote {
