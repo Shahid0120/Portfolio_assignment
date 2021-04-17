@@ -608,7 +608,7 @@ html {
 
 .projects {
   width: 100%;
-  height: 370vh;
+  height: 335vh;
   background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,21 +620,27 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .projects #title__header {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   font-size: 5rem;
   color: white;
 }
 
+.projects #title__header span {
+  font-style: italic;
+}
+
 .projects .project {
   width: 100%;
-  height: 20%;
+  height: 100rem;
   background-color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,6 +651,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 11rem;
 }
 
 .projects .project .project__background {
@@ -670,7 +677,7 @@ html {
 
 .projects .project .project__background .project__name {
   width: 100%;
-  height: 30%;
+  height: 70%;
   font-size: 2.5rem;
   background-color: #17181C;
   -webkit-box-ordinal-group: 3;
@@ -679,7 +686,7 @@ html {
 }
 
 .projects .project .project__background .project__name h2 {
-  font-size: 5rem;
+  font-size: 9rem;
   color: yellow;
 }
 
@@ -688,8 +695,8 @@ html {
 }
 
 .projects .project .project__background .project__name .project--decription .project__name {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 6rem;
+  font-weight: 550;
   color: white;
 }
 
@@ -707,13 +714,37 @@ html {
   color: white;
 }
 
-.projects .project .project__background .project__name .project--decription .project__description__tag .project--tag {
-  font-weight: 500;
+.projects .project .project__background .project__name .project--decription .project__description__tag .project__tag {
+  font-weight: 800;
+  line-height: 5;
+}
+
+.projects .project .project__background .project__name .project--decription .project__description__tag .project__decription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 5;
+  padding-left: 5rem;
+}
+
+.projects .project .project__background .project__name .project--decription .project__description__tag .description {
+  line-height: 1;
+  padding-top: 5rem;
 }
 
 .projects .project .project__background .project__picture {
   width: 100%;
-  height: 60%;
+  height: 30%;
   background-color: aliceblue;
 }
 

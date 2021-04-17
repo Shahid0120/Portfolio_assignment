@@ -13,80 +13,59 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-  max-width: 960px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3rem;
-  background-color: white;
+.background {
+  width: 100vw;
+  height: 10vh;
+  background-color: #f4d03f;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background .nav {
+  width: 100vw;
+  height: 10vh;
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-/* Question mark? */
-header {
-  width: 100%;
-  height: 9vh;
-  background-color: antiquewhite;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-header .main--attraction--inner h2 {
-  padding-top: rem;
-  font-size: 10rem;
-}
-
-.container {
-  max-width: 960px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3rem;
-  background-color: white;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-/* Question mark? */
-header {
-  width: 100%;
-  height: 9vh;
-  background-color: antiquewhite;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-header .main--attraction--inner h2 {
-  padding-top: rem;
-  font-size: 10rem;
-}
-
-.menu-wrap {
+  padding-top: 2rem;
+  color: #fff;
   position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Middle line */
+  /* Top and middle line again */
+  /* hidden menu */
 }
 
-.menu-wrap .toggler {
+.background .nav .initials h4 {
+  font-size: 4rem;
+}
+
+.background .nav .initials h4 span {
+  font-style: italic;
+}
+
+.background .nav .container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.background .nav .menu-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.background .nav .menu-wrap .toggler {
   position: absolute;
   cursor: pointer;
   z-index: 2;
@@ -97,13 +76,16 @@ header .main--attraction--inner h2 {
   opacity: 0;
 }
 
-/* This is the content inside the box  (aka links)*/
-.menu-wrap .hamburger {
+.background .nav .toggler {
+  margin-right: 2rem;
+}
+
+.background .nav .menu-wrap .hamburger {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
-  background: black;
+  background: transparent;
   width: 5rem;
   height: 5rem;
   display: -webkit-box;
@@ -117,8 +99,7 @@ header .main--attraction--inner h2 {
           justify-content: center;
 }
 
-/* Middle line */
-.menu-wrap .hamburger > div {
+.background .nav .menu-wrap .hamburger > div {
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   display: -webkit-box;
@@ -132,25 +113,24 @@ header .main--attraction--inner h2 {
           align-items: center;
   width: 100%;
   height: 0.25em;
-  background: yellow;
+  background: white;
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
 
-/* Top and middle line again */
-.menu-wrap .hamburger > div::before {
+.background .nav .menu-wrap .hamburger > div::before {
   content: '';
   position: absolute;
   top: -1rem;
   z-index: 1;
   width: 100%;
   height: 0.25rem;
-  background: yellow;
+  background: black;
 }
 
-.menu-wrap .hamburger > div::after {
+.background .nav .menu-wrap .hamburger > div::after {
   content: '';
   position: absolute;
   top: 1rem;
@@ -160,13 +140,12 @@ header .main--attraction--inner h2 {
   background: yellow;
 }
 
-.menu-wrap .toggler:checked + .hamburger > div {
+.background .nav .menu-wrap .toggler:checked + .hamburger > div {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-/* hidden menu */
-.xmenu-wrap .menu {
+.background .nav .xmenu-wrap .menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -183,24 +162,24 @@ header .main--attraction--inner h2 {
           justify-content: center;
 }
 
-.menu-wrap .toggler:checked ~ .menu {
+.background .nav .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
 
-.menu-wrap .toggler:checked ~ .menu > div {
+.background .nav .menu-wrap .toggler:checked ~ .menu > div {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-duration: 3s;
           transition-duration: 3s;
 }
 
-.menu-wrap .toggler:checked ~ .menu > div > div {
+.background .nav .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
   -webkit-transition: opacity 0.4s ease 0.2s;
   transition: opacity 0.4s ease 0.2s;
 }
 
-.menu-wrap .menu {
+.background .nav .menu-wrap .menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -219,7 +198,7 @@ header .main--attraction--inner h2 {
           justify-content: center;
 }
 
-.menu-wrap .menu > div {
+.background .nav .menu-wrap .menu > div {
   background: black;
   width: 100vw;
   height: 100vh;
@@ -241,7 +220,7 @@ header .main--attraction--inner h2 {
   transition: all 0.2 ease;
 }
 
-.menu-wrap .menu > div > div {
+.background .nav .menu-wrap .menu > div > div {
   text-align: center;
   max-width: 100vw;
   max-height: 100vh;
@@ -251,43 +230,61 @@ header .main--attraction--inner h2 {
   transition: opacity 0.2s ease;
 }
 
-.menu-wrap .menu > div > div > ul > li {
+.background .nav .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
   font-size: 2rem;
   padding: 1rem;
 }
 
-.menu-wrap .menu > div > div > ul > li > a {
+.background .nav .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
+.background #nav_non_responsive {
+  width: 100%;
+  height: 10vh;
+  background-color: #f4d03f;
+}
+
 .project--title {
   width: 100vw;
   height: 100vh;
-  background: url("../images/background/sky-5841177_1920.jpg") no-repeat center;
+  background-color: #f4d03f;
   background-size: cover;
   background-attachment: fixed;
+  position: absolute;
+  padding-left: -10rem;
+  padding-right: -10rem;
+}
+
+.project--title .project--cool {
+  width: 100%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   padding-left: 2rem;
-  padding-right: 2rem;
+  word-spacing: -1.3rem;
+  color: #fff;
 }
 
-.project--title h2 {
-  font-size: 9rem;
-  color: #17181C;
+.project--title .project--cool h2 {
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  font-weight: 700;
+}
+
+.project--title .project--cool h2 span {
+  font-style: italic;
+  font-weight: 1000;
 }
 
 .project--info {

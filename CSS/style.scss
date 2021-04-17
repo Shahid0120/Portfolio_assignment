@@ -490,24 +490,31 @@ html {
 
 .projects {
     width: 100%;
-    height: 370vh;
+    height: 335vh;
     background-color:#17181C;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
     #title__header {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
         font-size: 5rem;
         color: white;
+
+        span {
+           font-style: italic; 
+        }
     }
     .project {
         width: 100%;
-        height: 20%;
+        height: 100rem;
         background-color: aliceblue;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 11rem;
         .project__background {
             width: 100%;
             height: 100%;
@@ -520,19 +527,19 @@ html {
             padding-right: 2rem;
             .project__name {
                 width : 100%;
-                height: 30%;
+                height: 70%;
                 font-size: 2.5rem;
                 background-color: #17181C;
                 order: 2;
                 h2 {
-                    font-size: 5rem;
+                    font-size: 9rem;
                     color: yellow;
                 }
                 .project--decription {
                     line-height: 1.6;
                     .project__name {
-                        font-size: 3rem;
-                        font-weight: 600;
+                        font-size: 6rem;
+                        font-weight: 550;
                         color: white;
                     }
                     .project__description__tag{
@@ -540,8 +547,22 @@ html {
                         flex-direction: row;
                         justify-content: space-between;
                         color: white;
-                        .project--tag {
-                           font-weight: 500; 
+                        
+                        .project__tag {
+                           font-weight: 800;
+                           line-height: 5; 
+                        }
+                        .project__decription {
+                            display: flex;
+                            justify-content: end;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            line-height: 5;
+                            padding-left: 5rem;
+                        }
+                        .description{
+                            line-height: 1;
+                            padding-top: 5rem;
                         }
                     }
                 }
@@ -549,7 +570,7 @@ html {
             }
             .project__picture {
                 width : 100%;
-                height: 60%;
+                height: 30%;
                 background-color: aliceblue;
                 a {
                     text-decoration: none;
