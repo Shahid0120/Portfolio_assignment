@@ -219,7 +219,8 @@ html {
         word-spacing: -1.3rem;
         color: #fff;
         h2 {
-            font-size: 4rem;
+            padding-top: 3rem;
+            font-size: 3rem;
             letter-spacing: 2rem;
             font-weight: 700;
             span {
@@ -229,13 +230,14 @@ html {
         }
         .box {
             width: 60%;
-            height: 40%;
+            height: 30%;
             position: absolute;
-            margin-top: 20rem;
+            margin-top: 28rem;
             background-color: black;
             object-fit: cover;
-    
             img {
+                width: 100%;
+                min-height: 100%;
                 object-fit: cover;
             }
         }

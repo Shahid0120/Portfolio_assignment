@@ -278,7 +278,8 @@ html {
 }
 
 .project--title .project--cool h2 {
-  font-size: 4rem;
+  padding-top: 3rem;
+  font-size: 3rem;
   letter-spacing: 2rem;
   font-weight: 700;
 }
@@ -290,15 +291,17 @@ html {
 
 .project--title .project--cool .box {
   width: 60%;
-  height: 40%;
+  height: 30%;
   position: absolute;
-  margin-top: 20rem;
+  margin-top: 28rem;
   background-color: black;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .project--title .project--cool .box img {
+  width: 100%;
+  min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -529,4 +532,4 @@ footer .quote .quote__container span {
 footer .icon {
   background-color: #17181C;
 }
-/*# sourceMappingURL=project.css.map */
+/*# sourceMappingURL=project__three.css.map */
