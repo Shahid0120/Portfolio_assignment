@@ -1055,14 +1055,35 @@ html {
   color: white;
 }
 
-.contact #footer__icon #email #email__text {
-  padding-bottom: 4rem;
-}
-
 .contact #footer__icon #email #email__text a {
   font-size: 2rem;
   text-decoration: none;
   color: white;
+}
+
+.contact #footer__icon #email #butn-resume {
+  font-size: 2rem;
+  text-decoration: none;
+  width: 50%;
+  height: 5rem;
+  text-align: left;
+  color: white;
+  background-color: #17181C;
+  border: none;
+  border-radius: 2rem;
+  -webkit-box-shadow: insert 0 0 0 0 white;
+          box-shadow: insert 0 0 0 0 white;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.contact #footer__icon #email #butn-resume:hover {
+  -webkit-box-shadow: inset 30rem 0 0 0 #f4d03f;
+          box-shadow: inset 30rem 0 0 0 #f4d03f;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: line-through;
 }
 
 .contact #footer__icon #icon__section {
