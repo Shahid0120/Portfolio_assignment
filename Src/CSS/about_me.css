@@ -1,0 +1,668 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* This means 1 rem is 10 pixels */
+  background-color: white;
+  font-family: sofia-pro, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.background {
+  width: 100vw;
+  height: 10vh;
+  background-color: #f4d03f;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background .nav {
+  width: 100vw;
+  height: 10vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  color: #fff;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Middle line */
+  /* Top and middle line again */
+  /* hidden menu */
+}
+
+.background .nav .initials h4 {
+  font-size: 4rem;
+}
+
+.background .nav .initials h4 span {
+  font-style: italic;
+}
+
+.background .nav .container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.background .nav .menu-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.background .nav .menu-wrap .toggler {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  opacity: 0;
+}
+
+.background .nav .toggler {
+  margin-right: 2rem;
+}
+
+.background .nav .menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: transparent;
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .nav .menu-wrap .hamburger > div {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 0.25em;
+  background: white;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+.background .nav .menu-wrap .hamburger > div::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  z-index: 1;
+  width: 100%;
+  height: 0.25rem;
+  background: black;
+}
+
+.background .nav .menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  z-index: 1;
+  width: 100%;
+  height: 0.25rem;
+  background: yellow;
+}
+
+.background .nav .menu-wrap .toggler:checked + .hamburger > div {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.background .nav .xmenu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .nav .menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.background .nav .menu-wrap .toggler:checked ~ .menu > div {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+.background .nav .menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease 0.2s;
+  transition: opacity 0.4s ease 0.2s;
+}
+
+.background .nav .menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .nav .menu-wrap .menu > div {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
+}
+
+.background .nav .menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 100vw;
+  max-height: 100vh;
+  color: aliceblue;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.background .nav .menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.background .nav .menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.background #nav_non_responsive {
+  width: 100%;
+  height: 10vh;
+  background-color: #f4d03f;
+}
+
+.life--history--title {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4d03f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.life--history--title .history--title--brief {
+  width: 50%;
+  height: 40%;
+  background-color: white;
+}
+
+.life--history--title .history--title--brief .history__title__header {
+  width: 100%;
+  height: 10%;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.life--history--title .history--title--brief .history__title__body {
+  width: 100%;
+  height: 80%;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.life--history--title .history--title--brief .history__title__body .history__title__body__date {
+  width: 20%;
+  height: 100%;
+  background-color: #17181C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.life--history--title .history--title--brief .history__title__body .history__title__body__date h4 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.life--history--title .history--title--brief .history__title__body .history__title__body__body {
+  width: 60%;
+  height: 100%;
+  background-color: aquamarine;
+}
+
+.life--history--title .history--title--brief .history__title__body .history__title__body__ending {
+  width: 20%;
+  height: 100%;
+  background-color: #17181C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.life--history--title .history--title--brief .history__title__body .history__title__body__ending h4 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.life--history--title .history--title--brief .history__title__body .history__title__body__ending h4 span {
+  padding: 2rem;
+}
+
+.life--history--title .history--title--brief .hisotry__title__footer {
+  width: 100%;
+  height: 10%;
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.life--history--title .history--title--brief .hisotry__title__footer h4, .life--history--title .history--title--brief .history__title__body h4, .life--history--title .history--title--brief .history__title__header h4 {
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.life--history--title #history--title--brief--layer--two {
+  position: relative;
+  margin-bottom: 70rem;
+}
+
+.life--history--why {
+  width: 100vw;
+  height: 70vh;
+  background: #f4d03f;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.life--history--why #hi__quote {
+  width: 100%;
+  height: 10%;
+  text-align: left;
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.life--history--why .life--hisotry--why--body {
+  width: 100%;
+  height: 90%;
+}
+
+.life--history--why .life--hisotry--why--body #reasoning__ux_design {
+  width: 100%;
+  height: 50%;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.life--history--why .life--hisotry--why--body #reasoning__ux_design #box--over {
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  background-color: #f4d03f;
+  color: #fff;
+}
+
+.life--history--why .life--hisotry--why--body #reasoning__ux_design #box--over h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.life--history--why .life--hisotry--why--body #reasoning__ux_design #box--over #reasoning__ux_design__paragraph {
+  width: 85%;
+  height: 120%;
+  background-color: #17181C;
+  position: relative;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  padding: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.life--history--why .life--hisotry--why--body #reasoning__ux_design #box--over #reasoning__ux_design__paragraph p {
+  font-size: 2.5rem;
+  line-height: 1.8;
+}
+
+.life--history--why .life--hisotry--why--body #brief__history {
+  width: 100%;
+  height: 50%;
+  background-color: bisque;
+  /* SAME DIMENSION FOR CONTAINER + SLIDES */
+}
+
+.life--history--runthrough {
+  background-color: transparent;
+  width: 100vw;
+  height: 50vh;
+  /* img {
+        max-width: 100%;
+    } */
+}
+
+.life--history--runthrough .slider--container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.life--history--runthrough .slider--container .slider--menu {
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.life--history--runthrough .slider--container .slider--menu label {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  background: #fff;
+  border-radius: 3.3rem;
+  margin: 0 0.3em 1em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.life--history--runthrough .slider--container .slider--menu label:hover {
+  background: #f4d03f;
+}
+
+.life--history--runthrough .slider--container .slider--menu #label--two:hover {
+  background: #17181C;
+}
+
+.life--history--runthrough .slider--container .slide {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-transition: left 0s 0.75s;
+  transition: left 0s 0.75s;
+  padding: 8rem 1.2rem 0;
+}
+
+.life--history--runthrough .slider--container [id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  -webkit-transition: left .65s ease-out;
+  transition: left .65s ease-out;
+}
+
+.life--history--runthrough .slider--container .slide-one {
+  background-color: #17181C;
+  color: #fff;
+}
+
+.life--history--runthrough .slider--container .slide-one h3 {
+  font-size: 10rem;
+  font-weight: 700;
+}
+
+.life--history--runthrough .slider--container .slide-one p {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.life--history--runthrough .slider--container .slide-two {
+  background-color: #fff;
+}
+
+.life--history--runthrough .slider--container .slide-two h4 {
+  font-size: 10rem;
+  font-weight: 1000;
+}
+
+.life--history--runthrough .slider--container .slide-two p {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.life--history--runthrough .slider--container .slide-three {
+  background-color: #f4d03f;
+}
+
+.life--history--runthrough .slider--container .slide-three h4 {
+  font-size: 10rem;
+  font-weight: 1000;
+}
+
+.life--history--runthrough .slider--container .slide-three p {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.life--history--runthrough .slider--container .slide-four {
+  background-color: #17181C;
+  color: #fff;
+}
+
+.life--history--runthrough .slider--container .slide-four h4 {
+  font-size: 10rem;
+  font-weight: 1000;
+}
+
+.life--history--runthrough .slider--container .slide-four p {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.life--history--runthrough .slider--container .slide-two, .life--history--runthrough .slider--container .slide-three, .life--history--runthrough .slider--container .slide-four {
+  padding-bottom: 2rem;
+}
+
+.life--history--runthrough .slider--container .slide-two h4, .life--history--runthrough .slider--container .slide-three h4, .life--history--runthrough .slider--container .slide-four h4 {
+  font-size: 4rem;
+  padding-bottom: 4rem;
+  font-weight: 1000;
+}
+
+.life--history--runthrough .slider--container .slide-two p, .life--history--runthrough .slider--container .slide-three p, .life--history--runthrough .slider--container .slide-four p {
+  font-size: 3rem;
+  padding-left: 2rem;
+  padding-left: 2rem;
+  line-height: 1;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #17181C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+footer .name, footer .quote, footer .icon {
+  width: 33.3%;
+  height: 100%;
+}
+
+footer .name {
+  background-color: #17181C;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+footer .name .name__container {
+  width: 100%;
+  height: 50%;
+  background-color: #17181C;
+}
+
+footer .name .name__container p {
+  color: aliceblue;
+  text-align: center;
+}
+
+footer .quote {
+  background-color: #17181C;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .quote .quote__container {
+  width: 100%;
+  height: 50%;
+  background-color: #17181C;
+}
+
+footer .quote .quote__container p {
+  color: white;
+  text-align: center;
+}
+
+footer .quote .quote__container span {
+  font-style: italic;
+  font-weight: 700;
+}
+
+footer .icon {
+  background-color: #17181C;
+}
+/*# sourceMappingURL=about_me.css.map */

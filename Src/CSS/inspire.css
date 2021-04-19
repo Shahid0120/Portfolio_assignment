@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* This means 1 rem is 10 pixels */
+  background-color: white;
+  font-family: sofia-pro, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.background {
+  width: 100vw;
+  height: 10vh;
+  background-color: #f4d03f;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background .nav {
+  width: 100vw;
+  height: 10vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  color: #fff;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Middle line */
+  /* Top and middle line again */
+  /* hidden menu */
+}
+
+.background .nav .initials h4 {
+  font-size: 4rem;
+}
+
+.background .nav .initials h4 span {
+  font-style: italic;
+}
+
+.background .nav .container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.background .nav .menu-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.background .nav .menu-wrap .toggler {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  opacity: 0;
+}
+
+.background .nav .toggler {
+  margin-right: 2rem;
+}
+
+.background .nav .menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: transparent;
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .nav .menu-wrap .hamburger > div {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 0.25em;
+  background: white;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+.background .nav .menu-wrap .hamburger > div::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  z-index: 1;
+  width: 100%;
+  height: 0.25rem;
+  background: black;
+}
+
+.background .nav .menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  z-index: 1;
+  width: 100%;
+  height: 0.25rem;
+  background: yellow;
+}
+
+.background .nav .menu-wrap .toggler:checked + .hamburger > div {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.background .nav .xmenu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .nav .menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.background .nav .menu-wrap .toggler:checked ~ .menu > div {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+.background .nav .menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease 0.2s;
+  transition: opacity 0.4s ease 0.2s;
+}
+
+.background .nav .menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .nav .menu-wrap .menu > div {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
+}
+
+.background .nav .menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 100vw;
+  max-height: 100vh;
+  color: aliceblue;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.background .nav .menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.background .nav .menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.background #nav_non_responsive {
+  width: 100%;
+  height: 10vh;
+  background-color: #f4d03f;
+}
+
+.inspire--title {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4d03f;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.inspire--title .inspire--cool {
+  width: 100%;
+  height: 60%;
+  background: url("https://i.pinimg.com/564x/6c/53/4a/6c534a6284c1dfb0e4e9512461a9f3da.jpg") repeat center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.inspire--title .inspire--cool h2 {
+  font-size: 7rem;
+}
+
+.inspire--title .inspire--cool #inspiration__header__back {
+  position: absolute;
+  margin-top: 2rem;
+  margin-right: 1.2rem;
+  color: white;
+}
+
+.inspire--title .inspire--cool #inspiration__header__middle {
+  position: absolute;
+  color: #f4d03f;
+}
+
+.inspire--title .inspire--cool #inspiration__header__front {
+  position: absolute;
+  margin-bottom: 2rem;
+  margin-left: 1.2rem;
+  color: black;
+}
+
+.inspire--column {
+  width: 100vw;
+  height: 100vh;
+  background-color: blanchedalmond;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inspire--column .inspire--people {
+  width: 100%;
+  height: 50%;
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inspire--column .inspire--people .inspire--people--title {
+  width: 100%;
+  height: 20%;
+  background-color: #17181C;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.inspire--column .inspire--people .inspire--people--title h3 {
+  padding-left: 2rem;
+  color: white;
+  font-size: 5rem;
+  text-decoration: underline;
+}
+
+.inspire--column .inspire--people .inspire--people--title h3 span {
+  font-style: italic;
+}
+
+.inspire--column .inspire--people .inspire--people--body {
+  width: 100%;
+  height: 80%;
+  background-color: #17181C;
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+.inspire--column .inspire--people .inspire--people--body p {
+  padding-left: 2rem;
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.inspire--column .inspire--hobbies {
+  width: 100%;
+  height: 50%;
+  background-color: #17181C;
+}
+
+.inspire--column .inspire--hobbies .inspire--hobbies--title {
+  width: 100%;
+  height: 20%;
+  background-color: #17181C;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.inspire--column .inspire--hobbies .inspire--hobbies--title h3 {
+  padding-left: 2rem;
+  color: white;
+  font-size: 5rem;
+  text-decoration: underline;
+}
+
+.inspire--column .inspire--hobbies .inspire--hobbies--title h3 span {
+  font-style: italic;
+}
+
+.inspire--column .inspire--hobbies .inspire--hobbies--body {
+  width: 100%;
+  height: 80%;
+  background-color: #17181C;
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+.inspire--column .inspire--hobbies .inspire--hobbies--body p {
+  padding-left: 2rem;
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #17181C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+footer .name, footer .quote, footer .icon {
+  width: 33.3%;
+  height: 100%;
+}
+
+footer .name {
+  background-color: #17181C;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+footer .name .name__container {
+  width: 100%;
+  height: 50%;
+  background-color: #17181C;
+}
+
+footer .name .name__container p {
+  color: aliceblue;
+  text-align: center;
+}
+
+footer .quote {
+  background-color: #17181C;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .quote .quote__container {
+  width: 100%;
+  height: 50%;
+  background-color: #17181C;
+}
+
+footer .quote .quote__container p {
+  color: white;
+  text-align: center;
+}
+
+footer .quote .quote__container span {
+  font-style: italic;
+  font-weight: 700;
+}
+
+footer .icon {
+  background-color: #17181C;
+}
+
+/*  
+     .inspire--hobbies , .inspire--people {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .inspire--title {
+            width: 100%;
+            height: 20%;
+            background-color: #fff;
+        }
+        .inspire--body {
+            width: 100%;
+            height: 80%;
+            background-color: aqua;
+        }
+    } 
+    */
+/*# sourceMappingURL=inspire.css.map */
