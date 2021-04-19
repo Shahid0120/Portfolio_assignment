@@ -1348,9 +1348,10 @@ footer .quote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 3rem;
 }
 
 footer .quote .quote__container {
@@ -1371,6 +1372,169 @@ footer .quote .quote__container span {
 
 footer .icon {
   background-color: #17181C;
+  width: 100%;
+  height: 33.3%;
+  background-color: #17181C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem; */
+}
+
+footer .icon .icon__image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4rem;
+  padding-left: 3rem;
+}
+
+footer .icon .icon__image__container .top__row__box__one {
+  width: 35%;
+  height: 33.3%;
+  background-color: aliceblue;
+  /* Bad image */
+}
+
+footer .icon .icon__image__container .top__row__box__one .facebook {
+  width: 100%;
+  height: 100%;
+  background-color: #17181C;
+}
+
+footer .icon .icon__image__container .top__row__box__one .facebook p {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  text-align: center;
+  color: white;
+}
+
+footer .icon .icon__image__container .top__row__box__one .facebook span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .icon .icon__image__container .top__row__box__one .facebook span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .icon .icon__image__container .top__row__box__one .facebook span a img {
+  width: 5rem;
+  height: 5rem;
+}
+
+footer .icon .icon__image__container .top__row__box__two {
+  width: 35%;
+  height: 33.3%;
+  background-color: bisque;
+}
+
+footer .icon .icon__image__container .top__row__box__two .Github {
+  width: 100%;
+  height: 100%;
+  background-color: #17181C;
+}
+
+footer .icon .icon__image__container .top__row__box__two .Github p {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+}
+
+footer .icon .icon__image__container .top__row__box__two .Github span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .icon .icon__image__container .top__row__box__two .Github span a img {
+  width: 7rem;
+  height: 5rem;
+}
+
+footer .icon .icon__image__container .top__row__box__three {
+  width: 33.3%;
+  height: 33.3%;
+  background-color: #17181C;
+}
+
+footer .icon .icon__image__container .top__row__box__three .Linkin {
+  width: 100%;
+  height: 100%;
+  background-color: #17181C;
+}
+
+footer .icon .icon__image__container .top__row__box__three .Linkin p {
+  text-align: center;
+  color: aliceblue;
+  font-size: 2rem;
+  opacity: 0;
+}
+
+footer .icon .icon__image__container .top__row__box__three .Linkin span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
+  width: 5rem;
+  height: 5rem;
 }
 
 @media only screen and (min-width: 600px) {

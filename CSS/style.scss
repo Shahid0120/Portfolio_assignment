@@ -1036,11 +1036,13 @@ footer {
         font-size: 1.5rem;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        padding-left: 3rem;
         .quote__container {
             width: 100%;
             height: 50%;
             background-color: #17181C;
+            
             p {
                 color: white;
                 text-align: center;
@@ -1054,6 +1056,119 @@ footer {
     }
     .icon {
         background-color:#17181C;
+        width: 100%;
+        height: 33.3%;
+        background-color: #17181C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem; */
+        .icon__image__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4rem;
+            padding-left: 3rem;
+            .top__row__box__one {
+                width: 35%;
+                height: 33.3%;
+                background-color: aliceblue;
+                /* Bad image */
+                .facebook {
+                    width: 100%;
+                    height:100%;
+                    background-color: #17181C;
+                    p {
+                        width: 100%;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-size: 2rem;
+                        opacity: 0;
+                        transition: all 0.4s ease-in;
+                        text-align: center;
+                        color: white;
+                    }
+                    span {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                                
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+            .top__row__box__two {
+                width: 35%;
+                height: 33.3%;
+                background-color: bisque;
+                .Github { 
+                    width: 100%;
+                    height: 100%;
+                    background-color: #17181C;;
+                    p {
+                        text-align: center;
+                        font-size: 2rem;
+                        color: white;
+                        opacity: 0;
+                    }
+                    span {
+                        a {
+                            
+                            display:flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 7rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .top__row__box__three {
+                width: 33.3%;
+                height: 33.3%;
+                background-color:#17181C;
+                .Linkin { 
+                    width: 100%;
+                    height: 100%;
+                    background-color: #17181C;
+                    p {
+                        text-align: center;
+                        color: aliceblue;
+                
+                        font-size: 2rem;
+                        opacity: 0;
+                    }
+                    span {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                }
+            }     
+        }
     }
 }
 
