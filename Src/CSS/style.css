@@ -39,6 +39,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 10001;
   /* Middle line */
   /* Top and middle line again */
   /* hidden menu */
@@ -199,7 +200,7 @@ html {
 }
 
 .background .nav .menu-wrap .menu > div {
-  background: black;
+  background: #f4d03f;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -233,7 +234,7 @@ html {
 .background .nav .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
-  font-size: 2rem;
+  font-size: 5rem;
   padding: 1rem;
 }
 
@@ -461,6 +462,10 @@ html {
   color: #fff;
 }
 
+.background header .text #projects__about__me__link .projects__names__header #project__name__title {
+  text-decoration: line-through;
+}
+
 .background header .text #projects__about__me__link .projects__names__header p {
   text-transform: uppercase;
   font-size: 4rem;
@@ -473,6 +478,7 @@ html {
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .background header .text #projects__about__me__link .contact__me__header {
@@ -501,6 +507,7 @@ html {
   font-size: 4rem;
   position: relative;
   text-transform: uppercase;
+  padding-top: 2rem;
 }
 
 .background header .text #stuff__i__line p #ux {
@@ -608,7 +615,7 @@ html {
 
 .projects {
   width: 100%;
-  height: 335vh;
+  min-height: 150vh;
   background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,7 +762,7 @@ html {
 
 .projects .project .project__background .project__picture a img {
   width: 100%;
-  height: 100%;
+  height: 102%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: all 0.5s ease in;
@@ -889,7 +896,7 @@ html {
 
 .blog--container {
   width: 100%;
-  height: 260rem;
+  min-height: 150rem;
   background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1016,7 +1023,7 @@ html {
 
 .contact {
   width: 100%;
-  height: 100rem;
+  min-height: 100rem;
   background-color: #e9b4b4;
   font-size: 4.5rem;
   line-height: 1.3;
@@ -1576,62 +1583,236 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
 
 @media only screen and (min-width: 1200px) {
   /* Target all devices from 769px up */
-  nav {
+  .background header .pictures {
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 3.5rem;
-    font-weight: 300;
-    background-color: white;
+    height: 60%;
+    background-color: #f4d03f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  nav .hamburger {
-    display: none;
+  .background header .pictures .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-right: 6rem;
   }
-  nav #inspo--header {
-    display: contents;
-    font-style: italic;
+  .background header .pictures .name .first--name {
+    width: 100%;
+    height: 50%;
+    color: #fff;
   }
-  nav #abbreviation--name span {
-    font-weight: 550;
+  .background header .pictures .name .second--name {
+    width: 100%;
+    height: 50%;
+    color: #fff;
   }
-  nav {
-    padding-right: 8rem;
-    padding-left: 8rem;
-    background-color: white;
-  }
-  header {
-    padding-right: 8rem;
-    padding-left: 8rem;
-    background-color: white;
-    height: 22.5rem;
-  }
-  header #title {
-    font-style: sofia-pro, sans-serif;
-    font-size: 5rem;
-    font-style: normal;
-    color: black;
-  }
-  .main--pictures {
+  .background header .pictures .name .second--name, .background header .pictures .name .first--name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .background header .pictures .name .second--name p, .background header .pictures .name .first--name p {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+  .background header .pictures .pictures__section {
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 110rem;
-    /* padding-bottom: 20rem; */
   }
-  .main--pictures .picture {
-    width: 25%;
-    height: 50%;
-    margin: 1rem;
+  .background header .pictures .pictures__section #picture--one {
+    width: 20%;
+    height: 100%;
+    background-color: #f4d03f;
+  }
+  .background header .pictures .pictures__section #picture--one #image {
+    width: 130%;
+    height: 40%;
+    background-color: #f4d03f;
+    position: relative;
+    z-index: 9;
+  }
+  .background header .pictures .pictures__section #picture--one #image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .background header .pictures .pictures__section #picture--two {
+    width: 30%;
+    height: 85%;
+    background-color: #f4d03f;
+    padding-top: 5rem;
+  }
+  .background header .pictures .pictures__section #picture--two #image {
+    width: 100%;
+    height: 120%;
+    background-color: #f4d03f;
+    position: relative;
+    z-index: 10;
+  }
+  .background header .pictures .pictures__section #picture--two #image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .background header .pictures .pictures__section #picture--three {
+    width: 40%;
+    height: 80%;
+    background-color: #f4d03f;
+    padding-top: 10rem;
+  }
+  .background header .pictures .pictures__section #picture--three #image {
+    width: 110%;
+    height: 80%;
+    background-color: #f4d03f;
+    position: relative;
+    z-index: 9;
+  }
+  .background header .pictures .pictures__section #picture--three #image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .background header .pictures .pictures__section #picture--four {
+    width: 12%;
+    height: 150%;
+    background-color: #f4d03f;
+    padding-top: 3rem;
+    margin-left: 2rem;
+  }
+  .background header .pictures .pictures__section #picture--four #image {
+    width: 100%;
+    height: 20%;
+    background-color: #f4d03f;
+    position: relative;
+    z-index: 10;
+  }
+  .background header .pictures .pictures__section #picture--four #image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+    width: 100%;
+    height: 100%;
+  }
+  .background header .text #designer__syd {
+    padding-left: 4rem;
+  }
+  .background header .text #designer__syd h4 {
+    font-size: 10rem;
+    letter-spacing: 4rem;
+  }
+  .background header .text #designer__syd p {
+    padding-left: 1rem;
+    letter-spacing: 5rem;
+  }
+  .background header .text #contact__link {
+    width: 100%;
+    height: 25%;
+    background-color: #f4d03f;
+    text-align: right;
+    color: #cf000f;
+    padding-right: 4rem;
+  }
+  .background header .text #contact__link p {
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    line-height: 1;
+    font-weight: 800;
+  }
+  .background header .text #contact__link #contact {
+    font-style: italic;
+    text-decoration: line-through;
+  }
+  .background header .text #projects__about__me__link {
+    width: 100%;
+    height: 25%;
+    background-color: #f4d03f;
+    padding-left: 4rem;
+  }
+  .background header .text #projects__about__me__link .projects__names__header {
+    color: #fff;
+  }
+  .background header .text #projects__about__me__link .projects__names__header #project__name__title {
+    text-decoration: line-through;
+  }
+  .background header .text #projects__about__me__link .projects__names__header p {
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    line-height: 1;
+    font-weight: 800;
+  }
+  .background header .text #projects__about__me__link .projects__names__header #last__project {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .background header .text #projects__about__me__link .contact__me__header {
+    text-align: right;
+  }
+  .background header .text #projects__about__me__link .contact__me__header p {
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #cf000f;
+    padding-right: 4rem;
+  }
+  .background header .text #stuff__i__line {
+    width: 100%;
+    height: 25%;
+    background-color: #f4d03f;
+    padding-top: 6rem;
+    padding-bottom: 0;
+    padding-left: 4rem;
+    color: #fff;
+  }
+  .background header .text #stuff__i__line p {
+    font-size: 5rem;
+    position: relative;
+    text-transform: uppercase;
+    padding-top: 2rem;
+  }
+  .background header .text #stuff__i__line p #ux {
+    font-size: 3rem;
+  }
+  .background header .text #stuff__i__line p #coffee {
+    font-style: italic;
+    font-size: 4rem;
   }
   .inspirational--quote {
     height: 90vh;
@@ -1694,10 +1875,10 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     margin: 0;
   }
   .projects {
-    height: 500rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    min-height: 90rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     background-color: #17181C;
   }
   .projects #title__header {
@@ -1725,12 +1906,8 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
             flex-direction: row;
   }
   .projects .project .project__background .project__name {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    background-color: #17181C;
     height: 60%;
-    width: 30%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1741,6 +1918,10 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    background-color: #17181C;
   }
   .projects .project .project__background .project__name h2 {
     color: yellow;
@@ -1784,8 +1965,26 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     font-size: 2.4rem;
     line-height: 3;
   }
+  .projects .project .project__background .project__name .project--decription .project__description__tag .project__decription .description {
+    padding-top: 2.2rem;
+    padding-right: 1rem;
+  }
   .projects .project .project__background .project__picture {
-    width: 70%;
+    width: 50%;
+    height: 100%;
+    background-color: #17181C;
+  }
+  .projects .project .project__background #picture__one {
+    height: 53rem;
+  }
+  .projects .project .project__background #picture__one a img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projects .project .project__background #picture__two {
+    height: 51rem;
   }
   .life--history--why {
     height: 90vh;
@@ -1849,13 +2048,16 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
             transform: scaleX(1);
   }
   .blog--container {
-    height: 300rem;
+    min-height: 500rem;
     text-align: left;
     background-color: #17181C;
   }
   .blog--container #blogs__title {
+    height: 30rem;
     font-size: 10rem;
     font-weight: 700;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     color: white;
     background-color: #17181C;
   }
@@ -1865,24 +2067,36 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
   .blog--container .blog__post {
     padding-right: 8rem;
     padding-left: 8rem;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    height: 25%;
+    padding-bottom: 9rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 20%;
     background-color: #17181C;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .blog--container .blog__post .blog__picture {
-    height: 80%;
+    width: 100%;
+    height: 90rem;
+  }
+  .blog--container .blog__post #blog--one img, .blog--container .blog__post #blog--four img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .blog--container .blog__post .blog__name__date, .blog--container .blog__post .blog__name__date--two {
     height: 20%;
+    width: 100%;
   }
   .blog--container .blog__post .blog__name__date .blog__name, .blog--container .blog__post .blog__name__date--two .blog__name {
     width: 100%;
     height: 50%;
     background-color: #17181C;
     color: white;
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .blog--container .blog__post .blog__name__date .blog__summary, .blog--container .blog__post .blog__name__date--two .blog__summary {
     width: 100%;
@@ -1899,7 +2113,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     height: 100%;
     background-color: #17181C;
     color: yellow;
-    font-size: 2.4rem;
+    font-size: 3.5rem;
   }
   .blog--container .blog__post .blog__name__date .blog__summary .blog__date, .blog--container .blog__post .blog__name__date--two .blog__summary .blog__date {
     width: 70%;
@@ -1907,7 +2121,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     background-color: #17181C;
     color: yellow;
     text-align: end;
-    font-size: 2.4rem;
+    font-size: 3.5rem;
   }
   #blog--two {
     -webkit-box-align: end;
@@ -1928,10 +2142,17 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     background-color: burlywood;
   }
   .contact {
-    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .contact .contact__questions__upper {
-    padding-top: 7rem;
     padding-left: 8rem;
     height: 30%;
     padding-right: 8rem;
@@ -1977,12 +2198,17 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 20rem;
   }
   .contact #footer__icon #email #email__text {
     width: 100%;
@@ -1990,15 +2216,41 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     color: white;
   }
   .contact #footer__icon #email #email__text p {
-    font-size: 5rem;
+    padding-bottom: 2rem;
+    font-size: 3rem;
     text-align: left;
   }
   .contact #footer__icon #email #email__text p a {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 700;
+    padding-right: 2rem;
+  }
+  .contact #footer__icon #email #email__text p #butn-resume {
+    font-size: 5rem;
+    text-decoration: none;
+    width: 50%;
+    height: 5rem;
+    text-align: left;
+    color: white;
+    background-color: #17181C;
+    border: none;
+    border-radius: 2rem;
+    -webkit-box-shadow: insert 0 0 0 0 white;
+            box-shadow: insert 0 0 0 0 white;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+    outline: none;
+  }
+  .contact #footer__icon #email #email__text p #butn-resume:hover {
+    -webkit-box-shadow: inset 30rem 0 0 0 #f4d03f;
+            box-shadow: inset 30rem 0 0 0 #f4d03f;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: line-through;
   }
   .contact #footer__icon #email #email__text span {
     font-style: italic;
+    font-size: 6rem;
   }
   .contact #footer__icon #icon__section {
     width: 70%;
@@ -2010,6 +2262,10 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-top: 20rem;
   }
   .contact #footer__icon #icon__section img {
     width: 60%;
@@ -2019,18 +2275,18 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-left: 8rem;
     padding-right: 8rem;
     background-color: #17181C;
-  }
-  footer .name {
-    background-color: #17181C;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+  }
+  footer .name {
+    background-color: #17181C;
   }
   footer .name .name__container {
     width: 100%;
@@ -2038,9 +2294,10 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     background-color: #17181C;
   }
   footer .name .name__container p {
-    text-align: center;
-    font-size: 5rem;
+    padding-left: 2rem;
+    font-size: 3rem;
     color: white;
+    text-align: left;
   }
   footer .quote {
     background-color: #17181C;
@@ -2054,6 +2311,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 33.3%;
   }
   footer .quote .quote__container {
     width: 100%;
@@ -2063,6 +2321,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
   footer .quote .quote__container p {
     color: white;
     text-align: center;
+    font-size: 3rem;
   }
   footer .quote .quote__container span {
     font-style: italic;
@@ -2073,17 +2332,17 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+    width: 33.3%;
   }
   footer .icon .icon__image__container {
-    width: 50%;
-    height: 100%;
+    width: 75%;
+    height: 50%;
     background-color: #17181C;
+    margin-bottom: 16rem;
   }
   footer .icon .icon__image__container img {
     width: 100%;
