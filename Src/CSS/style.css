@@ -439,17 +439,33 @@ html {
   color: #cf000f;
 }
 
+.background header .text #contact__link #contact {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
 .background header .text #contact__link p {
   text-transform: uppercase;
   font-size: 4rem;
   letter-spacing: 0.4rem;
   line-height: 1;
   font-weight: 800;
+  text-decoration: none;
+  color: #cf000f;
 }
 
-.background header .text #contact__link #contact {
-  font-style: italic;
-  text-decoration: line-through;
+.background header .text #contact__link a {
+  text-decoration: none;
+}
+
+.background header .text #contact__link a p {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
+  line-height: 1;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .background header .text #projects__about__me__link {
@@ -474,6 +490,11 @@ html {
   font-weight: 800;
 }
 
+.background header .text #projects__about__me__link .projects__names__header p a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .background header .text #projects__about__me__link .projects__names__header #last__project {
   font-size: 3rem;
   font-weight: 600;
@@ -486,6 +507,19 @@ html {
 }
 
 .background header .text #projects__about__me__link .contact__me__header p {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
+  line-height: 1;
+  font-weight: 800;
+  color: #cf000f;
+}
+
+.background header .text #projects__about__me__link .contact__me__header a {
+  text-decoration: none;
+}
+
+.background header .text #projects__about__me__link .contact__me__header a p {
   text-transform: uppercase;
   font-size: 4rem;
   letter-spacing: 0.4rem;
@@ -1110,51 +1144,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* .bottom__row {
-                width: 100%;
-                height: 100%;
-                background-color:beige;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-                .Resume { 
-                    width: 100%;
-                    height: 100%;
-                    background-color:#17181C;
-                    
-                    .resume_downloader {
-                        text-align: center;
-                        
-                        p {
-                            opacity: 1;
-                            text-align: center;
-                            color: white;
-                            font-size: 2rem;
-                        }
-                        .resume_downloader {
-                            .resume__button {
-                                a {
-                                    text-decoration: none;
-                                    color: white;
-                                }
-                            }
-                        }
-                    }
-                    span {
-                        a {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            img {
-                                width: 5rem;
-                                height: 5rem;
-                            }
-                        }
-                    }
-                    
-                }
-            } */
 }
 
 .contact #footer__icon #icon__section .top__row {
@@ -1755,6 +1744,13 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     font-style: italic;
     text-decoration: line-through;
   }
+  .background header .text #contact__link a p {
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    line-height: 1;
+    font-weight: 800;
+  }
   .background header .text #projects__about__me__link {
     width: 100%;
     height: 25%;
@@ -1784,6 +1780,15 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     text-align: right;
   }
   .background header .text #projects__about__me__link .contact__me__header p {
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #cf000f;
+    padding-right: 4rem;
+  }
+  .background header .text #projects__about__me__link .contact__me__header a p {
     text-transform: uppercase;
     font-size: 6rem;
     letter-spacing: 0.4rem;

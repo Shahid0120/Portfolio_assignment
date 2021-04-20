@@ -385,21 +385,92 @@ footer {
 
 
 
-    /*  
-     .inspire--hobbies , .inspire--people {
-        display: flex;
+@media only screen and (min-width: 600px) {
+
+}
+    
+@media only screen and (min-width: 1200px) {
+    .inspire--column {
+        width: 100vw;
+        height: 100vh;
+        background-color:blanchedalmond;
         flex-direction: column;
+        display: flex;
         justify-content: center;
         align-items: center;
-        .inspire--title {
+        .inspire--people {
             width: 100%;
-            height: 20%;
-            background-color: #fff;
+            height: 50%;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            .inspire--people--title {
+                width: 100%;
+                height: 20%;
+                background-color: #17181C;
+                text-align: center;
+                padding-top: 10rem;
+                padding-bottom: 10rem;
+                h3 {
+                    padding-left: 2rem;
+                    color: white;
+                    font-size: 5rem;
+                    text-decoration:overline;
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+            .inspire--people--body {
+                width: 100%;
+                height: 80%;
+                background-color:#17181C;
+                padding-left: 8rem;
+                padding-top: 2rem;
+                p {
+                    padding-left: 2rem;
+                    font-size: 3.5rem;
+                    color: #fff;
+                    font-weight: 700;
+                    line-height: 1.8;
+                }
+            }
         }
-        .inspire--body {
+        .inspire--hobbies {
             width: 100%;
-            height: 80%;
-            background-color: aqua;
+            height: 50%;
+            background-color: #17181C;
+            .inspire--hobbies--title {
+                width: 100%;
+                height: 20%;
+                background-color: #17181C;
+                text-align: center;
+                padding-top: 10rem;
+                padding-bottom: 10rem;
+                h3 {
+                    padding-left: 2rem;
+                    color: white;
+                    font-size: 5rem;
+                    text-decoration:overline;
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+            .inspire--hobbies--body {
+                width: 100%;
+                height: 80%;
+                background-color:#17181C;
+                padding-left: 8rem;
+                padding-top: 2rem;
+                p {
+                    padding-left: 2rem;
+                    font-size: 3.5rem;
+                    color: #fff;
+                    font-weight: 700;
+                    line-height: 1.8;
+                }
+            }
         }
-    } 
-    */
+    }
+}

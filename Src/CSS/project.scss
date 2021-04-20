@@ -205,20 +205,20 @@ html {
     background-color: rgba(244, 208, 63, 1);
     background-size: cover;
     background-attachment: fixed;
-    position: absolute;
-    padding-left: -10rem;
-    padding-right: -10rem;
     .project--cool {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         text-align: center;
-        padding-top: 5.3rem;
+        
         padding-left: 2rem;
+        padding-right: 2rem;
         word-spacing: -1.3rem;
         color: #fff;
+        overflow: hidden;
         h2 {
+            overflow: hidden;
             font-size: 4rem;
             letter-spacing: 2rem;
             font-weight: 700;
@@ -229,13 +229,15 @@ html {
         }
         .box {
             width: 60%;
-            height: 40%;
+            height: 20%;
             position: absolute;
-            margin-top: 20rem;
+            margin-top: 50%;
             background-color: black;
             object-fit: cover;
     
             img {
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
         }
@@ -247,31 +249,37 @@ html {
 }
 
 .project--info {
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    background-color:#17181C;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    padding-top: 10rem;
     #title__header {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
         font-size: 5rem;
         color: white;
+
+        span {
+           font-style: italic; 
+        }
     }
     .project {
         width: 100%;
-        height: 100%;
-        background-color:rgb(255, 255, 255);
+        height: 100rem;
+        background-color: aliceblue;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        margin-bottom: 11rem;
         .project__background {
             width: 100%;
             height: 100%;
-            background-color:#fff;
+            background-color: #17181C;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -280,28 +288,42 @@ html {
             padding-right: 2rem;
             .project__name {
                 width : 100%;
-                height: 30%;
+                height: 70%;
                 font-size: 2.5rem;
-                background-color: white;
+                background-color: #17181C;
                 order: 2;
                 h2 {
-                    font-size: 5rem;
+                    font-size: 9rem;
                     color: yellow;
                 }
                 .project--decription {
                     line-height: 1.6;
                     .project__name {
-                        font-size: 3rem;
-                        font-weight: 600;
-                        color:#17181C;
+                        font-size: 6rem;
+                        font-weight: 550;
+                        color: white;
                     }
-                    .project__description__tag {
+                    .project__description__tag{
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        color:#17181C;
-                        .project--tag {
-                           font-weight: 500; 
+                        color: white;
+                        
+                        .project__tag {
+                           font-weight: 800;
+                           line-height: 5; 
+                        }
+                        .project__decription {
+                            display: flex;
+                            justify-content: end;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            line-height: 5;
+                            padding-left: 5rem;
+                        }
+                        .description{
+                            line-height: 1;
+                            padding-top: 5rem;
                         }
                     }
                 }
@@ -309,8 +331,21 @@ html {
             }
             .project__picture {
                 width : 100%;
-                height: 40%;
+                height: 30%;
                 background-color: aliceblue;
+                a {
+                    text-decoration: none;
+                    overflow:hidden;
+                    
+                    img {
+                        width: 100%;
+                        height: 102%;
+                        object-fit: cover;
+                        transition: all 0.5s ease in;
+                        transform: scale(1);
+                        background-size: cover;
+                    }
+                }
                 
             }
         }
@@ -398,4 +433,170 @@ footer {
     .icon {
         background-color:#17181C;
     }
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 1200px) {
+    .project--title {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(244, 208, 63, 1);
+        background-size: cover;
+        background-attachment: fixed;
+        
+        .project--cool {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            word-spacing: -1.3rem;
+            color: #fff;
+            overflow: hidden;
+            h2 {
+                overflow: hidden;
+                font-size: 15rem;
+                letter-spacing: 2rem;
+                font-weight: 700;
+                span {
+                    font-style: italic;
+                    font-weight: 1000;
+                }
+            }
+            
+            
+        }
+        
+    
+    }
+
+    .project--info {
+        min-height: 20rem;
+        justify-content: flex-start;
+        background-color:#17181C;
+        padding-top: 10rem;
+        #title__header {
+            font-size: 10rem;
+            font-weight: 700;
+            color:  rgb(255, 255, 255);
+        }
+        .project {
+            height: 20%;
+            justify-content: center;
+            background-color:#17181C;;
+            .project__background {
+                justify-self: flex-end;
+                height: 95%;
+                width: 100%;
+                padding-left: 8rem;
+                padding-right:8rem;
+                background-color: #17181C;
+                flex-direction: row;
+                .project__name {
+                    height: 60%;
+                    width: 50%;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    order:-1;
+                    background-color: #17181C;
+                    
+                    h2 {
+                        color: yellow;
+                        font-size: 14rem;
+                    }
+
+                    .project--decription{
+                        width: 92.5%;
+                        height: 90%;
+                        background-color: black;
+                        align-self: flex-end;
+                        color: aliceblue;
+                        .project__name {
+                            height: 20%;
+                            width: 100%;
+                            background-color: #17181C;
+                            font-size: 5rem;
+                            color: white;
+                        }
+                        .project__description__tag {
+                            height: 80%;
+                            width: 100%;
+                            background-color: #17181C;
+                            display: flex;
+                            .project__tag {
+                                width: 30%;
+                                height: 100%;
+                                background-color: #17181C;
+                                color: white;
+                                font-size: 2.4rem;
+                                line-height: 3;
+                            }
+                            .project__decription {
+                                width: 70%;
+                                height: 100%;
+                                background-color: #17181C;
+                                font-size: 2.4rem;
+                                line-height: 3;
+                                .description {
+                                    padding-top: 2.2rem;
+                                    padding-right: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .project__picture {
+                    width: 50%;
+                    height: 100%;
+                    background-color: #17181C;
+                }
+                #picture__one {
+                    height: 53rem;
+                    a {
+                        img {
+                            width: 100%;
+                            height: 100%; 
+                            object-fit: cover;
+                        }
+                    }
+                    
+                }
+                #picture__two {
+                    height: 51rem;
+                }
+            }
+        
+        }
+    }
+    .project--summary {
+        width: 100vw;
+        min-height: 20vh;
+        background-color: #17181C;
+        
+        text-align: left;
+        padding-top: 10rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-bottom: 10rem;
+        font-family: sofia-pro, sans-serif;
+        
+        h3 {
+            font-size: 8rem;
+            color: #fff;
+            padding-bottom: 4rem;
+            line-height: 1;
+        }
+        p {
+            color: #fff;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+            line-height: 1;
+        }
+    }
+
 }

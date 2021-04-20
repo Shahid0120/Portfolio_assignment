@@ -324,7 +324,6 @@ html {
             width: 100%;
             height: 60%;
             background-color: rgba(244, 208, 63, 1);
-            
             #designer__syd {
                 width: 100%;
                 height: 25%;
@@ -349,17 +348,34 @@ html {
                 background-color: rgba(244, 208, 63, 1);
                 text-align: right;
                 color: rgba(207, 0, 15, 1);
+                #contact {
+                    font-style: italic;
+                    text-decoration:line-through;
+                }
                 p {
                     text-transform: uppercase;
                     font-size: 4rem;
                     letter-spacing: 0.4rem;
                     line-height: 1;
                     font-weight: 800;
+                    text-decoration: none;
+                    color: rgba(207, 0, 15, 1);
                 }
-                #contact {
-                    font-style: italic;
-                    text-decoration:line-through;
+                a {
+                    text-decoration: none;
+                    p {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 4rem;
+                        letter-spacing: 0.4rem;
+                        line-height: 1;
+                        font-weight: 800;
+                        text-decoration: none;
+                    }
+                    
                 }
+                
+                
             }
             #projects__about__me__link {
                 width: 100%;
@@ -377,6 +393,10 @@ html {
                         letter-spacing: 0.4rem;
                         line-height: 1;
                         font-weight: 800;
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                        }
                         
                     }
                     #last__project {
@@ -389,14 +409,25 @@ html {
                 }
                 .contact__me__header {
                     text-align: right;
-                p {
-                    text-transform: uppercase;
-                    font-size: 4rem;
-                    letter-spacing: 0.4rem;
-                    line-height: 1;
-                    font-weight: 800;
-                    color: rgba(207, 0, 15, 1);
-                }
+                    p {
+                        text-transform: uppercase;
+                        font-size: 4rem;
+                        letter-spacing: 0.4rem;
+                        line-height: 1;
+                        font-weight: 800;
+                        color: rgba(207, 0, 15, 1);
+                    }
+                    a {
+                        text-decoration: none;
+                        p {
+                            text-transform: uppercase;
+                            font-size: 4rem;
+                            letter-spacing: 0.4rem;
+                            line-height: 1;
+                            font-weight: 800;
+                            color: rgba(207, 0, 15, 1);
+                        }
+                    }
                 }
             }
             #stuff__i__line {
@@ -958,51 +989,6 @@ html {
                     }
                 }
             }
-            /* .bottom__row {
-                width: 100%;
-                height: 100%;
-                background-color:beige;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-                .Resume { 
-                    width: 100%;
-                    height: 100%;
-                    background-color:#17181C;
-                    
-                    .resume_downloader {
-                        text-align: center;
-                        
-                        p {
-                            opacity: 1;
-                            text-align: center;
-                            color: white;
-                            font-size: 2rem;
-                        }
-                        .resume_downloader {
-                            .resume__button {
-                                a {
-                                    text-decoration: none;
-                                    color: white;
-                                }
-                            }
-                        }
-                    }
-                    span {
-                        a {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            img {
-                                width: 5rem;
-                                height: 5rem;
-                            }
-                        }
-                    }
-                    
-                }
-            } */
         } 
     }
 }
@@ -1374,6 +1360,15 @@ footer {
                         font-style: italic;
                         text-decoration:line-through;
                     }
+                    a {
+                        p {
+                            text-transform: uppercase;
+                            font-size: 6rem;
+                            letter-spacing: 0.4rem;
+                            line-height: 1;
+                            font-weight: 800;
+                        }
+                    }
                 }
                 #projects__about__me__link {
                     width: 100%;
@@ -1391,6 +1386,10 @@ footer {
                             letter-spacing: 0.4rem;
                             line-height: 1;
                             font-weight: 800;
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+                            }
                             
                         }
                         #last__project {
@@ -1411,6 +1410,17 @@ footer {
                         font-weight: 800;
                         color: rgba(207, 0, 15, 1);
                         padding-right: 4rem;
+                    }
+                    a {
+                        p {
+                            text-transform: uppercase;
+                            font-size: 6rem;
+                            letter-spacing: 0.4rem;
+                            line-height: 1;
+                            font-weight: 800;
+                            color: rgba(207, 0, 15, 1);
+                            padding-right: 4rem;
+                        }
                     }
                     }
                 }

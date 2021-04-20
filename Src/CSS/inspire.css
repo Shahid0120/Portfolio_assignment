@@ -496,22 +496,103 @@ footer .icon {
   background-color: #17181C;
 }
 
-/*  
-     .inspire--hobbies , .inspire--people {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .inspire--title {
-            width: 100%;
-            height: 20%;
-            background-color: #fff;
-        }
-        .inspire--body {
-            width: 100%;
-            height: 80%;
-            background-color: aqua;
-        }
-    } 
-    */
+@media only screen and (min-width: 1200px) {
+  .inspire--column {
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inspire--column .inspire--people {
+    width: 100%;
+    height: 50%;
+    background-color: pink;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inspire--column .inspire--people .inspire--people--title {
+    width: 100%;
+    height: 20%;
+    background-color: #17181C;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .inspire--column .inspire--people .inspire--people--title h3 {
+    padding-left: 2rem;
+    color: white;
+    font-size: 5rem;
+    text-decoration: overline;
+  }
+  .inspire--column .inspire--people .inspire--people--title h3 span {
+    font-style: italic;
+  }
+  .inspire--column .inspire--people .inspire--people--body {
+    width: 100%;
+    height: 80%;
+    background-color: #17181C;
+    padding-left: 8rem;
+    padding-top: 2rem;
+  }
+  .inspire--column .inspire--people .inspire--people--body p {
+    padding-left: 2rem;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.8;
+  }
+  .inspire--column .inspire--hobbies {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  .inspire--column .inspire--hobbies .inspire--hobbies--title {
+    width: 100%;
+    height: 20%;
+    background-color: #17181C;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .inspire--column .inspire--hobbies .inspire--hobbies--title h3 {
+    padding-left: 2rem;
+    color: white;
+    font-size: 5rem;
+    text-decoration: overline;
+  }
+  .inspire--column .inspire--hobbies .inspire--hobbies--title h3 span {
+    font-style: italic;
+  }
+  .inspire--column .inspire--hobbies .inspire--hobbies--body {
+    width: 100%;
+    height: 80%;
+    background-color: #17181C;
+    padding-left: 8rem;
+    padding-top: 2rem;
+  }
+  .inspire--column .inspire--hobbies .inspire--hobbies--body p {
+    padding-left: 2rem;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.8;
+  }
+}
 /*# sourceMappingURL=inspire.css.map */
