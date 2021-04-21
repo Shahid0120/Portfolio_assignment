@@ -148,15 +148,39 @@ I have broken down the Home page into sections pages on viewing ports
 
 
 ### Sitemap
+[Sitemap (html version)](./sitemap/sitemap%20(1).xml)
+[Visual Site Map](https://www.xml-sitemaps.com/download/friendly-jones-53bab9.netlify.app-7483ba8eb/sitemap.html?view=1)
 ### Screenshots
 - Ios
-- Laptop
-- Tablet
+  - Homepage
+![Alt text](/Src/images/screenshot/Ios/home_title.png?.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/Home_inspiration.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/home_inspiration_hover.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/home_projects.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/home_project_two.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/home_project_three.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/home_about_me.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/home_about_me_hover.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/home_blog_contact.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/home_blog_contact?raw=true "Optional Title")
+  - Inspiration
+![Alt text](/Src/images/screenshot/Ios/Inspiration%20page/Home.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/Inspiration%20page/Inspo_hobbies.png?raw=true "Optional Title")
+  - Projects  
+![Alt text](/Src/images/screenshot/Ios/Projects/title.png "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/Projects/summary.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/Projects/extended_description.png?raw=true "Optional Title")
+  - History 
+![Alt text](/Src/images/screenshot/Ios/About%20me/Title.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/About%20me/Slider.png?raw=true "Optional Title")
+![Alt text](/Src/images/screenshot/Ios/About%20me/slider_2.png?raw=true "Optional Title")
+
+
 ### Target audience
     the general market who are interested in computer science. 
     But i have targed a specific target market based on usability. These are companies who are currently seeking full stack developers
 
 ### Tech stack (e.g. html, css, deployment platform, etc)
 Tech Stack 
-- Html: Core of Web Development
-- SCSS: CSS Essential for styling, by using SCSS helps inproves readbility of code
+- Html: Core of Web Development.
+- SCSS: CSS Essential for styling, by using SCSS helps inproves readbility of code and building styling based on HTML.
