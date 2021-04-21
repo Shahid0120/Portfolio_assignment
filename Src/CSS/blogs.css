@@ -358,7 +358,10 @@ html {
   font-weight: 900;
 }
 
-#blogs--title {
+#blogs--title--one {
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -377,16 +380,71 @@ html {
   padding-right: 8rem;
 }
 
-#blogs--title #blog__title__name {
+#blogs--title--one #blog__title__name {
   font-size: 5rem;
   font-weight: 900;
 }
 
-#blogs--title #blog__title__name span {
+#blogs--title--one #blog__title__name span {
   font-style: italic;
 }
 
-#blogs--title #blog__title__name span span {
+#blogs--title--one #blog__title__name span span {
+  text-decoration: line-through;
+}
+
+#blogs--title {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: balck;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#blogs--title #blog--title--one {
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#blogs--title #blog--title--one #blog__title__name {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+#blogs--title #blog--title--one #blog__title__name span {
+  font-style: italic;
+}
+
+#blogs--title #blog--title--one #blog__title__name span span {
+  text-decoration: line-through;
+}
+
+#blogs--title #blog--title--two {
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#blogs--title #blog--title--two #blog__title__name {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+#blogs--title #blog--title--two #blog__title__name span {
+  font-style: italic;
+}
+
+#blogs--title #blog--title--two #blog__title__name span span {
   text-decoration: line-through;
 }
 
@@ -408,6 +466,11 @@ html {
 #blogs--content #blog__content__title p, #blogs--content #blog__content__paragraph p {
   font-size: 3rem;
   line-height: 1.6;
+}
+
+#blogs--content #blog__content__title #blog__date, #blogs--content #blog__content__paragraph #blog__date {
+  font-style: italic;
+  font-weight: 900;
 }
 
 footer {
@@ -654,6 +717,9 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
 }
 
 @media only screen and (min-width: 1200px) {
+  #blogs--titlepage {
+    height: 110vh;
+  }
   #blogs--titlepage #blogs__titlepage__upper__title {
     width: 100%;
     height: 20%;
