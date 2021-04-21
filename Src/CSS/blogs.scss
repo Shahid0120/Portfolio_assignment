@@ -10,13 +10,13 @@ html {
     font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
 }
-.background {
+#background {
     width: 100vw;
     height: 10vh;
     background-color: rgba(244, 208, 63, 1);
     background-size: cover;
     background-attachment: fixed;
-    .nav {
+    #nav {
         width: 100vw;
         height: 10vh;
         padding-left: 2rem;
@@ -197,224 +197,7 @@ html {
         height: 10vh;
         background-color: rgba(244, 208, 63, 1);
     }
-    header {
-        width: 100%;
-        height: 90vh;
-        .pictures {
-            width: 100%;
-            height: 60%;
-            background-color: rgba(244, 208, 63, 1);
-            display: flex;
-            
-            .name {
-                width: 10%;
-                height: 100%;
-                background-color: rgba(244, 208, 63, 1);
-                padding-bottom: 2rem;
-                .first--name {
-                    width: 100%;
-                    height: 50%;
-                    color: #fff;
-                }
-                .second--name {
-                    width: 100%;
-                    height: 50%;
-                    color: #fff;
-                }
-                .second--name , .first--name {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    p {
-                        font-size: 3rem;
-                        line-height: 1.4;
-                    }
-                }
-                
-            }
-            .pictures__section {
-                width: 90%;
-                height: 100%;
-                display: flex;
-                flex-direction: row;
-
-                #picture--one {
-                    width: 20%;
-                    height: 100%;
-                    background-color: rgba(244, 208, 63, 1);
-                    
-                    #image {
-                        width: 155%;
-                        height: 40%;
-                        background-color: rgba(244, 208, 63, 1);
-                        position: relative;
-                        z-index: 9;
-                        img {
-                            object-fit: cover;
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                }
-                #picture--two {
-                    width: 30%;
-                    height: 100%;
-                    background-color: rgba(244, 208, 63, 1);
-                    padding-top: 15rem;
-                    #image {
-                        width: 120%;
-                        height: 90%;
-                        background-color: rgba(244, 208, 63, 1);
-                        position: relative;
-                        z-index: 10;
-                        img {
-                            object-fit: cover;
-                            
-                            width: 100%;
-                            height: 100%;
-                            
-                        }
-                    }
-                    
-                }
-                #picture--three {
-                    width: 40%;
-                    height: 100%;
-                    background-color: rgba(244, 208, 63, 1);
-                    padding-top: 20rem;
-                    #image {
-                        width: 120%;
-                        height: 40%;
-                        background-color: rgba(244, 208, 63, 1);
-                        position: relative;
-                        z-index: 9;
-                        img {
-                            object-fit: cover;
-                            width: 100%;
-                            height: 100%;
-
-                        }
-                    }
-                }
-                #picture--four {
-                    width: 10%;
-                    height: 100%;
-                    background-color: rgba(244, 208, 63, 1);
-                    padding-top: 15rem;
-                    #image {
-                        width: 100%;
-                        height: 20%;
-                        background-color: rgba(244, 208, 63, 1);
-                        position: relative;
-                        z-index: 10;
-                        img {
-                            object-fit: cover;
-                            object-position: left;
-                            width: 100%;
-                            height: 100%;
-                            
-                        }
-                    }
-                }
-            }
-        }
-        .text {
-            width: 100%;
-            height: 60%;
-            background-color: rgba(244, 208, 63, 1);
-            
-            #designer__syd {
-                width: 100%;
-                height: 25%;
-                background-color: rgba(244, 208, 63, 1);
-                color: white;
-                h4 {
-                    font-size: 7.5rem;
-                    letter-spacing: 2.3rem;
-
-                    
-                }
-                p {
-                    letter-spacing: 2rem;
-                    font-size: 2rem;
-                    padding-left: 2rem;
-                    color:black;
-                }
-            }
-            #contact__link {
-                width: 100%;
-                height: 25%;
-                background-color: rgba(244, 208, 63, 1);
-                text-align: right;
-                color: rgba(207, 0, 15, 1);
-                p {
-                    text-transform: uppercase;
-                    font-size: 4rem;
-                    letter-spacing: 0.4rem;
-                    line-height: 1;
-                    font-weight: 800;
-                }
-                #contact {
-                    font-style: italic;
-                    text-decoration:line-through;
-                }
-            }
-            #projects__about__me__link {
-                width: 100%;
-                height: 25%;
-                background-color: rgba(244, 208, 63, 1);
-                
-                .projects__names__header {
-                    color: #fff;
-                    p {
-                        text-transform: uppercase;
-                        font-size: 4rem;
-                        letter-spacing: 0.4rem;
-                        line-height: 1;
-                        font-weight: 800;
-                    }
-                    #last__project {
-                        font-size: 3rem;
-                        font-weight: 600;
-                        letter-spacing: 1rem;
-                    }
-                    
-                }
-                .contact__me__header {
-                    text-align: right;
-                p {
-                    text-transform: uppercase;
-                    font-size: 4rem;
-                    letter-spacing: 0.4rem;
-                    line-height: 1;
-                    font-weight: 800;
-                    color: rgba(207, 0, 15, 1);
-                }
-                }
-            }
-            #stuff__i__line {
-                width: 100%;
-                height: 25%;
-                background-color: rgba(244, 208, 63, 1); 
-                padding-top: 6rem;
-                padding-bottom: 0;
-                color: #fff;
-                p {
-                    font-size: 4rem;
-                    position: relative;
-                    text-transform: uppercase;
-                    #ux {
-                        font-size: 2rem;
-                    }
-                    #coffee {
-                        font-style: italic;
-                        font-size: 3rem;
-                    }
-                }
-            }
-        }
-    }
+    
     
 }
 
@@ -422,8 +205,8 @@ html {
     width: 100vw;
     height: 100vh;
     background-color: rgba(244, 208, 63, 1);
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     #blogs__titlepage__upper__title {
         width: 100%;
         height: 20%;
@@ -447,6 +230,7 @@ html {
             }
         }
     }
+    
     #blogs__titlepage__lower__title {
         width: 100%;
         height: 80%;
@@ -505,7 +289,10 @@ html {
     }
 }
 
-#blogs--title {
+#blogs--title--one {
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
     background-color: white;
@@ -514,8 +301,9 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    
     #blog__title__name {
         font-size: 5rem;
         font-weight: 900;
@@ -526,28 +314,71 @@ html {
             }
         }
     }
+    
 }
-
+#blogs--title {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color:balck;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    #blog--title--one {
+        background: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        #blog__title__name {
+            font-size: 5rem;
+            font-weight: 900;
+            span{
+                font-style: italic;
+                span {
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+    #blog--title--two {
+        background: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        #blog__title__name {
+            font-size: 5rem;
+            font-weight: 900;
+            span{
+                font-style: italic;
+                span {
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+    
+}
 #blogs--content {
     width: 100vw;
     min-height: 100vh;
     background-color:#17181C;
     color: #fff;
-    padding-top: 4rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 8rem;
     
     #blog__content__title {
         font-weight: 700; 
-    }
-    #blog__content__paragraph {
-
     }
     #blog__content__title, #blog__content__paragraph {
         p {
             font-size: 3rem;
             line-height: 1.6;
+        }
+        #blog__date {
+            font-style: italic;
+            font-weight: 900;
         }
     }
 }
@@ -559,18 +390,18 @@ footer {
     display:flex;
     padding-left: 2rem;
     padding-right: 2rem;
-    .name, .quote , .icon {
+    #name, .quote , .icon {
         width: 33.3%;
         height:100%;
     }
-    .name {
+    #name {
         background-color:#17181C;
         font-size: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: left;
         
-        .name__container {
+        #name__container {
             width: 100%;
             height:50%;
             background-color: #17181C;
@@ -580,16 +411,18 @@ footer {
             }
         }
     }
-    .quote {
+    #quote {
         background-color:#17181C;
         font-size: 1.5rem;
         display: flex;
         align-items: center;
-        justify-content: center;
-        .quote__container {
+        justify-content: flex-end;
+        padding-left: 3rem;
+        #quote__container {
             width: 100%;
             height: 50%;
             background-color: #17181C;
+            
             p {
                 color: white;
                 text-align: center;
@@ -601,7 +434,277 @@ footer {
             }
         }
     }
-    .icon {
+    #icon {
         background-color:#17181C;
+        width: 100%;
+        height: 33.3%;
+        background-color: #17181C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem; */
+        #icon__image__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4rem;
+            padding-left: 3rem;
+            #top__row__box__one {
+                width: 35%;
+                height: 33.3%;
+                background-color: aliceblue;
+                /* Bad image */
+                #facebook {
+                    width: 100%;
+                    height:100%;
+                    background-color: #17181C;
+                    p {
+                        width: 100%;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-size: 2rem;
+                        opacity: 0;
+                        transition: all 0.4s ease-in;
+                        text-align: center;
+                        color: white;
+                    }
+                    span {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                                
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+            #top__row__box__two {
+                width: 35%;
+                height: 33.3%;
+                background-color: bisque;
+                #Github { 
+                    width: 100%;
+                    height: 100%;
+                    background-color: #17181C;;
+                    p {
+                        text-align: center;
+                        font-size: 2rem;
+                        color: white;
+                        opacity: 0;
+                    }
+                    span {
+                        a {
+                            
+                            display:flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 7rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #top__row__box__three {
+                width: 33.3%;
+                height: 33.3%;
+                background-color:#17181C;
+                #Linkin { 
+                    width: 100%;
+                    height: 100%;
+                    background-color: #17181C;
+                    p {
+                        text-align: center;
+                        color: aliceblue;
+                
+                        font-size: 2rem;
+                        opacity: 0;
+                    }
+                    span {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                }
+            }     
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    /* Target all devices from 600px to 769px */
+}
+@media only screen and (min-width: 1200px) {
+    #blogs--titlepage {
+        height: 110vh;
+        #blogs__titlepage__upper__title {
+            width: 100%;
+            height: 20%;
+            background-color: rgba(244, 208, 63, 1);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            #blog__titlepage__upper__title__right {
+                width: 50%;
+                min-height: 40%;
+                background-color:#17181C;
+                
+                p {
+                    font-weight: 1000;
+                    font-size: 6rem;
+                    border:2px black solid;
+                    color: #fff; 
+                    font-style: italic;
+        
+                
+                }
+            }
+        }
+        #blogs__titlepage__lower__title {
+            width: 100%;
+            height: 80%;
+            background-color:rgba(244, 208, 63, 1);
+            display: flex;
+            flex-direction: row;
+            #blogs__titlepage__lower__title__left {
+                width: 20%;
+                height: 100%;
+                background-color: rgba(244, 208, 63, 1);
+                z-index: 1;
+                #blogs__titlepage__lower__title__left__upper {
+                    width: 100%;
+                    height: 30%;
+                    background-color: rgba(244, 208, 63, 1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 7rem;
+                    p {
+                        font-weight: 1000;
+                        font-size: 15rem;
+                        color: white; 
+                        font-style: italic;
+                        letter-spacing: 3rem;
+                        padding-left: 18rem;
+                        
+                    }
+                }
+                #blogs__titlepage__lower__title__left__button{
+                    min-width: 10%;
+                    min-height: 5%;
+                    background-color:white;
+                    position: absolute;
+                    margin-left: 40rem;
+                    margin-top: 20rem;
+                    p {
+                        font-weight: 1000;
+                        font-size: 9rem;
+                        color:black; 
+                        font-style: italic;
+                    }
+                }
+    
+            }
+            #blogs__titlepage__lower__title__right{
+               
+                p {
+                    font-size: 30rem;
+                    font-weight: 3000;
+                    line-height: 0.9;
+                    letter-spacing: 3rem;
+                    
+                }
+    
+            }
+            
+        }
+    }
+    footer {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        background-color: #17181C;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        #name {
+            background-color: #17181C;
+            #name__container {
+                width: 100%;
+                height:50%;
+                background-color: #17181C;
+                p {
+                    padding-left: 2rem;
+                    font-size: 3rem;
+                    color: white;
+                    text-align:left;
+                }
+            }
+        }
+        #quote {
+            background-color: #17181C;
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 33.3%;
+            #quote__container {
+                width: 100%;
+                height: 50%;
+                background-color: #17181C;
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 3rem;
+                }
+                span {
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+        }
+        
+        #icon {
+            background-color: #17181C;
+            display: flex;
+            justify-content:flex-end;
+            height: 100%;
+            width: 33.3%;
+            #icon__image__container {
+                width:75%;
+                height:50%;
+                background-color: #17181C;
+                margin-bottom: 16rem;
+
+                img {
+                    width:100%;
+                    height: 120%;
+                    
+                }
+            }
+        }
     }
 }

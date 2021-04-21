@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>S.H Porfolio</title>
+        <title>Shahid Hussain Porfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../CSS/style.css" type='text/css'>
@@ -19,10 +19,12 @@
                     <div>
                         <div>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href='./inspire.html'>Inspiration</a></li>
+                            <li><a href="#nav__project">Projects</a></li>
+                            <li><a href="./about_me.html">History</a></li>
+                            <li><a href="#nav--blogs">Blogs</a></li>
+                            <li><a href="#nav--contact">Contact Me</a></li>
                         </ul>
                         </div>
                     </div>
@@ -85,19 +87,29 @@
                     </div>
                     <div id="contact__link">
                         <p id='contact'>Contact Me</p>
-                        <p>LinkedIn</p>
-                        <p>Facebook</p>
+                        <a href='https://www.linkedin.com/in/shahid-hussain-005952142/'>
+                            <p>LinkedIn</p>
+                        </a>
+                        <a href='https://www.facebook.com/'>
+                            <p>Facebook</p>
+                        </a>
 
                     </div>
                     <div id="projects__about__me__link">
                         <div class="projects__names__header">
-                            <p>Projects</p>
-                            <p>Name</p>
-                            <p id='last__project'>Name Name</p>
+                            <p id='project__name__title'>Projects</p>
+                            
+                            <p><a href='./project_one.html'>Project One</a></p>
+                            
+                            <p id='last__project'> <a href='./project_two.html'>Project Two </a><a href='./project_three.html'>Project Three<a></p>
+                            
                         </div>
                         <div class='contact__me__header'>
-                            <p>Resume</p>
+                            <a href='../Resume/Shahid Hussain Resume One page.docx'>
+                                <p>Resume</p>
+                            </a>
                             <p>Click Above</p>
+                           
                         </div>
                     </div>
                     <div id="stuff__i__line">
@@ -106,14 +118,14 @@
                 </div>
             </header>
         </section>
-        <section class = 'inspirational--quote'>
-            <div class='inspiration__container'>
+        <section id = 'inspirational--quote'>
+            <div class='quote__container'>
                 <a href='./inspire.html' id='inspire'>Inspire</a>
                 <p class='quote'><span>"</span>We <span>all</span> have the ability to come from</p>
                 <p class='quote'><span>nothing</span> to <span>something</span><span>"</span></p>
             </div>
         </section>
-        <section class = 'projects'>
+        <section id= 'projects' id='nav__project'>
             <p id='title__header'>Projects <span> by </span>me</p>
             <div class='project'>
                 <div class='project__background'>
@@ -133,15 +145,15 @@
                                 <div class='project__decription'>
                                     <p>UX Design</p>
                                     <p>Researcher | UX Design</p>
-                                    <p>Day Month Year</p>
+                                    <p>24th July 2021</p>
                                     <p class='description'>
-                                        this is project is aboutblah This contnieus and contnies
+                                        Basic scissors, paper, rock game using CSS.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='project__picture'>
+                    <div class='project__picture' id='picture__one'>
                         <a href="./project_one.html" class="image">
                             <img src='https://i.ytimg.com/vi/qWPtKtYEsN4/maxresdefault.jpg' alt='background image'>
                         </a>
@@ -165,21 +177,21 @@
                                 </div>
                                 <div class='project__decription'>
                                     <p>UX Design</p>
-                                    <p>Researcher | UX Design</p>
-                                    <p>Day Month Year</p>
-                                    <p class='description'>this is project is about blah </p>
+                                    <p>Animation | UX Design</p>
+                                    <p>25th July 2021</p>
+                                    <p class='description'>CSS only animation</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='project__picture'>
+                    <div class='project__picture' id='picture__two'>
                         <a href="./project_two.html" class="image">
                             <img src='https://assets.hongkiat.com/uploads/built-with-css/brick_character.jpg' alt='background image'>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class='project' >
+            <div class='project'>
                 <div class='project__background'>
                     <div class='project__name'>
                         <h2>03.</h2>
@@ -196,60 +208,29 @@
                                 </div>
                                 <div class='project__decription'>
                                     <p>UX Design</p>
-                                    <p>Researcher | UX Design</p>
-                                    <p>Day Month Year</p>
-                                    <p class='description'>this is project is about blah blah blah blah blah blah </p>
+                                    <p>Javascript | UX Design</p>
+                                    <p>26th July 2021</p>
+                                    <p class='description'> Game Animation made by only using Javascript, HTML and CSS.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='project__picture'>
+                    <div class='project__picture' >
                         <a href="./project_three.html" class="image">
                             <img src='https://inventwithpython.com/blogstatic/missilecommand.gif' alt='background image'>
                         </a>
                     </div>
                 </div>
             </div>
-            <!-- <div class='project' >
-                <div class='project__background'>
-                    <div class='project__name'>
-                        <h2>04.</h2>
-                        <div class='project--decription'>
-                            <div class='project__name'>
-                                <p>Project Four</p>
-                            </div>
-                            <div class='project__description__tag'>
-                                <div class='project__tag'>
-                                    <p>Type</p>
-                                    <p>Role</p>
-                                    <p>Date</p>
-                                    <p>Decription</p>
-                                </div>
-                                <div class='project__decription'>
-                                    <p>UX Design</p>
-                                    <p>Researcher | UX Design</p>
-                                    <p>Day Month Year</p>
-                                    <p>this is project is about blah </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='project__picture'>
-                        <a href="./project_four.html" class="image">
-                            <img src='../images/project pictures/pexels-ryutaro-tsukata-5472337.jpg' alt='background image'>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
         </section>
-        <section class = 'life--history--why'>
-            <div class='inspiration__container'>
+        <section id= 'life--history--why'>
+            <div class='quote__container'>
                 <a href='./about_me.html'id='history'>History</a>
                 <p class='quote'><span>"</span>All <span>we</span> have is</p>
                 <p class='quote'><span>now</span><span>"</span></p>
             </div>
         </section>
-        <section class = 'blog--container'>
+        <section id ='blog--container' id='nav--blogs'>
             <h2 id='blogs__title'>Blogs <span>from</span> me.</h2>
             <div class='blog__post' >
                 <div class='blog__picture' id='blog--one'>
@@ -261,14 +242,13 @@
                     <div class='blog__name'>C-S-S Battles.</div>
                     <div class='blog__summary'>
                         <div class='blog__sum'>CSS</div>
-                        <div class='blog__date'>2021</div>
+                        <div class='blog__date'>20th April 2021</div>
                     </div>
                 </div>
             </div>
-
-            <div class='blog__post' >
+            <div class='blog__post'>
                 <div class='blog__picture' id='blog--four'>
-                    <a href="./blog_post_one.html" class="image"> 
+                    <a href="./blog_post_two.html" class="image"> 
                     <img src='https://i.pinimg.com/564x/14/33/8c/14338c9edb602c90f2772a86ae360db7.jpg'>
                     </a>
                 </div>
@@ -276,14 +256,13 @@
                     <div class='blog__name'>End-less Bugs.</div>
                     <div class='blog__summary'>
                         <div class='blog__sum'>Visual Studio</div>
-                        <div class='blog__date'>2021</div>
+                        <div class='blog__date'>19th April 2021</div>
                     </div>
                 </div>
             </div>
-
-            <div class='blog__post' >
+            <div class='blog__post'>
                 <div class='blog__picture' id='blog--four'>
-                    <a href="./blog_post_one.html" class="image"> 
+                    <a href="./blog_post_three.html" class="image"> 
                     <img src='https://i.pinimg.com/564x/91/6e/ea/916eeab43fe75d7a14171bc3217b4a08.jpg'>
                     </a>
                 </div>
@@ -291,63 +270,62 @@
                     <div class='blog__name'>Li-near Gradients.</div>
                     <div class='blog__summary'>
                         <div class='blog__sum'>Adobe</div>
-                        <div class='blog__date'>2021</div>
+                        <div class='blog__date'>15th April 2021</div>
                     </div>
                 </div>
             </div>
-
             <div class='blog__post' >
                 <div class='blog__picture' id='blog--four'>
-                    <a href="./blog_post_one.html" class="image"> 
+                    <a href="./blog_post_four.html" class="image"> 
                     <img src='https://i.pinimg.com/564x/60/17/1c/60171cef2946964e2b29b95bb7045f8f.jpg'>
-                    <a>
+                    </a>
                 </div>
                 <div class='blog__name__date'>
-                    <div class='blog__name'>Adopting a Programing Life Style</div>
+                    <div class='blog__name'>Adopting a Programing Life-style</div>
                     <div class='blog__summary'>
                         <div class='blog__sum'>Programming</div>
-                        <div class='blog__date'>2021</div>
+                        <div class='blog__date'>10th April 2021</div>
                     </div>
                 </div>
             </div>
-
-            <div class='blog__post' >
+            <div class='blog__post'>
                 <div class='blog__picture' id='blog--four'>
-                    <img src='https://i.pinimg.com/564x/e6/98/ac/e698ac5e445c0d47da02292a965f4a30.jpg'>
+                    <a href="./blog_post_five.html" class="image"> 
+                        <img src='https://i.pinimg.com/564x/e6/98/ac/e698ac5e445c0d47da02292a965f4a30.jpg'>
+                    </a>
                 </div>
                 <div class='blog__name__date'>
                     <div class='blog__name'>My Best Future Work.</div>
                     <div class='blog__summary'>
                         <div class='blog__sum'>Javascript</div>
-                        <div class='blog__date'>2021</div>
+                        <div class='blog__date'>1st April 2021</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class = 'contact'>
-            <div class='contact__questions__upper' id='contact__line__one'>
+        <section id = 'contact--section' id='nav--contact'>
+            <div id ='contact__questions__upper' id='contact__line__one'>
                 <p>Would <span>you</span> like to say <span id='someting--tag'>Something</span>?</span></p>
                 <p>Maybe....<span>Hi</span>?</p>
                 <hr>
             </div>
-            <div class='contact__questions__lower' id='contact__line__two'>
-                <p>Come on... Say hi to <span>Meeeee</span>.</p>
+            <div id ='contact__questions__lower' id='contact__line__two'>
+                <p>Say <span>hi.</span>.</p>
             </div>
             <div id='footer__icon'>
                 <div id='email'>
                     <div id='email__text'>
                         <p>Lets get <span>in touch</span>:<br><a href="mailto:shahid.hussain@gmail.com?subject=Enquiries">Shahid.hussain0120@gmail.com</a></p>
                     </div>
-                    
                     <a href="../Resume/Shahid Hussain Resume One page.docx" id='butn-resume'>Resume</a>
                 </div>
                 <div id='icon__section'>
-                    <div class="top__row">
+                    <div id ="top__row">
                         <div class="top__row__box__one">
                                 <div class="facebook">
                                 <p>Facebook</p>
                                 <span>
-                                    <a href="http://www.google.com">
+                                    <a href="https://www.facebook.com/profile.php?id=100029824131793">
                                         <img src='../images/white_logo/facebook-icon-18-256.png' alt='github logo' #id='facebook__logo'>
                                     </a>
                                 </span>
@@ -357,7 +335,7 @@
                             <div class="Github">
                                 <p>Github</p>
                                 <span>
-                                <a href="http://www.google.com">
+                                <a href="https://github.com/Shahid0120">
                                     <img src='../images/white_logo/github-logo-white.png' alt='github logo'>
                                 </a>
                                 </span>
@@ -367,7 +345,7 @@
                             <div class="Linkin">
                                 <p>LinkIn</p>
                                 <span>
-                                <a href="http://www.google.com"><img src='../images/white_logo/linkedin-icon-18-256.png' alt='github logo'/></a>
+                                <a href="https://www.linkedin.com/in/shahid-hussain-005952142/"><img src='../images/white_logo/linkedin-icon-18-256.png' alt='github logo'/></a>
                                 </span>
                             </div>
                         </div>
@@ -377,7 +355,7 @@
         </section>
         <footer>
             <div class='name'>
-                <div class='name__container'>
+                <div id ='name__container'>
                 <p>© Shahid Hussain</p>
                 </div>
             </div>
@@ -392,7 +370,7 @@
                         <div class="facebook">
                         <p>Facebook</p>
                         <span>
-                            <a href="http://www.google.com">
+                            <a href="https://www.facebook.com/profile.php?id=100029824131793">
                                 <img src='../images/white_logo/facebook-icon-18-256.png' alt='github logo' #id='facebook__logo'>
                             </a>
                         </span>
@@ -402,7 +380,7 @@
                         <div class="Github">
                             <p>Github</p>
                             <span>
-                            <a href="http://www.google.com">
+                            <a href="https://github.com/Shahid0120">
                                 <img src='../images/white_logo/github-logo-white.png' alt='github logo'>
                             </a>
                             </span>
@@ -412,7 +390,7 @@
                         <div class="Linkin">
                             <p>LinkIn</p>
                             <span>
-                            <a href="http://www.google.com"><img src='../images/white_logo/linkedin-icon-18-256.png' alt='github logo'/></a>
+                            <a href="https://www.linkedin.com/in/shahid-hussain-005952142/"><img src='../images/white_logo/linkedin-icon-18-256.png' alt='github logo'/></a>
                             </span>
                         </div>
                     </div>

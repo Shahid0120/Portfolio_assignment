@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.background {
+#background {
   width: 100vw;
   height: 10vh;
   background-color: #f4d03f;
@@ -21,7 +21,7 @@ html {
   background-attachment: fixed;
 }
 
-.background .nav {
+#background #nav {
   width: 100vw;
   height: 10vh;
   padding-left: 2rem;
@@ -44,15 +44,15 @@ html {
   /* hidden menu */
 }
 
-.background .nav .initials h4 {
+#background #nav .initials h4 {
   font-size: 4rem;
 }
 
-.background .nav .initials h4 span {
+#background #nav .initials h4 span {
   font-style: italic;
 }
 
-.background .nav .container {
+#background #nav .container {
   max-width: 960px;
   margin: auto;
   overflow: hidden;
@@ -60,12 +60,12 @@ html {
   background-color: white;
 }
 
-.background .nav .menu-wrap {
+#background #nav .menu-wrap {
   position: -webkit-sticky;
   position: sticky;
 }
 
-.background .nav .menu-wrap .toggler {
+#background #nav .menu-wrap .toggler {
   position: absolute;
   cursor: pointer;
   z-index: 2;
@@ -76,11 +76,11 @@ html {
   opacity: 0;
 }
 
-.background .nav .toggler {
+#background #nav .toggler {
   margin-right: 2rem;
 }
 
-.background .nav .menu-wrap .hamburger {
+#background #nav .menu-wrap .hamburger {
   position: absolute;
   top: 0;
   right: 0;
@@ -99,7 +99,7 @@ html {
           justify-content: center;
 }
 
-.background .nav .menu-wrap .hamburger > div {
+#background #nav .menu-wrap .hamburger > div {
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   display: -webkit-box;
@@ -120,7 +120,7 @@ html {
           flex: none;
 }
 
-.background .nav .menu-wrap .hamburger > div::before {
+#background #nav .menu-wrap .hamburger > div::before {
   content: '';
   position: absolute;
   top: -1rem;
@@ -130,7 +130,7 @@ html {
   background: black;
 }
 
-.background .nav .menu-wrap .hamburger > div::after {
+#background #nav .menu-wrap .hamburger > div::after {
   content: '';
   position: absolute;
   top: 1rem;
@@ -140,12 +140,12 @@ html {
   background: yellow;
 }
 
-.background .nav .menu-wrap .toggler:checked + .hamburger > div {
+#background #nav .menu-wrap .toggler:checked + .hamburger > div {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.background .nav .xmenu-wrap .menu {
+#background #nav .xmenu-wrap .menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -162,24 +162,24 @@ html {
           justify-content: center;
 }
 
-.background .nav .menu-wrap .toggler:checked ~ .menu {
+#background #nav .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
 
-.background .nav .menu-wrap .toggler:checked ~ .menu > div {
+#background #nav .menu-wrap .toggler:checked ~ .menu > div {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-duration: 3s;
           transition-duration: 3s;
 }
 
-.background .nav .menu-wrap .toggler:checked ~ .menu > div > div {
+#background #nav .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
   -webkit-transition: opacity 0.4s ease 0.2s;
   transition: opacity 0.4s ease 0.2s;
 }
 
-.background .nav .menu-wrap .menu {
+#background #nav .menu-wrap .menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -198,7 +198,7 @@ html {
           justify-content: center;
 }
 
-.background .nav .menu-wrap .menu > div {
+#background #nav .menu-wrap .menu > div {
   background: black;
   width: 100vw;
   height: 100vh;
@@ -220,7 +220,7 @@ html {
   transition: all 0.2 ease;
 }
 
-.background .nav .menu-wrap .menu > div > div {
+#background #nav .menu-wrap .menu > div > div {
   text-align: center;
   max-width: 100vw;
   max-height: 100vh;
@@ -230,38 +230,35 @@ html {
   transition: opacity 0.2s ease;
 }
 
-.background .nav .menu-wrap .menu > div > div > ul > li {
+#background #nav .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
   font-size: 2rem;
   padding: 1rem;
 }
 
-.background .nav .menu-wrap .menu > div > div > ul > li > a {
+#background #nav .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
-.background #nav_non_responsive {
+#background #nav_non_responsive {
   width: 100%;
   height: 10vh;
   background-color: #f4d03f;
 }
 
-.project--title {
+#project--title {
   width: 100vw;
   height: 100vh;
   background-color: #f4d03f;
   background-size: cover;
   background-attachment: fixed;
-  position: absolute;
-  padding-left: -10rem;
-  padding-right: -10rem;
 }
 
-.project--title .project--cool {
+#project--title #project--cool {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -271,42 +268,46 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding-top: 5.3rem;
   padding-left: 2rem;
+  padding-right: 2rem;
   word-spacing: -1.3rem;
   color: #fff;
+  overflow: hidden;
 }
 
-.project--title .project--cool h2 {
+#project--title #project--cool h2 {
+  overflow: hidden;
   font-size: 4rem;
   letter-spacing: 2rem;
   font-weight: 700;
 }
 
-.project--title .project--cool h2 span {
+#project--title #project--cool h2 span {
   font-style: italic;
   font-weight: 1000;
 }
 
-.project--title .project--cool .box {
+#project--title #project--cool .box {
   width: 60%;
-  height: 40%;
+  height: 20%;
   position: absolute;
-  margin-top: 20rem;
+  margin-top: 50%;
   background-color: black;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.project--title .project--cool .box img {
+#project--title #project--cool .box img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.project--info {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
+#project--info {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,22 +318,29 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 10rem;
 }
 
-.project--info #title__header {
+#project--info #title__header {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   font-size: 5rem;
   color: white;
 }
 
-.project--info .project {
+#project--info #title__header span {
+  font-style: italic;
+}
+
+#project--info #project {
   width: 100%;
-  height: 100%;
-  background-color: white;
+  height: 100rem;
+  background-color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,14 +350,13 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-bottom: 11rem;
 }
 
-.project--info .project .project__background {
+#project--info #project #project__background {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,32 +374,32 @@ html {
   padding-right: 2rem;
 }
 
-.project--info .project .project__background .project__name {
+#project--info #project #project__background .project__name {
   width: 100%;
-  height: 30%;
+  height: 70%;
   font-size: 2.5rem;
-  background-color: white;
+  background-color: #17181C;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-.project--info .project .project__background .project__name h2 {
-  font-size: 5rem;
+#project--info #project #project__background .project__name h2 {
+  font-size: 9rem;
   color: yellow;
 }
 
-.project--info .project .project__background .project__name .project--decription {
+#project--info #project #project__background .project__name #project--decription {
   line-height: 1.6;
 }
 
-.project--info .project .project__background .project__name .project--decription .project__name {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #17181C;
+#project--info #project #project__background .project__name #project--decription .project__name {
+  font-size: 6rem;
+  font-weight: 550;
+  color: white;
 }
 
-.project--info .project .project__background .project__name .project--decription .project__description__tag {
+#project--info #project #project__background .project__name #project--decription #project__description__tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,20 +410,61 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #17181C;
+  color: white;
 }
 
-.project--info .project .project__background .project__name .project--decription .project__description__tag .project--tag {
-  font-weight: 500;
+#project--info #project #project__background .project__name #project--decription #project__description__tag #project__tag {
+  font-weight: 800;
+  line-height: 5;
 }
 
-.project--info .project .project__background .project__picture {
+#project--info #project #project__background .project__name #project--decription #project__description__tag #project__decription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 5;
+  padding-left: 5rem;
+}
+
+#project--info #project #project__background .project__name #project--decription #project__description__tag #description {
+  line-height: 1;
+  padding-top: 5rem;
+}
+
+#project--info #project #project__background #project__picture {
   width: 100%;
-  height: 40%;
+  height: 30%;
   background-color: aliceblue;
 }
 
-.project--summary {
+#project--info #project #project__background #project__picture a {
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#project--info #project #project__background #project__picture a img {
+  width: 100%;
+  height: 102%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s ease in;
+  transition: all 0.5s ease in;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-size: cover;
+}
+
+#project--summary {
   width: 100vw;
   height: 100vh;
   background-color: #17181C;
@@ -441,14 +489,14 @@ html {
   font-family: sofia-pro, sans-serif;
 }
 
-.project--summary h3 {
+#project--summary h3 {
   font-size: 8rem;
   color: #fff;
   padding-bottom: 4rem;
   line-height: 1;
 }
 
-.project--summary p {
+#project--summary p {
   color: #fff;
   font-size: 3rem;
   padding-bottom: 2rem;
@@ -466,12 +514,12 @@ footer {
   padding-right: 2rem;
 }
 
-footer .name, footer .quote, footer .icon {
+footer #name, footer .quote, footer .icon {
   width: 33.3%;
   height: 100%;
 }
 
-footer .name {
+footer #name {
   background-color: #17181C;
   font-size: 1.5rem;
   display: -webkit-box;
@@ -485,20 +533,163 @@ footer .name {
           justify-content: left;
 }
 
-footer .name .name__container {
+footer #name #name__container {
   width: 100%;
   height: 50%;
   background-color: #17181C;
 }
 
-footer .name .name__container p {
+footer #name #name__container p {
   color: aliceblue;
   text-align: center;
 }
 
-footer .quote {
+footer #quote {
   background-color: #17181C;
   font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 3rem;
+}
+
+footer #quote #quote__container {
+  width: 100%;
+  height: 50%;
+  background-color: #17181C;
+}
+
+footer #quote #quote__container p {
+  color: white;
+  text-align: center;
+}
+
+footer #quote #quote__container span {
+  font-style: italic;
+  font-weight: 700;
+}
+
+footer #icon {
+  background-color: #17181C;
+  width: 100%;
+  height: 33.3%;
+  background-color: #17181C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem; */
+}
+
+footer #icon #icon__image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4rem;
+  padding-left: 3rem;
+}
+
+footer #icon #icon__image__container #top__row__box__one {
+  width: 35%;
+  height: 33.3%;
+  background-color: aliceblue;
+  /* Bad image */
+}
+
+footer #icon #icon__image__container #top__row__box__one #facebook {
+  width: 100%;
+  height: 100%;
+  background-color: #17181C;
+}
+
+footer #icon #icon__image__container #top__row__box__one #facebook p {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  text-align: center;
+  color: white;
+}
+
+footer #icon #icon__image__container #top__row__box__one #facebook span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #icon #icon__image__container #top__row__box__one #facebook span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #icon #icon__image__container #top__row__box__one #facebook span a img {
+  width: 5rem;
+  height: 5rem;
+}
+
+footer #icon #icon__image__container #top__row__box__two {
+  width: 35%;
+  height: 33.3%;
+  background-color: bisque;
+}
+
+footer #icon #icon__image__container #top__row__box__two #Github {
+  width: 100%;
+  height: 100%;
+  background-color: #17181C;
+}
+
+footer #icon #icon__image__container #top__row__box__two #Github p {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+}
+
+footer #icon #icon__image__container #top__row__box__two #Github span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,23 +701,293 @@ footer .quote {
           justify-content: center;
 }
 
-footer .quote .quote__container {
+footer #icon #icon__image__container #top__row__box__two #Github span a img {
+  width: 7rem;
+  height: 5rem;
+}
+
+footer #icon #icon__image__container #top__row__box__three {
+  width: 33.3%;
+  height: 33.3%;
+  background-color: #17181C;
+}
+
+footer #icon #icon__image__container #top__row__box__three #Linkin {
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-color: #17181C;
 }
 
-footer .quote .quote__container p {
-  color: white;
+footer #icon #icon__image__container #top__row__box__three #Linkin p {
   text-align: center;
+  color: aliceblue;
+  font-size: 2rem;
+  opacity: 0;
 }
 
-footer .quote .quote__container span {
-  font-style: italic;
-  font-weight: 700;
+footer #icon #icon__image__container #top__row__box__three #Linkin span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-footer .icon {
-  background-color: #17181C;
+footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  #project--title {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4d03f;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #project--title #project--cool {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    word-spacing: -1.3rem;
+    color: #fff;
+    overflow: hidden;
+  }
+  #project--title #project--cool h2 {
+    overflow: hidden;
+    font-size: 15rem;
+    letter-spacing: 2rem;
+    font-weight: 700;
+  }
+  #project--title #project--cool h2 span {
+    font-style: italic;
+    font-weight: 1000;
+  }
+  #project--info {
+    min-height: 20rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-color: #17181C;
+    padding-top: 10rem;
+  }
+  #project--info #title__header {
+    font-size: 10rem;
+    font-weight: 700;
+    color: white;
+  }
+  #project--info #project {
+    height: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #17181C;
+  }
+  #project--info #project #project__background {
+    justify-self: flex-end;
+    height: 95%;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background-color: #17181C;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #project--info #project #project__background .project__name {
+    height: 60%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    background-color: #17181C;
+  }
+  #project--info #project #project__background .project__name h2 {
+    color: yellow;
+    font-size: 14rem;
+  }
+  #project--info #project #project__background .project__name #project--decription {
+    width: 92.5%;
+    height: 90%;
+    background-color: black;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    color: aliceblue;
+  }
+  #project--info #project #project__background .project__name #project--decription .project__name {
+    height: 20%;
+    width: 100%;
+    background-color: #17181C;
+    font-size: 5rem;
+    color: white;
+  }
+  #project--info #project #project__background .project__name #project--decription #project__description__tag {
+    height: 80%;
+    width: 100%;
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #project--info #project #project__background .project__name #project--decription #project__description__tag #project__tag {
+    width: 30%;
+    height: 100%;
+    background-color: #17181C;
+    color: white;
+    font-size: 2.4rem;
+    line-height: 3;
+  }
+  #project--info #project #project__background .project__name #project--decription #project__description__tag #project__decription {
+    width: 70%;
+    height: 100%;
+    background-color: #17181C;
+    font-size: 2.4rem;
+    line-height: 3;
+  }
+  #project--info #project #project__background .project__name #project--decription #project__description__tag #project__decription .description {
+    padding-top: 2.2rem;
+    padding-right: 1rem;
+  }
+  #project--info #project #project__background #project__picture {
+    width: 50%;
+    height: 100%;
+    background-color: #17181C;
+  }
+  #project--info #project #project__background #picture__one {
+    height: 53rem;
+  }
+  #project--info #project #project__background #picture__one a img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #project--info #project #project__background #picture__two {
+    height: 51rem;
+  }
+  #project--summary {
+    width: 100vw;
+    min-height: 20vh;
+    background-color: #17181C;
+    text-align: left;
+    padding-top: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 10rem;
+    font-family: sofia-pro, sans-serif;
+  }
+  #project--summary h3 {
+    font-size: 8rem;
+    color: #fff;
+    padding-bottom: 4rem;
+    line-height: 1;
+  }
+  #project--summary p {
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    line-height: 1;
+  }
+  footer {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer #name {
+    background-color: #17181C;
+  }
+  footer #name #name__container {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  footer #name #name__container p {
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+  }
+  footer #quote {
+    background-color: #17181C;
+    font-size: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33.3%;
+  }
+  footer #quote #quote__container {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  footer #quote #quote__container p {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+  }
+  footer #quote #quote__container span {
+    font-style: italic;
+    font-weight: 700;
+  }
+  footer #icon {
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+    width: 33.3%;
+  }
+  footer #icon #icon__image__container {
+    width: 75%;
+    height: 50%;
+    background-color: #17181C;
+    margin-bottom: 16rem;
+  }
+  footer #icon #icon__image__container img {
+    width: 100%;
+    height: 120%;
+  }
 }
 /*# sourceMappingURL=project.css.map */

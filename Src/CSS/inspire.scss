@@ -10,13 +10,13 @@ html {
     font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
 }
-.background {
+#background {
     width: 100vw;
     height: 10vh;
     background-color: rgba(244, 208, 63, 1);
     background-size: cover;
     background-attachment: fixed;
-    .nav {
+    #nav {
         width: 100vw;
         height: 10vh;
         padding-left: 2rem;
@@ -198,7 +198,7 @@ html {
     }
 }
 
-.inspire--title {
+#inspire--title {
     width: 100vw;
     height: 100vh;
     background-color: rgba(244, 208, 63, 1);
@@ -210,7 +210,7 @@ html {
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
-    .inspire--cool {
+    #inspire--cool {
         width: 100%;
         height: 60%;
         background: url('https://i.pinimg.com/564x/6c/53/4a/6c534a6284c1dfb0e4e9512461a9f3da.jpg') repeat center;
@@ -246,7 +246,7 @@ html {
     
 
 }
-.inspire--column {
+#inspire--column {
     width: 100vw;
     height: 100vh;
     background-color:blanchedalmond;
@@ -254,13 +254,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    .inspire--people {
+    #inspire--people {
         width: 100%;
         height: 50%;
         background-color: pink;
         display: flex;
         flex-direction: column;
-        .inspire--people--title {
+        #inspire--people--title {
             width: 100%;
             height: 20%;
             background-color: #17181C;
@@ -276,7 +276,7 @@ html {
                 }
             }
         }
-        .inspire--people--body {
+        #inspire--people--body {
             width: 100%;
             height: 80%;
             background-color:#17181C;
@@ -291,12 +291,12 @@ html {
             }
         }
     }
-    .inspire--hobbies {
+    #inspire--hobbies {
         width: 100%;
         height: 50%;
         background-color: #17181C;
         
-        .inspire--hobbies--title {
+        #inspire--hobbies--title {
             width: 100%;
             height: 20%;
             background-color: #17181C;
@@ -312,7 +312,7 @@ html {
                 }
             }
         }
-        .inspire--hobbies--body {
+        #inspire--hobbies--body {
             width: 100%;
             height: 80%;
             background-color:#17181C;
@@ -329,6 +329,7 @@ html {
     }
 }
 
+
 footer {
     width: 100%;
     height: 10vh;
@@ -336,18 +337,18 @@ footer {
     display:flex;
     padding-left: 2rem;
     padding-right: 2rem;
-    .name, .quote , .icon {
+    #name, .quote , .icon {
         width: 33.3%;
         height:100%;
     }
-    .name {
+    #name {
         background-color:#17181C;
         font-size: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: left;
         
-        .name__container {
+        #name__container {
             width: 100%;
             height:50%;
             background-color: #17181C;
@@ -357,16 +358,18 @@ footer {
             }
         }
     }
-    .quote {
+    #quote {
         background-color:#17181C;
         font-size: 1.5rem;
         display: flex;
         align-items: center;
-        justify-content: center;
-        .quote__container {
+        justify-content: flex-end;
+        padding-left: 3rem;
+        #quote__container {
             width: 100%;
             height: 50%;
             background-color: #17181C;
+            
             p {
                 color: white;
                 text-align: center;
@@ -378,28 +381,275 @@ footer {
             }
         }
     }
-    .icon {
+    #icon {
         background-color:#17181C;
+        width: 100%;
+        height: 33.3%;
+        background-color: #17181C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem; */
+        #icon__image__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4rem;
+            padding-left: 3rem;
+            #top__row__box__one {
+                width: 35%;
+                height: 33.3%;
+                background-color: aliceblue;
+                /* Bad image */
+                #facebook {
+                    width: 100%;
+                    height:100%;
+                    background-color: #17181C;
+                    p {
+                        width: 100%;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-size: 2rem;
+                        opacity: 0;
+                        transition: all 0.4s ease-in;
+                        text-align: center;
+                        color: white;
+                    }
+                    span {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                                
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+            #top__row__box__two {
+                width: 35%;
+                height: 33.3%;
+                background-color: bisque;
+                #Github { 
+                    width: 100%;
+                    height: 100%;
+                    background-color: #17181C;;
+                    p {
+                        text-align: center;
+                        font-size: 2rem;
+                        color: white;
+                        opacity: 0;
+                    }
+                    span {
+                        a {
+                            
+                            display:flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 7rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #top__row__box__three {
+                width: 33.3%;
+                height: 33.3%;
+                background-color:#17181C;
+                #Linkin { 
+                    width: 100%;
+                    height: 100%;
+                    background-color: #17181C;
+                    p {
+                        text-align: center;
+                        color: aliceblue;
+                
+                        font-size: 2rem;
+                        opacity: 0;
+                    }
+                    span {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                }
+            }     
+        }
     }
 }
 
+@media only screen and (min-width: 600px) {
 
-
-    /*  
-     .inspire--hobbies , .inspire--people {
-        display: flex;
+}
+    
+@media only screen and (min-width: 1200px) {
+    #inspire--column {
+        width: 100vw;
+        height: 100vh;
+        background-color:blanchedalmond;
         flex-direction: column;
+        display: flex;
         justify-content: center;
         align-items: center;
-        .inspire--title {
+        #inspire--people {
             width: 100%;
-            height: 20%;
-            background-color: #fff;
+            height: 50%;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            #inspire--people--title {
+                width: 100%;
+                height: 20%;
+                background-color: #17181C;
+                text-align: center;
+                padding-top: 10rem;
+                padding-bottom: 10rem;
+                h3 {
+                    padding-left: 2rem;
+                    color: white;
+                    font-size: 5rem;
+                    text-decoration:overline;
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+            #inspire--people--body {
+                width: 100%;
+                height: 80%;
+                background-color:#17181C;
+                padding-left: 8rem;
+                padding-top: 2rem;
+                p {
+                    padding-left: 2rem;
+                    font-size: 3.5rem;
+                    color: #fff;
+                    font-weight: 700;
+                    line-height: 1.8;
+                }
+            }
         }
-        .inspire--body {
+        #inspire--hobbies {
             width: 100%;
-            height: 80%;
-            background-color: aqua;
+            height: 50%;
+            background-color: #17181C;
+            #inspire--hobbies--title {
+                width: 100%;
+                height: 20%;
+                background-color: #17181C;
+                text-align: center;
+                padding-top: 10rem;
+                padding-bottom: 10rem;
+                h3 {
+                    padding-left: 2rem;
+                    color: white;
+                    font-size: 5rem;
+                    text-decoration:overline;
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+            #inspire--hobbies--body {
+                width: 100%;
+                height: 80%;
+                background-color:#17181C;
+                padding-left: 8rem;
+                padding-top: 2rem;
+                p {
+                    padding-left: 2rem;
+                    font-size: 3.5rem;
+                    color: #fff;
+                    font-weight: 700;
+                    line-height: 1.8;
+                }
+            }
         }
-    } 
-    */
+    }
+    footer {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        background-color: #17181C;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        #name {
+            background-color: #17181C;
+            #name__container {
+                width: 100%;
+                height:50%;
+                background-color: #17181C;
+                p {
+                    padding-left: 2rem;
+                    font-size: 3rem;
+                    color: white;
+                    text-align:left;
+                }
+            }
+        }
+        #quote {
+            background-color: #17181C;
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 33.3%;
+            #quote__container {
+                width: 100%;
+                height: 50%;
+                background-color: #17181C;
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 3rem;
+                }
+                span {
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+        }
+        
+        #icon {
+            background-color: #17181C;
+            display: flex;
+            justify-content:flex-end;
+            height: 100%;
+            width: 33.3%;
+            #icon__image__container {
+                width:75%;
+                height:50%;
+                background-color: #17181C;
+                margin-bottom: 16rem;
+
+                img {
+                    width:100%;
+                    height: 120%;
+                    
+                }
+            }
+        }
+    }
+}
+
