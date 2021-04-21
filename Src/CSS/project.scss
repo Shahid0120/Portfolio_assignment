@@ -11,13 +11,13 @@ html {
     scroll-behavior: smooth;
 }
 
-.background {
+#background {
     width: 100vw;
     height: 10vh;
     background-color: rgba(244, 208, 63, 1);
     background-size: cover;
     background-attachment: fixed;
-    .nav {
+    #nav {
         width: 100vw;
         height: 10vh;
         padding-left: 2rem;
@@ -199,13 +199,13 @@ html {
     }
 }
 
-.project--title {
+#project--title {
     width: 100vw;
     height: 100vh;
     background-color: rgba(244, 208, 63, 1);
     background-size: cover;
     background-attachment: fixed;
-    .project--cool {
+    #project--cool {
         width: 100%;
         height: 100%;
         display: flex;
@@ -248,7 +248,7 @@ html {
 
 }
 
-.project--info {
+#project--info {
     width: 100%;
     min-height: 100vh;
     background-color:#17181C;
@@ -268,7 +268,7 @@ html {
            font-style: italic; 
         }
     }
-    .project {
+    #project {
         width: 100%;
         height: 100rem;
         background-color: aliceblue;
@@ -276,7 +276,7 @@ html {
         align-items: center;
         justify-content: center;
         margin-bottom: 11rem;
-        .project__background {
+        #project__background {
             width: 100%;
             height: 100%;
             background-color: #17181C;
@@ -296,24 +296,24 @@ html {
                     font-size: 9rem;
                     color: yellow;
                 }
-                .project--decription {
+                #project--decription {
                     line-height: 1.6;
                     .project__name {
                         font-size: 6rem;
                         font-weight: 550;
                         color: white;
                     }
-                    .project__description__tag{
+                    #project__description__tag{
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
                         color: white;
                         
-                        .project__tag {
+                        #project__tag {
                            font-weight: 800;
                            line-height: 5; 
                         }
-                        .project__decription {
+                        #project__decription {
                             display: flex;
                             justify-content: end;
                             flex-direction: column;
@@ -321,7 +321,7 @@ html {
                             line-height: 5;
                             padding-left: 5rem;
                         }
-                        .description{
+                        #description{
                             line-height: 1;
                             padding-top: 5rem;
                         }
@@ -329,7 +329,7 @@ html {
                 }
 
             }
-            .project__picture {
+            #project__picture {
                 width : 100%;
                 height: 30%;
                 background-color: aliceblue;
@@ -353,7 +353,7 @@ html {
 }
 
 
-.project--summary {
+#project--summary {
     width: 100vw;
     height: 100vh;
     background-color: #17181C;
@@ -388,18 +388,18 @@ footer {
     display:flex;
     padding-left: 2rem;
     padding-right: 2rem;
-    .name, .quote , .icon {
+    #name, .quote , .icon {
         width: 33.3%;
         height:100%;
     }
-    .name {
+    #name {
         background-color:#17181C;
         font-size: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: left;
         
-        .name__container {
+        #name__container {
             width: 100%;
             height:50%;
             background-color: #17181C;
@@ -409,14 +409,14 @@ footer {
             }
         }
     }
-    .quote {
+    #quote {
         background-color:#17181C;
         font-size: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         padding-left: 3rem;
-        .quote__container {
+        #quote__container {
             width: 100%;
             height: 50%;
             background-color: #17181C;
@@ -432,7 +432,7 @@ footer {
             }
         }
     }
-    .icon {
+    #icon {
         background-color:#17181C;
         width: 100%;
         height: 33.3%;
@@ -445,19 +445,19 @@ footer {
         padding-right: 2rem;
         padding-top: 2rem;
         padding-bottom: 2rem; */
-        .icon__image__container {
+        #icon__image__container {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             padding-top: 4rem;
             padding-left: 3rem;
-            .top__row__box__one {
+            #top__row__box__one {
                 width: 35%;
                 height: 33.3%;
                 background-color: aliceblue;
                 /* Bad image */
-                .facebook {
+                #facebook {
                     width: 100%;
                     height:100%;
                     background-color: #17181C;
@@ -490,11 +490,11 @@ footer {
                 }
                 
             }
-            .top__row__box__two {
+            #top__row__box__two {
                 width: 35%;
                 height: 33.3%;
                 background-color: bisque;
-                .Github { 
+                #Github { 
                     width: 100%;
                     height: 100%;
                     background-color: #17181C;;
@@ -518,11 +518,11 @@ footer {
                     }
                 }
             }
-            .top__row__box__three {
+            #top__row__box__three {
                 width: 33.3%;
                 height: 33.3%;
                 background-color:#17181C;
-                .Linkin { 
+                #Linkin { 
                     width: 100%;
                     height: 100%;
                     background-color: #17181C;
@@ -555,14 +555,14 @@ footer {
 
 }
 @media only screen and (min-width: 1200px) {
-    .project--title {
+    #project--title {
         width: 100vw;
         height: 100vh;
         background-color: rgba(244, 208, 63, 1);
         background-size: cover;
         background-attachment: fixed;
         
-        .project--cool {
+        #project--cool {
             width: 100%;
             height: 100%;
             display: flex;
@@ -590,7 +590,7 @@ footer {
     
     }
 
-    .project--info {
+    #project--info {
         min-height: 20rem;
         justify-content: flex-start;
         background-color:#17181C;
@@ -600,11 +600,11 @@ footer {
             font-weight: 700;
             color:  rgb(255, 255, 255);
         }
-        .project {
+        #project {
             height: 20%;
             justify-content: center;
             background-color:#17181C;;
-            .project__background {
+            #project__background {
                 justify-self: flex-end;
                 height: 95%;
                 width: 100%;
@@ -626,7 +626,7 @@ footer {
                         font-size: 14rem;
                     }
 
-                    .project--decription{
+                    #project--decription{
                         width: 92.5%;
                         height: 90%;
                         background-color: black;
@@ -639,12 +639,12 @@ footer {
                             font-size: 5rem;
                             color: white;
                         }
-                        .project__description__tag {
+                        #project__description__tag {
                             height: 80%;
                             width: 100%;
                             background-color: #17181C;
                             display: flex;
-                            .project__tag {
+                            #project__tag {
                                 width: 30%;
                                 height: 100%;
                                 background-color: #17181C;
@@ -652,7 +652,7 @@ footer {
                                 font-size: 2.4rem;
                                 line-height: 3;
                             }
-                            .project__decription {
+                            #project__decription {
                                 width: 70%;
                                 height: 100%;
                                 background-color: #17181C;
@@ -666,7 +666,7 @@ footer {
                         }
                     }
                 }
-                .project__picture {
+                #project__picture {
                     width: 50%;
                     height: 100%;
                     background-color: #17181C;
@@ -689,7 +689,7 @@ footer {
         
         }
     }
-    .project--summary {
+    #project--summary {
         width: 100vw;
         min-height: 20vh;
         background-color: #17181C;
@@ -721,9 +721,9 @@ footer {
         display: flex;
         justify-content:space-between;
         align-items: center;
-        .name {
+        #name {
             background-color: #17181C;
-            .name__container {
+            #name__container {
                 width: 100%;
                 height:50%;
                 background-color: #17181C;
@@ -735,14 +735,14 @@ footer {
                 }
             }
         }
-        .quote {
+        #quote {
             background-color: #17181C;
             font-size: 5rem;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 33.3%;
-            .quote__container {
+            #quote__container {
                 width: 100%;
                 height: 50%;
                 background-color: #17181C;
@@ -758,13 +758,13 @@ footer {
             }
         }
         
-        .icon {
+        #icon {
             background-color: #17181C;
             display: flex;
             justify-content:flex-end;
             height: 100%;
             width: 33.3%;
-            .icon__image__container {
+            #icon__image__container {
                 width:75%;
                 height:50%;
                 background-color: #17181C;

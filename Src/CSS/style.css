@@ -243,6 +243,8 @@ html {
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  -webkit-transition-duration: 10s;
+          transition-duration: 10s;
 }
 
 .background #nav_non_responsive {
@@ -553,7 +555,7 @@ html {
   font-size: 3rem;
 }
 
-.inspirational--quote {
+#inspirational--quote {
   width: 100%;
   height: 100vh;
   background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg") no-repeat center;
@@ -575,7 +577,7 @@ html {
           flex-direction: column;
 }
 
-.inspirational--quote .inspiration__container {
+#inspirational--quote .quote__container {
   width: 100%;
   height: 100%;
   background-color: transparent white;
@@ -596,7 +598,7 @@ html {
           flex-direction: column;
 }
 
-.inspirational--quote .inspiration__container #inspire {
+#inspirational--quote .quote__container #inspire {
   font-style: italic;
   color: white;
   text-decoration: line-through;
@@ -607,7 +609,7 @@ html {
   display: inline-block;
 }
 
-.inspirational--quote .inspiration__container #inspire::after {
+#inspirational--quote .quote__container #inspire::after {
   top: -0.25rem;
   bottom: -0.25rem;
   left: -2rem;
@@ -627,7 +629,7 @@ html {
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
-.inspirational--quote .inspiration__container .quote {
+#inspirational--quote .quote__container .quote {
   font-weight: 300;
   font-style: italic;
   font-size: 3rem;
@@ -637,17 +639,17 @@ html {
   color: white;
 }
 
-.inspirational--quote .inspiration__container .quote span {
+#inspirational--quote .quote__container .quote span {
   font-weight: 700;
   font-style: normal;
 }
 
-.inspirational--quote .inspiration__container:hover #inspire::after {
+#inspirational--quote .quote__container:hover #inspire::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.projects {
+#projects {
   width: 100%;
   min-height: 150vh;
   background-color: #17181C;
@@ -668,18 +670,18 @@ html {
       flex-wrap: wrap;
 }
 
-.projects #title__header {
+#projects #title__header {
   padding-top: 10rem;
   padding-bottom: 10rem;
   font-size: 5rem;
   color: white;
 }
 
-.projects #title__header span {
+#projects #title__header span {
   font-style: italic;
 }
 
-.projects .project {
+#projects .project {
   width: 100%;
   height: 100rem;
   background-color: aliceblue;
@@ -695,7 +697,7 @@ html {
   margin-bottom: 11rem;
 }
 
-.projects .project .project__background {
+#projects .project .project__background {
   width: 100%;
   height: 100%;
   background-color: #17181C;
@@ -716,7 +718,7 @@ html {
   padding-right: 2rem;
 }
 
-.projects .project .project__background .project__name {
+#projects .project .project__background .project__name {
   width: 100%;
   height: 70%;
   font-size: 2.5rem;
@@ -726,22 +728,22 @@ html {
           order: 2;
 }
 
-.projects .project .project__background .project__name h2 {
+#projects .project .project__background .project__name h2 {
   font-size: 9rem;
   color: yellow;
 }
 
-.projects .project .project__background .project__name .project--decription {
+#projects .project .project__background .project__name .project--decription {
   line-height: 1.6;
 }
 
-.projects .project .project__background .project__name .project--decription .project__name {
+#projects .project .project__background .project__name .project--decription .project__name {
   font-size: 6rem;
   font-weight: 550;
   color: white;
 }
 
-.projects .project .project__background .project__name .project--decription .project__description__tag {
+#projects .project .project__background .project__name .project--decription .project__description__tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,12 +757,12 @@ html {
   color: white;
 }
 
-.projects .project .project__background .project__name .project--decription .project__description__tag .project__tag {
+#projects .project .project__background .project__name .project--decription .project__description__tag .project__tag {
   font-weight: 800;
   line-height: 5;
 }
 
-.projects .project .project__background .project__name .project--decription .project__description__tag .project__decription {
+#projects .project .project__background .project__name .project--decription .project__description__tag .project__decription {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,23 +780,23 @@ html {
   padding-left: 5rem;
 }
 
-.projects .project .project__background .project__name .project--decription .project__description__tag .description {
+#projects .project .project__background .project__name .project--decription .project__description__tag .description {
   line-height: 1;
   padding-top: 5rem;
 }
 
-.projects .project .project__background .project__picture {
+#projects .project .project__background .project__picture {
   width: 100%;
   height: 30%;
   background-color: aliceblue;
 }
 
-.projects .project .project__background .project__picture a {
+#projects .project .project__background .project__picture a {
   text-decoration: none;
   overflow: hidden;
 }
 
-.projects .project .project__background .project__picture a img {
+#projects .project .project__background .project__picture a img {
   width: 100%;
   height: 102%;
   -o-object-fit: cover;
@@ -806,25 +808,25 @@ html {
   background-size: cover;
 }
 
-.projects {
+#projects {
   z-index: 3;
 }
 
-.projects .project {
+#projects .project {
   z-index: 2;
   position: relative;
 }
 
-.projects .project .project__picture:hover {
+#projects .project .project__picture:hover {
   z-index: 1;
   position: relative;
 }
 
-.projects .project .project__picture:hover a:hover {
+#projects .project .project__picture:hover a:hover {
   overflow: hidden;
 }
 
-.projects .project .project__picture:hover a:hover img {
+#projects .project .project__picture:hover a:hover img {
   opacity: 0.5;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -836,7 +838,7 @@ html {
   z-index: 1;
 }
 
-.life--history--why {
+#life--history--why {
   width: 100%;
   height: 100vh;
   font-size: 4.5rem;
@@ -858,7 +860,7 @@ html {
   color: #fff;
 }
 
-.life--history--why .inspiration__container {
+#life--history--why .quote__container {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -881,7 +883,7 @@ html {
   padding-right: 0;
 }
 
-.life--history--why .inspiration__container a {
+#life--history--why .quote__container a {
   font-style: italic;
   text-decoration: overline;
   line-height: 3;
@@ -892,7 +894,7 @@ html {
   display: inline-block;
 }
 
-.life--history--why .inspiration__container a::after {
+#life--history--why .quote__container a::after {
   content: '';
   position: absolute;
   top: -0.25rem;
@@ -911,24 +913,24 @@ html {
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
-.life--history--why .inspiration__container .quote {
+#life--history--why .quote__container .quote {
   font-weight: 300;
   font-style: italic;
   font-size: 3rem;
   line-height: 1;
 }
 
-.life--history--why .inspiration__container .quote span {
+#life--history--why .quote__container .quote span {
   font-weight: 700;
   font-style: normal;
 }
 
-.life--history--why .inspiration__container:hover a::after {
+#life--history--why .quote__container:hover a::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.blog--container {
+#blog--container {
   width: 100%;
   min-height: 150rem;
   background-color: #17181C;
@@ -947,7 +949,7 @@ html {
           flex-direction: column;
 }
 
-.blog--container h2 {
+#blog--container h2 {
   text-align: center;
   padding-top: 2rem;
   width: 100%;
@@ -957,11 +959,11 @@ html {
   font-weight: 700;
 }
 
-.blog--container h2 span {
+#blog--container h2 span {
   font-style: italic;
 }
 
-.blog--container .blog__post {
+#blog--container .blog__post {
   width: 100%;
   height: 50rem;
   background-color: #17181C;
@@ -982,17 +984,17 @@ html {
   padding-right: 2rem;
 }
 
-.blog--container .blog__post .blog__name__date {
+#blog--container .blog__post .blog__name__date {
   background-color: #17181C;
 }
 
-.blog--container .blog__post .blog__name__date .blog__name {
+#blog--container .blog__post .blog__name__date .blog__name {
   font-size: 3.5rem;
   color: white;
   background-color: #17181C;
 }
 
-.blog--container .blog__post .blog__name__date .blog__summary {
+#blog--container .blog__post .blog__name__date .blog__summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1002,30 +1004,30 @@ html {
   background-color: #17181C;
 }
 
-.blog--container .blog__post .blog__name__date .blog__summary .blog__sum {
+#blog--container .blog__post .blog__name__date .blog__summary .blog__sum {
   font-size: 2rem;
   color: yellow;
 }
 
-.blog--container .blog__post .blog__name__date .blog__summary .blog__date {
+#blog--container .blog__post .blog__name__date .blog__summary .blog__date {
   font-size: 2rem;
   color: yellow;
 }
 
-.blog--container .blog__post .blog__picture {
+#blog--container .blog__post .blog__picture {
   width: 100%;
   height: 70%;
   background-color: antiquewhite;
 }
 
-.blog--container .blog__post #blog--one img, .blog--container .blog__post #blog--four img {
+#blog--container .blog__post #blog--one img, #blog--container .blog__post #blog--four img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.blog--container .blog__post .blog__name__date {
+#blog--container .blog__post .blog__name__date {
   width: 100%;
   height: 5rem;
   background-color: burlywood;
@@ -1055,7 +1057,7 @@ html {
   margin: 1rem;
 }
 
-.contact {
+#contact--section {
   width: 100%;
   min-height: 100rem;
   background-color: #e9b4b4;
@@ -1063,7 +1065,7 @@ html {
   line-height: 1.3;
 }
 
-.contact .contact__questions__upper {
+#contact--section #contact__questions__upper {
   width: 100%;
   height: 30%;
   padding-left: 2rem;
@@ -1074,7 +1076,7 @@ html {
   line-height: 1.2;
 }
 
-.contact .contact__questions__lower {
+#contact--section #contact__questions__lower {
   height: 10%;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1082,7 +1084,7 @@ html {
   background-color: #17181C;
 }
 
-.contact #footer__icon {
+#contact--section #footer__icon {
   width: 100%;
   height: 60%;
   font-size: 4.5rem;
@@ -1092,17 +1094,17 @@ html {
   padding-top: 5rem;
 }
 
-.contact #footer__icon #email {
+#contact--section #footer__icon #email {
   color: white;
 }
 
-.contact #footer__icon #email #email__text a {
+#contact--section #footer__icon #email #email__text a {
   font-size: 2rem;
   text-decoration: none;
   color: white;
 }
 
-.contact #footer__icon #email #butn-resume {
+#contact--section #footer__icon #email #butn-resume {
   font-size: 2rem;
   text-decoration: none;
   width: 50%;
@@ -1119,7 +1121,7 @@ html {
   outline: none;
 }
 
-.contact #footer__icon #email #butn-resume:hover {
+#contact--section #footer__icon #email #butn-resume:hover {
   -webkit-box-shadow: inset 30rem 0 0 0 #f4d03f;
           box-shadow: inset 30rem 0 0 0 #f4d03f;
   cursor: pointer;
@@ -1127,7 +1129,7 @@ html {
   text-decoration: line-through;
 }
 
-.contact #footer__icon #icon__section {
+#contact--section #footer__icon #icon__section {
   width: 100%;
   height: 60%;
   background-color: #17181C;
@@ -1146,7 +1148,7 @@ html {
           flex-direction: column;
 }
 
-.contact #footer__icon #icon__section .top__row {
+#contact--section #footer__icon #icon__section #top__row {
   width: 100%;
   height: 80%;
   background-color: #17181C;
@@ -1169,20 +1171,20 @@ html {
   padding-bottom: 2rem;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__one {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__one {
   width: 35%;
   height: 33.3%;
   background-color: aliceblue;
   /* Bad image */
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__one .facebook {
   width: 100%;
   height: 100%;
   background-color: #17181C;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook p {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__one .facebook p {
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
@@ -1193,7 +1195,7 @@ html {
   color: white;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook span {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__one .facebook span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1205,7 +1207,7 @@ html {
           justify-content: center;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook span a {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__one .facebook span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1217,31 +1219,31 @@ html {
           align-items: center;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__one .facebook span a img {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__one .facebook span a img {
   width: 7rem;
   height: 7rem;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__two {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__two {
   width: 35%;
   height: 33.3%;
   background-color: bisque;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__two .Github {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__two .Github {
   width: 100%;
   height: 100%;
   background-color: #17181C;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__two .Github p {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__two .Github p {
   text-align: center;
   font-size: 2rem;
   color: white;
   opacity: 0;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__two .Github span a {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__two .Github span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1253,31 +1255,31 @@ html {
           justify-content: center;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__two .Github span a img {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__two .Github span a img {
   width: 12rem;
   height: 8rem;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__three {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__three {
   width: 33.3%;
   height: 33.3%;
   background-color: #17181C;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__three .Linkin {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__three .Linkin {
   width: 100%;
   height: 100%;
   background-color: #17181C;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__three .Linkin p {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__three .Linkin p {
   text-align: center;
   color: aliceblue;
   font-size: 2rem;
   opacity: 0;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__three .Linkin span a {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__three .Linkin span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1289,7 +1291,7 @@ html {
           justify-content: center;
 }
 
-.contact #footer__icon #icon__section .top__row .top__row__box__three .Linkin span a img {
+#contact--section #footer__icon #icon__section #top__row .top__row__box__three .Linkin span a img {
   width: 7rem;
   height: 7rem;
 }
@@ -1324,13 +1326,13 @@ footer .name {
           justify-content: left;
 }
 
-footer .name .name__container {
+footer .name #name__container {
   width: 100%;
   height: 50%;
   background-color: #17181C;
 }
 
-footer .name .name__container p {
+footer .name #name__container p {
   color: aliceblue;
   text-align: center;
 }
@@ -1551,19 +1553,19 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .projects {
+  #projects {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .life--history--why {
+  #life--history--why {
     padding-left: 0;
     padding-right: 0;
   }
-  .blog--container {
+  #blog--container {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .contact {
+  #contact--section {
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #17181C;
@@ -1770,6 +1772,10 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     line-height: 1;
     font-weight: 800;
   }
+  .background header .text #projects__about__me__link .projects__names__header p a {
+    text-decoration: none;
+    color: #fff;
+  }
   .background header .text #projects__about__me__link .projects__names__header #last__project {
     font-size: 3rem;
     font-weight: 600;
@@ -1819,23 +1825,23 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     font-style: italic;
     font-size: 4rem;
   }
-  .inspirational--quote {
+  #inspirational--quote {
     height: 90vh;
     font-size: 10rem;
     position: relative;
   }
-  .inspirational--quote .inspiration__container {
+  #inspirational--quote .quote__container {
     width: 100%;
     height: 50%;
     background-blend-mode: multiply;
     position: relative;
   }
-  .inspirational--quote .inspiration__container #inspire {
+  #inspirational--quote .quote__container #inspire {
     position: relative;
     z-index: 1;
     display: inline-block;
   }
-  .inspirational--quote .inspiration__container #inspire::after {
+  #inspirational--quote .quote__container #inspire::after {
     top: -0.25rem;
     bottom: -0.25rem;
     left: -2rem;
@@ -1854,7 +1860,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     transition: transform 250ms ease-in;
     transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
   }
-  .inspirational--quote .inspiration__container .quote {
+  #inspirational--quote .quote__container .quote {
     font-weight: 300;
     font-style: italic;
     font-size: 3rem;
@@ -1862,11 +1868,11 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .inspirational--quote .inspiration__container .quote span {
+  #inspirational--quote .quote__container .quote span {
     font-weight: 700;
     font-style: normal;
   }
-  .inspirational--quote .inspiration__container:hover #inspire::after {
+  #inspirational--quote .quote__container:hover #inspire::after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
@@ -1879,26 +1885,26 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     width: 50%;
     margin: 0;
   }
-  .projects {
+  #projects {
     min-height: 90rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     background-color: #17181C;
   }
-  .projects #title__header {
+  #projects #title__header {
     font-size: 10rem;
     font-weight: 700;
     color: white;
   }
-  .projects .project {
+  #projects .project {
     height: 20%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #17181C;
   }
-  .projects .project .project__background {
+  #projects .project .project__background {
     justify-self: flex-end;
     height: 95%;
     width: 100%;
@@ -1910,7 +1916,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .projects .project .project__background .project__name {
+  #projects .project .project__background .project__name {
     height: 60%;
     width: 50%;
     display: -webkit-box;
@@ -1928,11 +1934,11 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
             order: -1;
     background-color: #17181C;
   }
-  .projects .project .project__background .project__name h2 {
+  #projects .project .project__background .project__name h2 {
     color: yellow;
     font-size: 14rem;
   }
-  .projects .project .project__background .project__name .project--decription {
+  #projects .project .project__background .project__name .project--decription {
     width: 92.5%;
     height: 90%;
     background-color: black;
@@ -1940,14 +1946,14 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
         align-self: flex-end;
     color: aliceblue;
   }
-  .projects .project .project__background .project__name .project--decription .project__name {
+  #projects .project .project__background .project__name .project--decription .project__name {
     height: 20%;
     width: 100%;
     background-color: #17181C;
     font-size: 5rem;
     color: white;
   }
-  .projects .project .project__background .project__name .project--decription .project__description__tag {
+  #projects .project .project__background .project__name .project--decription .project__description__tag {
     height: 80%;
     width: 100%;
     background-color: #17181C;
@@ -1955,7 +1961,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     display: -ms-flexbox;
     display: flex;
   }
-  .projects .project .project__background .project__name .project--decription .project__description__tag .project__tag {
+  #projects .project .project__background .project__name .project--decription .project__description__tag .project__tag {
     width: 30%;
     height: 100%;
     background-color: #17181C;
@@ -1963,35 +1969,35 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     font-size: 2.4rem;
     line-height: 3;
   }
-  .projects .project .project__background .project__name .project--decription .project__description__tag .project__decription {
+  #projects .project .project__background .project__name .project--decription .project__description__tag .project__decription {
     width: 70%;
     height: 100%;
     background-color: #17181C;
     font-size: 2.4rem;
     line-height: 3;
   }
-  .projects .project .project__background .project__name .project--decription .project__description__tag .project__decription .description {
+  #projects .project .project__background .project__name .project--decription .project__description__tag .project__decription .description {
     padding-top: 2.2rem;
     padding-right: 1rem;
   }
-  .projects .project .project__background .project__picture {
+  #projects .project .project__background .project__picture {
     width: 50%;
     height: 100%;
     background-color: #17181C;
   }
-  .projects .project .project__background #picture__one {
+  #projects .project .project__background #picture__one {
     height: 53rem;
   }
-  .projects .project .project__background #picture__one a img {
+  #projects .project .project__background #picture__one a img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .projects .project .project__background #picture__two {
+  #projects .project .project__background #picture__two {
     height: 51rem;
   }
-  .life--history--why {
+  #life--history--why {
     height: 90vh;
     font-size: 10rem;
     display: -webkit-box;
@@ -2006,13 +2012,13 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-left: 0;
     padding-right: 0;
   }
-  .life--history--why #history__quote {
+  #life--history--why #history__quote {
     width: 100%;
     height: 50%;
     background: yellow;
     position: relative;
   }
-  .life--history--why #history__quote a {
+  #life--history--why #history__quote a {
     font-style: italic;
     text-decoration: overline;
     line-height: 3;
@@ -2020,7 +2026,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     z-index: 1;
     display: inline-block;
   }
-  .life--history--why #history__quote a::after {
+  #life--history--why #history__quote a::after {
     content: '';
     position: absolute;
     top: -0.25rem;
@@ -2038,26 +2044,26 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     transition: transform 250ms ease-in;
     transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
   }
-  .life--history--why #history__quote .quote {
+  #life--history--why #history__quote .quote {
     font-weight: 300;
     font-style: italic;
     font-size: 6rem;
     line-height: 1;
   }
-  .life--history--why #history__quote .quote span {
+  #life--history--why #history__quote .quote span {
     font-weight: 700;
     font-style: normal;
   }
-  .life--history--why #history__quote:hover a::after {
+  #life--history--why #history__quote:hover a::after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
-  .blog--container {
+  #blog--container {
     min-height: 500rem;
     text-align: left;
     background-color: #17181C;
   }
-  .blog--container #blogs__title {
+  #blog--container #blogs__title {
     height: 30rem;
     font-size: 10rem;
     font-weight: 700;
@@ -2066,10 +2072,10 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     color: white;
     background-color: #17181C;
   }
-  .blog--container #blogs__title span {
+  #blog--container #blogs__title span {
     font-style: italic;
   }
-  .blog--container .blog__post {
+  #blog--container .blog__post {
     padding-right: 8rem;
     padding-left: 8rem;
     padding-bottom: 9rem;
@@ -2082,28 +2088,28 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .blog--container .blog__post .blog__picture {
+  #blog--container .blog__post .blog__picture {
     width: 100%;
     height: 90rem;
   }
-  .blog--container .blog__post #blog--one img, .blog--container .blog__post #blog--four img {
+  #blog--container .blog__post #blog--one img, #blog--container .blog__post #blog--four img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .blog--container .blog__post .blog__name__date, .blog--container .blog__post .blog__name__date--two {
+  #blog--container .blog__post .blog__name__date, #blog--container .blog__post .blog__name__date--two {
     height: 20%;
     width: 100%;
   }
-  .blog--container .blog__post .blog__name__date .blog__name, .blog--container .blog__post .blog__name__date--two .blog__name {
+  #blog--container .blog__post .blog__name__date .blog__name, #blog--container .blog__post .blog__name__date--two .blog__name {
     width: 100%;
     height: 50%;
     background-color: #17181C;
     color: white;
     font-size: 6rem;
   }
-  .blog--container .blog__post .blog__name__date .blog__summary, .blog--container .blog__post .blog__name__date--two .blog__summary {
+  #blog--container .blog__post .blog__name__date .blog__summary, #blog--container .blog__post .blog__name__date--two .blog__summary {
     width: 100%;
     height: 50%;
     background-color: #17181C;
@@ -2113,14 +2119,14 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     display: -ms-flexbox;
     display: flex;
   }
-  .blog--container .blog__post .blog__name__date .blog__summary .blog__sum, .blog--container .blog__post .blog__name__date--two .blog__summary .blog__sum {
+  #blog--container .blog__post .blog__name__date .blog__summary .blog__sum, #blog--container .blog__post .blog__name__date--two .blog__summary .blog__sum {
     width: 30%;
     height: 100%;
     background-color: #17181C;
     color: yellow;
     font-size: 3.5rem;
   }
-  .blog--container .blog__post .blog__name__date .blog__summary .blog__date, .blog--container .blog__post .blog__name__date--two .blog__summary .blog__date {
+  #blog--container .blog__post .blog__name__date .blog__summary .blog__date, #blog--container .blog__post .blog__name__date--two .blog__summary .blog__date {
     width: 70%;
     height: 100%;
     background-color: #17181C;
@@ -2146,7 +2152,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     height: 20%;
     background-color: burlywood;
   }
-  .contact {
+  #contact--section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2157,7 +2163,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .contact .contact__questions__upper {
+  #contact--section #contact__questions__upper {
     padding-left: 8rem;
     height: 30%;
     padding-right: 8rem;
@@ -2167,14 +2173,14 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     background-color: #17181C;
     line-height: 1.3;
   }
-  .contact .contact__questions__upper span {
+  #contact--section #contact__questions__upper span {
     font-style: italic;
     font-size: 5.5rem;
   }
-  .contact .contact__questions__upper #someting--tag {
+  #contact--section #contact__questions__upper #someting--tag {
     font-weight: 700;
   }
-  .contact .contact__questions__lower {
+  #contact--section #contact__questions__lower {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 2rem;
@@ -2185,7 +2191,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     background-color: #17181C;
     line-height: 1.6;
   }
-  .contact #footer__icon {
+  #contact--section #footer__icon {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-bottom: 11rem;
@@ -2196,7 +2202,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     display: flex;
     background-color: #17181C;
   }
-  .contact #footer__icon #email {
+  #contact--section #footer__icon #email {
     width: 30%;
     height: 100%;
     background-color: #17181C;
@@ -2215,22 +2221,22 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
             flex-direction: column;
     padding-bottom: 20rem;
   }
-  .contact #footer__icon #email #email__text {
+  #contact--section #footer__icon #email #email__text {
     width: 100%;
     height: 40%;
     color: white;
   }
-  .contact #footer__icon #email #email__text p {
+  #contact--section #footer__icon #email #email__text p {
     padding-bottom: 2rem;
     font-size: 3rem;
     text-align: left;
   }
-  .contact #footer__icon #email #email__text p a {
+  #contact--section #footer__icon #email #email__text p a {
     font-size: 2.8rem;
     font-weight: 700;
     padding-right: 2rem;
   }
-  .contact #footer__icon #email #email__text p #butn-resume {
+  #contact--section #footer__icon #email #email__text p #butn-resume {
     font-size: 5rem;
     text-decoration: none;
     width: 50%;
@@ -2246,18 +2252,18 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     transition: ease-out 0.3s;
     outline: none;
   }
-  .contact #footer__icon #email #email__text p #butn-resume:hover {
+  #contact--section #footer__icon #email #email__text p #butn-resume:hover {
     -webkit-box-shadow: inset 30rem 0 0 0 #f4d03f;
             box-shadow: inset 30rem 0 0 0 #f4d03f;
     cursor: pointer;
     text-align: center;
     text-decoration: line-through;
   }
-  .contact #footer__icon #email #email__text span {
+  #contact--section #footer__icon #email #email__text span {
     font-style: italic;
     font-size: 6rem;
   }
-  .contact #footer__icon #icon__section {
+  #contact--section #footer__icon #icon__section {
     width: 70%;
     height: 100%;
     background-color: #17181C;
@@ -2272,7 +2278,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
             align-items: flex-end;
     padding-top: 20rem;
   }
-  .contact #footer__icon #icon__section img {
+  #contact--section #footer__icon #icon__section img {
     width: 60%;
     height: 60%;
   }
@@ -2293,12 +2299,12 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
   footer .name {
     background-color: #17181C;
   }
-  footer .name .name__container {
+  footer .name #name__container {
     width: 100%;
     height: 50%;
     background-color: #17181C;
   }
-  footer .name .name__container p {
+  footer .name #name__container p {
     padding-left: 2rem;
     font-size: 3rem;
     color: white;

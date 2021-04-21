@@ -191,6 +191,7 @@ html {
             color: inherit;
             text-decoration: none;
             transition: color 0.2s ease;
+            transition-duration: 10s;
         }
     }
     #nav_non_responsive {
@@ -457,7 +458,7 @@ html {
 }
 
 
-.inspirational--quote {
+#inspirational--quote {
     width:100%;
     height: 100vh;
     background: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg') no-repeat center;
@@ -468,7 +469,7 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-        .inspiration__container {
+        .quote__container {
             width: 100%;
             height: 100%;
             background-color: transparent white;
@@ -517,7 +518,7 @@ html {
                 }
             }
         }
-        .inspiration__container:hover {
+        .quote__container:hover {
             #inspire::after {
             transform: scaleX(1);
             }
@@ -526,7 +527,7 @@ html {
 
 
 
-.projects {
+#projects {
     width: 100%;
     min-height: 150vh;
     background-color:#17181C;
@@ -629,7 +630,7 @@ html {
     }
 }
 
-.projects {
+#projects {
     z-index: 3; 
     .project {
         z-index: 2;
@@ -652,7 +653,7 @@ html {
         }
     }
 }
-.life--history--why {
+#life--history--why {
     width: 100%;
     height: 100vh;
     font-size: 4.5rem;
@@ -666,7 +667,7 @@ html {
     padding-left: 0;
     padding-right: 0;
     color: #fff;
-    .inspiration__container {
+    .quote__container {
         width: 100%;
         height: 100%;
         background-color: transparent;
@@ -712,14 +713,14 @@ html {
                 }
             }
     }
-    .inspiration__container:hover {
+    .quote__container:hover {
         a::after {
             transform: scaleX(1);
         }
     }
 }
 
-.blog--container {
+#blog--container {
     width: 100%;
     min-height: 150rem;
     background-color:#17181C;
@@ -813,13 +814,13 @@ html {
     }
 }
 
-.contact {
+#contact--section {
     width: 100%;
     min-height: 100rem;
     background-color: rgb(233, 180, 180);
     font-size: 4.5rem;
     line-height: 1.3;
-    .contact__questions__upper {
+    #contact__questions__upper {
         width: 100%;
         height: 30%; 
         padding-left: 2rem;
@@ -829,7 +830,7 @@ html {
         padding-top: 5rem;
         line-height: 1.2;
     }
-    .contact__questions__lower {
+    #contact__questions__lower {
         height: 10%;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -882,7 +883,7 @@ html {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            .top__row {
+            #top__row {
                 width: 100%;
                 height: 80%;
                 background-color: #17181C;
@@ -1012,7 +1013,7 @@ footer {
         align-items: center;
         justify-content: left;
         
-        .name__container {
+        #name__container {
             width: 100%;
             height:50%;
             background-color: #17181C;
@@ -1182,19 +1183,19 @@ footer {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    .projects {
+    #projects {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    .life--history--why {
+    #life--history--why {
         padding-left: 0;
         padding-right: 0;
     }
-    .blog--container {
+    #blog--container {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    .contact {
+    #contact--section {
         padding-left: 2rem;
         padding-right: 2rem;
         background-color: #17181C;
@@ -1210,7 +1211,6 @@ footer {
                 height: 60%;
                 background-color: rgba(244, 208, 63, 1);
                 display: flex;
-                
                 .name {
                     display: flex;
                     align-items: flex-end;
@@ -1452,11 +1452,11 @@ footer {
 
         }
     }
-    .inspirational--quote {
+    #inspirational--quote {
         height: 90vh;
         font-size: 10rem;
         position:relative;
-        .inspiration__container {
+        .quote__container {
             width:100%;
             height: 50%;
             background-blend-mode: multiply;
@@ -1493,7 +1493,7 @@ footer {
                 }
             }
         } 
-        .inspiration__container:hover {
+        .quote__container:hover {
             #inspire::after {
                 transform: scaleX(1);
             }
@@ -1510,7 +1510,7 @@ footer {
         }
     }
 
-    .projects {
+    #projects {
         min-height: 90rem;
         justify-content: flex-start;
         background-color:#17181C;
@@ -1608,7 +1608,7 @@ footer {
         }
     }
 
-    .life--history--why {
+    #life--history--why {
         height: 90vh;
         font-size: 10rem;
         display: flex;
@@ -1662,7 +1662,7 @@ footer {
 
     }
 
-    .blog--container {
+    #blog--container {
         min-height: 500rem;
         text-align: left;
         background-color: #17181C;
@@ -1754,11 +1754,11 @@ footer {
         }
     }
 
-    .contact { 
+    #contact--section { 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        .contact__questions__upper {
+        #contact__questions__upper {
             padding-left: 8rem;
             height: 30%;
             padding-right: 8rem;
@@ -1775,7 +1775,7 @@ footer {
                 font-weight: 700;
             }
         }
-        .contact__questions__lower {
+        #contact__questions__lower {
             padding-left: 8rem;
             padding-right: 8rem;
             padding-top: 2rem;
@@ -1871,7 +1871,7 @@ footer {
         align-items: center;
         .name {
             background-color: #17181C;
-            .name__container {
+            #name__container {
                 width: 100%;
                 height:50%;
                 background-color: #17181C;

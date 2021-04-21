@@ -10,13 +10,13 @@ html {
     font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
 }
-.background {
+#background {
     width: 100vw;
     height: 10vh;
     background-color: rgba(244, 208, 63, 1);
     background-size: cover;
     background-attachment: fixed;
-    .nav {
+    #nav {
         width: 100vw;
         height: 10vh;
         padding-left: 2rem;
@@ -197,224 +197,7 @@ html {
         height: 10vh;
         background-color: rgba(244, 208, 63, 1);
     }
-    header {
-        width: 100%;
-        height: 90vh;
-        .pictures {
-            width: 100%;
-            height: 60%;
-            background-color: rgba(244, 208, 63, 1);
-            display: flex;
-            
-            .name {
-                width: 10%;
-                height: 100%;
-                background-color: rgba(244, 208, 63, 1);
-                padding-bottom: 2rem;
-                .first--name {
-                    width: 100%;
-                    height: 50%;
-                    color: #fff;
-                }
-                .second--name {
-                    width: 100%;
-                    height: 50%;
-                    color: #fff;
-                }
-                .second--name , .first--name {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    p {
-                        font-size: 3rem;
-                        line-height: 1.4;
-                    }
-                }
-                
-            }
-            .pictures__section {
-                width: 90%;
-                height: 100%;
-                display: flex;
-                flex-direction: row;
-
-                #picture--one {
-                    width: 20%;
-                    height: 100%;
-                    background-color: rgba(244, 208, 63, 1);
-                    
-                    #image {
-                        width: 155%;
-                        height: 40%;
-                        background-color: rgba(244, 208, 63, 1);
-                        position: relative;
-                        z-index: 9;
-                        img {
-                            object-fit: cover;
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                }
-                #picture--two {
-                    width: 30%;
-                    height: 100%;
-                    background-color: rgba(244, 208, 63, 1);
-                    padding-top: 15rem;
-                    #image {
-                        width: 120%;
-                        height: 90%;
-                        background-color: rgba(244, 208, 63, 1);
-                        position: relative;
-                        z-index: 10;
-                        img {
-                            object-fit: cover;
-                            
-                            width: 100%;
-                            height: 100%;
-                            
-                        }
-                    }
-                    
-                }
-                #picture--three {
-                    width: 40%;
-                    height: 100%;
-                    background-color: rgba(244, 208, 63, 1);
-                    padding-top: 20rem;
-                    #image {
-                        width: 120%;
-                        height: 40%;
-                        background-color: rgba(244, 208, 63, 1);
-                        position: relative;
-                        z-index: 9;
-                        img {
-                            object-fit: cover;
-                            width: 100%;
-                            height: 100%;
-
-                        }
-                    }
-                }
-                #picture--four {
-                    width: 10%;
-                    height: 100%;
-                    background-color: rgba(244, 208, 63, 1);
-                    padding-top: 15rem;
-                    #image {
-                        width: 100%;
-                        height: 20%;
-                        background-color: rgba(244, 208, 63, 1);
-                        position: relative;
-                        z-index: 10;
-                        img {
-                            object-fit: cover;
-                            object-position: left;
-                            width: 100%;
-                            height: 100%;
-                            
-                        }
-                    }
-                }
-            }
-        }
-        .text {
-            width: 100%;
-            height: 60%;
-            background-color: rgba(244, 208, 63, 1);
-            
-            #designer__syd {
-                width: 100%;
-                height: 25%;
-                background-color: rgba(244, 208, 63, 1);
-                color: white;
-                h4 {
-                    font-size: 7.5rem;
-                    letter-spacing: 2.3rem;
-
-                    
-                }
-                p {
-                    letter-spacing: 2rem;
-                    font-size: 2rem;
-                    padding-left: 2rem;
-                    color:black;
-                }
-            }
-            #contact__link {
-                width: 100%;
-                height: 25%;
-                background-color: rgba(244, 208, 63, 1);
-                text-align: right;
-                color: rgba(207, 0, 15, 1);
-                p {
-                    text-transform: uppercase;
-                    font-size: 4rem;
-                    letter-spacing: 0.4rem;
-                    line-height: 1;
-                    font-weight: 800;
-                }
-                #contact {
-                    font-style: italic;
-                    text-decoration:line-through;
-                }
-            }
-            #projects__about__me__link {
-                width: 100%;
-                height: 25%;
-                background-color: rgba(244, 208, 63, 1);
-                
-                .projects__names__header {
-                    color: #fff;
-                    p {
-                        text-transform: uppercase;
-                        font-size: 4rem;
-                        letter-spacing: 0.4rem;
-                        line-height: 1;
-                        font-weight: 800;
-                    }
-                    #last__project {
-                        font-size: 3rem;
-                        font-weight: 600;
-                        letter-spacing: 1rem;
-                    }
-                    
-                }
-                .contact__me__header {
-                    text-align: right;
-                p {
-                    text-transform: uppercase;
-                    font-size: 4rem;
-                    letter-spacing: 0.4rem;
-                    line-height: 1;
-                    font-weight: 800;
-                    color: rgba(207, 0, 15, 1);
-                }
-                }
-            }
-            #stuff__i__line {
-                width: 100%;
-                height: 25%;
-                background-color: rgba(244, 208, 63, 1); 
-                padding-top: 6rem;
-                padding-bottom: 0;
-                color: #fff;
-                p {
-                    font-size: 4rem;
-                    position: relative;
-                    text-transform: uppercase;
-                    #ux {
-                        font-size: 2rem;
-                    }
-                    #coffee {
-                        font-style: italic;
-                        font-size: 3rem;
-                    }
-                }
-            }
-        }
-    }
+    
     
 }
 
@@ -559,18 +342,18 @@ footer {
     display:flex;
     padding-left: 2rem;
     padding-right: 2rem;
-    .name, .quote , .icon {
+    #name, .quote , .icon {
         width: 33.3%;
         height:100%;
     }
-    .name {
+    #name {
         background-color:#17181C;
         font-size: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: left;
         
-        .name__container {
+        #name__container {
             width: 100%;
             height:50%;
             background-color: #17181C;
@@ -580,14 +363,14 @@ footer {
             }
         }
     }
-    .quote {
+    #quote {
         background-color:#17181C;
         font-size: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         padding-left: 3rem;
-        .quote__container {
+        #quote__container {
             width: 100%;
             height: 50%;
             background-color: #17181C;
@@ -603,7 +386,7 @@ footer {
             }
         }
     }
-    .icon {
+    #icon {
         background-color:#17181C;
         width: 100%;
         height: 33.3%;
@@ -616,19 +399,19 @@ footer {
         padding-right: 2rem;
         padding-top: 2rem;
         padding-bottom: 2rem; */
-        .icon__image__container {
+        #icon__image__container {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             padding-top: 4rem;
             padding-left: 3rem;
-            .top__row__box__one {
+            #top__row__box__one {
                 width: 35%;
                 height: 33.3%;
                 background-color: aliceblue;
                 /* Bad image */
-                .facebook {
+                #facebook {
                     width: 100%;
                     height:100%;
                     background-color: #17181C;
@@ -661,11 +444,11 @@ footer {
                 }
                 
             }
-            .top__row__box__two {
+            #top__row__box__two {
                 width: 35%;
                 height: 33.3%;
                 background-color: bisque;
-                .Github { 
+                #Github { 
                     width: 100%;
                     height: 100%;
                     background-color: #17181C;;
@@ -689,11 +472,11 @@ footer {
                     }
                 }
             }
-            .top__row__box__three {
+            #top__row__box__three {
                 width: 33.3%;
                 height: 33.3%;
                 background-color:#17181C;
-                .Linkin { 
+                #Linkin { 
                     width: 100%;
                     height: 100%;
                     background-color: #17181C;
@@ -720,8 +503,6 @@ footer {
         }
     }
 }
-
-
 
 
 
@@ -820,9 +601,9 @@ footer {
         display: flex;
         justify-content:space-between;
         align-items: center;
-        .name {
+        #name {
             background-color: #17181C;
-            .name__container {
+            #name__container {
                 width: 100%;
                 height:50%;
                 background-color: #17181C;
@@ -834,14 +615,14 @@ footer {
                 }
             }
         }
-        .quote {
+        #quote {
             background-color: #17181C;
             font-size: 5rem;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 33.3%;
-            .quote__container {
+            #quote__container {
                 width: 100%;
                 height: 50%;
                 background-color: #17181C;
@@ -857,13 +638,13 @@ footer {
             }
         }
         
-        .icon {
+        #icon {
             background-color: #17181C;
             display: flex;
             justify-content:flex-end;
             height: 100%;
             width: 33.3%;
-            .icon__image__container {
+            #icon__image__container {
                 width:75%;
                 height:50%;
                 background-color: #17181C;

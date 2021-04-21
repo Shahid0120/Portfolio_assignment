@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.background {
+#background {
   width: 100vw;
   height: 10vh;
   background-color: #f4d03f;
@@ -21,7 +21,7 @@ html {
   background-attachment: fixed;
 }
 
-.background .nav {
+#background #nav {
   width: 100vw;
   height: 10vh;
   padding-left: 2rem;
@@ -44,15 +44,15 @@ html {
   /* hidden menu */
 }
 
-.background .nav .initials h4 {
+#background #nav .initials h4 {
   font-size: 4rem;
 }
 
-.background .nav .initials h4 span {
+#background #nav .initials h4 span {
   font-style: italic;
 }
 
-.background .nav .container {
+#background #nav .container {
   max-width: 960px;
   margin: auto;
   overflow: hidden;
@@ -60,12 +60,12 @@ html {
   background-color: white;
 }
 
-.background .nav .menu-wrap {
+#background #nav .menu-wrap {
   position: -webkit-sticky;
   position: sticky;
 }
 
-.background .nav .menu-wrap .toggler {
+#background #nav .menu-wrap .toggler {
   position: absolute;
   cursor: pointer;
   z-index: 2;
@@ -76,11 +76,11 @@ html {
   opacity: 0;
 }
 
-.background .nav .toggler {
+#background #nav .toggler {
   margin-right: 2rem;
 }
 
-.background .nav .menu-wrap .hamburger {
+#background #nav .menu-wrap .hamburger {
   position: absolute;
   top: 0;
   right: 0;
@@ -99,7 +99,7 @@ html {
           justify-content: center;
 }
 
-.background .nav .menu-wrap .hamburger > div {
+#background #nav .menu-wrap .hamburger > div {
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   display: -webkit-box;
@@ -120,7 +120,7 @@ html {
           flex: none;
 }
 
-.background .nav .menu-wrap .hamburger > div::before {
+#background #nav .menu-wrap .hamburger > div::before {
   content: '';
   position: absolute;
   top: -1rem;
@@ -130,7 +130,7 @@ html {
   background: black;
 }
 
-.background .nav .menu-wrap .hamburger > div::after {
+#background #nav .menu-wrap .hamburger > div::after {
   content: '';
   position: absolute;
   top: 1rem;
@@ -140,12 +140,12 @@ html {
   background: yellow;
 }
 
-.background .nav .menu-wrap .toggler:checked + .hamburger > div {
+#background #nav .menu-wrap .toggler:checked + .hamburger > div {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.background .nav .xmenu-wrap .menu {
+#background #nav .xmenu-wrap .menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -162,24 +162,24 @@ html {
           justify-content: center;
 }
 
-.background .nav .menu-wrap .toggler:checked ~ .menu {
+#background #nav .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
 
-.background .nav .menu-wrap .toggler:checked ~ .menu > div {
+#background #nav .menu-wrap .toggler:checked ~ .menu > div {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-duration: 3s;
           transition-duration: 3s;
 }
 
-.background .nav .menu-wrap .toggler:checked ~ .menu > div > div {
+#background #nav .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
   -webkit-transition: opacity 0.4s ease 0.2s;
   transition: opacity 0.4s ease 0.2s;
 }
 
-.background .nav .menu-wrap .menu {
+#background #nav .menu-wrap .menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -198,7 +198,7 @@ html {
           justify-content: center;
 }
 
-.background .nav .menu-wrap .menu > div {
+#background #nav .menu-wrap .menu > div {
   background: black;
   width: 100vw;
   height: 100vh;
@@ -220,7 +220,7 @@ html {
   transition: all 0.2 ease;
 }
 
-.background .nav .menu-wrap .menu > div > div {
+#background #nav .menu-wrap .menu > div > div {
   text-align: center;
   max-width: 100vw;
   max-height: 100vh;
@@ -230,27 +230,27 @@ html {
   transition: opacity 0.2s ease;
 }
 
-.background .nav .menu-wrap .menu > div > div > ul > li {
+#background #nav .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
   font-size: 2rem;
   padding: 1rem;
 }
 
-.background .nav .menu-wrap .menu > div > div > ul > li > a {
+#background #nav .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
-.background #nav_non_responsive {
+#background #nav_non_responsive {
   width: 100%;
   height: 10vh;
   background-color: #f4d03f;
 }
 
-.inspire--title {
+#inspire--title {
   width: 100vw;
   height: 100vh;
   background-color: #f4d03f;
@@ -270,7 +270,7 @@ html {
   padding-right: 2rem;
 }
 
-.inspire--title .inspire--cool {
+#inspire--title #inspire--cool {
   width: 100%;
   height: 60%;
   background: url("https://i.pinimg.com/564x/6c/53/4a/6c534a6284c1dfb0e4e9512461a9f3da.jpg") repeat center;
@@ -290,30 +290,30 @@ html {
   position: relative;
 }
 
-.inspire--title .inspire--cool h2 {
+#inspire--title #inspire--cool h2 {
   font-size: 7rem;
 }
 
-.inspire--title .inspire--cool #inspiration__header__back {
+#inspire--title #inspire--cool #inspiration__header__back {
   position: absolute;
   margin-top: 2rem;
   margin-right: 1.2rem;
   color: white;
 }
 
-.inspire--title .inspire--cool #inspiration__header__middle {
+#inspire--title #inspire--cool #inspiration__header__middle {
   position: absolute;
   color: #f4d03f;
 }
 
-.inspire--title .inspire--cool #inspiration__header__front {
+#inspire--title #inspire--cool #inspiration__header__front {
   position: absolute;
   margin-bottom: 2rem;
   margin-left: 1.2rem;
   color: black;
 }
 
-.inspire--column {
+#inspire--column {
   width: 100vw;
   height: 100vh;
   background-color: blanchedalmond;
@@ -332,7 +332,7 @@ html {
           align-items: center;
 }
 
-.inspire--column .inspire--people {
+#inspire--column #inspire--people {
   width: 100%;
   height: 50%;
   background-color: pink;
@@ -345,7 +345,7 @@ html {
           flex-direction: column;
 }
 
-.inspire--column .inspire--people .inspire--people--title {
+#inspire--column #inspire--people #inspire--people--title {
   width: 100%;
   height: 20%;
   background-color: #17181C;
@@ -353,18 +353,18 @@ html {
   padding-top: 2rem;
 }
 
-.inspire--column .inspire--people .inspire--people--title h3 {
+#inspire--column #inspire--people #inspire--people--title h3 {
   padding-left: 2rem;
   color: white;
   font-size: 5rem;
   text-decoration: underline;
 }
 
-.inspire--column .inspire--people .inspire--people--title h3 span {
+#inspire--column #inspire--people #inspire--people--title h3 span {
   font-style: italic;
 }
 
-.inspire--column .inspire--people .inspire--people--body {
+#inspire--column #inspire--people #inspire--people--body {
   width: 100%;
   height: 80%;
   background-color: #17181C;
@@ -372,7 +372,7 @@ html {
   padding-top: 2rem;
 }
 
-.inspire--column .inspire--people .inspire--people--body p {
+#inspire--column #inspire--people #inspire--people--body p {
   padding-left: 2rem;
   font-size: 3.5rem;
   color: #fff;
@@ -380,13 +380,13 @@ html {
   line-height: 1.8;
 }
 
-.inspire--column .inspire--hobbies {
+#inspire--column #inspire--hobbies {
   width: 100%;
   height: 50%;
   background-color: #17181C;
 }
 
-.inspire--column .inspire--hobbies .inspire--hobbies--title {
+#inspire--column #inspire--hobbies #inspire--hobbies--title {
   width: 100%;
   height: 20%;
   background-color: #17181C;
@@ -394,18 +394,18 @@ html {
   padding-top: 2rem;
 }
 
-.inspire--column .inspire--hobbies .inspire--hobbies--title h3 {
+#inspire--column #inspire--hobbies #inspire--hobbies--title h3 {
   padding-left: 2rem;
   color: white;
   font-size: 5rem;
   text-decoration: underline;
 }
 
-.inspire--column .inspire--hobbies .inspire--hobbies--title h3 span {
+#inspire--column #inspire--hobbies #inspire--hobbies--title h3 span {
   font-style: italic;
 }
 
-.inspire--column .inspire--hobbies .inspire--hobbies--body {
+#inspire--column #inspire--hobbies #inspire--hobbies--body {
   width: 100%;
   height: 80%;
   background-color: #17181C;
@@ -413,7 +413,7 @@ html {
   padding-top: 2rem;
 }
 
-.inspire--column .inspire--hobbies .inspire--hobbies--body p {
+#inspire--column #inspire--hobbies #inspire--hobbies--body p {
   padding-left: 2rem;
   font-size: 3.5rem;
   color: #fff;
@@ -432,12 +432,12 @@ footer {
   padding-right: 2rem;
 }
 
-footer .name, footer .quote, footer .icon {
+footer #name, footer .quote, footer .icon {
   width: 33.3%;
   height: 100%;
 }
 
-footer .name {
+footer #name {
   background-color: #17181C;
   font-size: 1.5rem;
   display: -webkit-box;
@@ -451,18 +451,18 @@ footer .name {
           justify-content: left;
 }
 
-footer .name .name__container {
+footer #name #name__container {
   width: 100%;
   height: 50%;
   background-color: #17181C;
 }
 
-footer .name .name__container p {
+footer #name #name__container p {
   color: aliceblue;
   text-align: center;
 }
 
-footer .quote {
+footer #quote {
   background-color: #17181C;
   font-size: 1.5rem;
   display: -webkit-box;
@@ -477,23 +477,23 @@ footer .quote {
   padding-left: 3rem;
 }
 
-footer .quote .quote__container {
+footer #quote #quote__container {
   width: 100%;
   height: 50%;
   background-color: #17181C;
 }
 
-footer .quote .quote__container p {
+footer #quote #quote__container p {
   color: white;
   text-align: center;
 }
 
-footer .quote .quote__container span {
+footer #quote #quote__container span {
   font-style: italic;
   font-weight: 700;
 }
 
-footer .icon {
+footer #icon {
   background-color: #17181C;
   width: 100%;
   height: 33.3%;
@@ -517,7 +517,7 @@ footer .icon {
         padding-bottom: 2rem; */
 }
 
-footer .icon .icon__image__container {
+footer #icon #icon__image__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,20 +535,20 @@ footer .icon .icon__image__container {
   padding-left: 3rem;
 }
 
-footer .icon .icon__image__container .top__row__box__one {
+footer #icon #icon__image__container #top__row__box__one {
   width: 35%;
   height: 33.3%;
   background-color: aliceblue;
   /* Bad image */
 }
 
-footer .icon .icon__image__container .top__row__box__one .facebook {
+footer #icon #icon__image__container #top__row__box__one #facebook {
   width: 100%;
   height: 100%;
   background-color: #17181C;
 }
 
-footer .icon .icon__image__container .top__row__box__one .facebook p {
+footer #icon #icon__image__container #top__row__box__one #facebook p {
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
@@ -559,7 +559,7 @@ footer .icon .icon__image__container .top__row__box__one .facebook p {
   color: white;
 }
 
-footer .icon .icon__image__container .top__row__box__one .facebook span {
+footer #icon #icon__image__container #top__row__box__one #facebook span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,7 +571,7 @@ footer .icon .icon__image__container .top__row__box__one .facebook span {
           justify-content: center;
 }
 
-footer .icon .icon__image__container .top__row__box__one .facebook span a {
+footer #icon #icon__image__container #top__row__box__one #facebook span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,31 +583,31 @@ footer .icon .icon__image__container .top__row__box__one .facebook span a {
           align-items: center;
 }
 
-footer .icon .icon__image__container .top__row__box__one .facebook span a img {
+footer #icon #icon__image__container #top__row__box__one #facebook span a img {
   width: 5rem;
   height: 5rem;
 }
 
-footer .icon .icon__image__container .top__row__box__two {
+footer #icon #icon__image__container #top__row__box__two {
   width: 35%;
   height: 33.3%;
   background-color: bisque;
 }
 
-footer .icon .icon__image__container .top__row__box__two .Github {
+footer #icon #icon__image__container #top__row__box__two #Github {
   width: 100%;
   height: 100%;
   background-color: #17181C;
 }
 
-footer .icon .icon__image__container .top__row__box__two .Github p {
+footer #icon #icon__image__container #top__row__box__two #Github p {
   text-align: center;
   font-size: 2rem;
   color: white;
   opacity: 0;
 }
 
-footer .icon .icon__image__container .top__row__box__two .Github span a {
+footer #icon #icon__image__container #top__row__box__two #Github span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,31 +619,31 @@ footer .icon .icon__image__container .top__row__box__two .Github span a {
           justify-content: center;
 }
 
-footer .icon .icon__image__container .top__row__box__two .Github span a img {
+footer #icon #icon__image__container #top__row__box__two #Github span a img {
   width: 7rem;
   height: 5rem;
 }
 
-footer .icon .icon__image__container .top__row__box__three {
+footer #icon #icon__image__container #top__row__box__three {
   width: 33.3%;
   height: 33.3%;
   background-color: #17181C;
 }
 
-footer .icon .icon__image__container .top__row__box__three .Linkin {
+footer #icon #icon__image__container #top__row__box__three #Linkin {
   width: 100%;
   height: 100%;
   background-color: #17181C;
 }
 
-footer .icon .icon__image__container .top__row__box__three .Linkin p {
+footer #icon #icon__image__container #top__row__box__three #Linkin p {
   text-align: center;
   color: aliceblue;
   font-size: 2rem;
   opacity: 0;
 }
 
-footer .icon .icon__image__container .top__row__box__three .Linkin span a {
+footer #icon #icon__image__container #top__row__box__three #Linkin span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,13 +655,13 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a {
           justify-content: center;
 }
 
-footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
+footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   width: 5rem;
   height: 5rem;
 }
 
 @media only screen and (min-width: 1200px) {
-  .inspire--column {
+  #inspire--column {
     width: 100vw;
     height: 100vh;
     background-color: blanchedalmond;
@@ -679,7 +679,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .inspire--column .inspire--people {
+  #inspire--column #inspire--people {
     width: 100%;
     height: 50%;
     background-color: pink;
@@ -691,7 +691,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .inspire--column .inspire--people .inspire--people--title {
+  #inspire--column #inspire--people #inspire--people--title {
     width: 100%;
     height: 20%;
     background-color: #17181C;
@@ -699,35 +699,35 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-top: 10rem;
     padding-bottom: 10rem;
   }
-  .inspire--column .inspire--people .inspire--people--title h3 {
+  #inspire--column #inspire--people #inspire--people--title h3 {
     padding-left: 2rem;
     color: white;
     font-size: 5rem;
     text-decoration: overline;
   }
-  .inspire--column .inspire--people .inspire--people--title h3 span {
+  #inspire--column #inspire--people #inspire--people--title h3 span {
     font-style: italic;
   }
-  .inspire--column .inspire--people .inspire--people--body {
+  #inspire--column #inspire--people #inspire--people--body {
     width: 100%;
     height: 80%;
     background-color: #17181C;
     padding-left: 8rem;
     padding-top: 2rem;
   }
-  .inspire--column .inspire--people .inspire--people--body p {
+  #inspire--column #inspire--people #inspire--people--body p {
     padding-left: 2rem;
     font-size: 3.5rem;
     color: #fff;
     font-weight: 700;
     line-height: 1.8;
   }
-  .inspire--column .inspire--hobbies {
+  #inspire--column #inspire--hobbies {
     width: 100%;
     height: 50%;
     background-color: #17181C;
   }
-  .inspire--column .inspire--hobbies .inspire--hobbies--title {
+  #inspire--column #inspire--hobbies #inspire--hobbies--title {
     width: 100%;
     height: 20%;
     background-color: #17181C;
@@ -735,23 +735,23 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-top: 10rem;
     padding-bottom: 10rem;
   }
-  .inspire--column .inspire--hobbies .inspire--hobbies--title h3 {
+  #inspire--column #inspire--hobbies #inspire--hobbies--title h3 {
     padding-left: 2rem;
     color: white;
     font-size: 5rem;
     text-decoration: overline;
   }
-  .inspire--column .inspire--hobbies .inspire--hobbies--title h3 span {
+  #inspire--column #inspire--hobbies #inspire--hobbies--title h3 span {
     font-style: italic;
   }
-  .inspire--column .inspire--hobbies .inspire--hobbies--body {
+  #inspire--column #inspire--hobbies #inspire--hobbies--body {
     width: 100%;
     height: 80%;
     background-color: #17181C;
     padding-left: 8rem;
     padding-top: 2rem;
   }
-  .inspire--column .inspire--hobbies .inspire--hobbies--body p {
+  #inspire--column #inspire--hobbies #inspire--hobbies--body p {
     padding-left: 2rem;
     font-size: 3.5rem;
     color: #fff;
@@ -772,21 +772,21 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
         -ms-flex-align: center;
             align-items: center;
   }
-  footer .name {
+  footer #name {
     background-color: #17181C;
   }
-  footer .name .name__container {
+  footer #name #name__container {
     width: 100%;
     height: 50%;
     background-color: #17181C;
   }
-  footer .name .name__container p {
+  footer #name #name__container p {
     padding-left: 2rem;
     font-size: 3rem;
     color: white;
     text-align: left;
   }
-  footer .quote {
+  footer #quote {
     background-color: #17181C;
     font-size: 5rem;
     display: -webkit-box;
@@ -800,21 +800,21 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
             justify-content: center;
     width: 33.3%;
   }
-  footer .quote .quote__container {
+  footer #quote #quote__container {
     width: 100%;
     height: 50%;
     background-color: #17181C;
   }
-  footer .quote .quote__container p {
+  footer #quote #quote__container p {
     color: white;
     text-align: center;
     font-size: 3rem;
   }
-  footer .quote .quote__container span {
+  footer #quote #quote__container span {
     font-style: italic;
     font-weight: 700;
   }
-  footer .icon {
+  footer #icon {
     background-color: #17181C;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -825,13 +825,13 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     height: 100%;
     width: 33.3%;
   }
-  footer .icon .icon__image__container {
+  footer #icon #icon__image__container {
     width: 75%;
     height: 50%;
     background-color: #17181C;
     margin-bottom: 16rem;
   }
-  footer .icon .icon__image__container img {
+  footer #icon #icon__image__container img {
     width: 100%;
     height: 120%;
   }
