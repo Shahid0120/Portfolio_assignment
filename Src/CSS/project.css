@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +40,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 10001;
   /* Middle line */
   /* Top and middle line again */
   /* hidden menu */
@@ -481,7 +481,7 @@ html {
      object-fit: cover;
 }
 
-¸
+/* Mains section of the porject goes indepth about he proejct */
 #project--summary {
   width: 100vw;
   height: 100vh;
@@ -507,7 +507,6 @@ html {
   font-family: sofia-pro, sans-serif;
 }
 
-¸
 #project--summary h3 {
   font-size: 8rem;
   color: white;
@@ -515,7 +514,6 @@ html {
   line-height: 1;
 }
 
-¸
 #project--summary p {
   color: white;
   font-size: 3rem;

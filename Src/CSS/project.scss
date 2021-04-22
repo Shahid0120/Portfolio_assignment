@@ -28,6 +28,7 @@ html {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        z-index: 10001;
         .initials {   
             h4 {
                 font-size: 4rem;
@@ -365,11 +366,11 @@ html {
     }
 }
 
-¸/* Mains section of the porject goes indepth about he proejct */
+/* Mains section of the porject goes indepth about he proejct */
 #project--summary {
     width: 100vw;
     height: 100vh;
-    background-color: #17181C;
+    background-color:#17181C;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -380,7 +381,6 @@ html {
     padding-right: 2rem;
     padding-bottom: 2rem;
     font-family: sofia-pro, sans-serif;
-    
     h3 {
         font-size: 8rem;
         color: rgb(255, 255, 255);
