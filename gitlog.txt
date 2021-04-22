@@ -1,0 +1,322 @@
+commit 1d51f6d1a7817ead4d9167b004f95527aa08f7b9
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 23:15:25 2021 +1000
+
+    update links in Readme.md v2
+
+commit e1126fb2692cc529cd343e2a2a2229b46cd58a92
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 23:13:59 2021 +1000
+
+    update links in Readme.md
+
+commit be142bdaef8cafd4fc727d0a4e57e6bae8783e1b
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 23:01:27 2021 +1000
+
+    create a pdf resume, finalise ipad version bugs on blogs lower sections, laptop bugs fix for funtionality and aesthetics, fix Hi bug on about page, fix parrallax effect on blogs page
+
+commit e9f6b10aa2b2adb9f668b67fa1596c290342e9ef
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 20:21:12 2021 +1000
+
+    final ipad width port design complete
+
+commit fd60719d0a994a1ed161f55987469256755a670d
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 13:31:51 2021 +1000
+
+    create SRI and implement to html documents
+
+commit 57eaed8b0cf2ceaaee2898185c1de14e050a0e4b
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 06:31:43 2021 +1000
+
+    Create final version of Readme.md document
+
+commit b9693a9f297c5135a244af314002c188c700d383
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 05:07:05 2021 +1000
+
+    create a image on the blogs page based on assignment description
+
+commit 098951f7831b0a30e45891018c01ba9dc3b1f9ab
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 21 10:57:24 2021 +1000
+
+    replace all wrong classes with id and id with classes for all pages in projects
+
+commit ac18e0b73e07d361551bc54899f24a45bbf5897c
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 21 05:38:26 2021 +1000
+
+    create the same,functional footer bar on everysingle page
+
+commit 2cf52a32be54317f512c0458d192d0707c47ef0b
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 21 05:23:32 2021 +1000
+
+    create finihsed version of index.html pages wihout ipad portability
+
+commit 415765c21ca95a14216218ba1e955fe01642015d
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 21 02:20:53 2021 +1000
+
+    create final desktop design for homepage
+
+commit 81772b448bf4b20fb3d7e2560e5681303ebeb6a5
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Tue Apr 20 05:48:38 2021 +1000
+
+    create scr folder, and place coding material into it, create ppt for presentations and read.me doc with slides folder
+
+commit b3fee9847f677f4c1c44a2c8b282dd1caf3d4a2b
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Mon Apr 19 15:51:31 2021 +1000
+
+    create the final version for footer bar for mobile
+
+commit 13e96229dd3e8b6e5042bce8348d4edb479f49d7
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Mon Apr 19 15:01:39 2021 +1000
+
+    create final version of blogs page one
+
+commit 0621aee66b18d5d75920e929f0cbd3d889c6ba2c
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Mon Apr 19 11:31:00 2021 +1000
+
+    create blogs page, without title page
+
+commit 987b9ced551e0feddb6e014d79cf8db39712188f
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 18 18:44:03 2021 +1000
+
+    create final mobile design for projects page
+
+commit 18ea3cd3959ee649651770d59e84518e1619d1e6
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 18 04:50:30 2021 +1000
+
+    create final deisgn for projects section in index.html page, create a homepage for projects page
+
+commit b83763dda3c0e047875af18249f78ee328eeccc0
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 18 02:55:27 2021 +1000
+
+    create final design for mobile first inspiration page
+
+commit 9128c2b963770727fffa795fdfca7699d5055aa9
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 18 01:45:08 2021 +1000
+
+    create a funtional asthetic nav bar, create picture for blogs, pick better picture for quote dividers
+
+commit fda172ffe01870709708949c667548c99ad19295
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 18 00:26:12 2021 +1000
+
+    create black and white themesd portfolio
+
+commit f766f8c27db1961ed2b61b44207c31dbe1c15ec3
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 17 17:18:24 2021 +1000
+
+    create slider for descriptive hisotry ending section
+
+commit 842a41f8e3c9e205f07bc726c22fe778edce1862
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Fri Apr 16 07:59:14 2021 +1000
+
+    create linkable history page on index page
+
+commit 4e9f54c4b042aec454d28ba9efb478b503918878
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 15 11:43:03 2021 +1000
+
+    project create interactive clickable images
+
+commit bc72ae23729010844c3c6dda53726ad79f0d7184
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 15 09:30:55 2021 +1000
+
+    add unifinalised hamburger nav on top, create interaction icons, create interactive gmail link
+
+commit 060c9058cf8bc59f96a99c74169d3c14aa59320c
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Tue Apr 13 13:24:38 2021 +1000
+
+    create conact responsivess
+
+commit ae2eac38e65e80fc892daee0a733623deca5cd1b
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Tue Apr 13 11:24:45 2021 +1000
+
+    made interactive quotes section so you can see link better
+
+commit e668bf4646c9c0a176e7869bc61579ef4c741c86
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 11 22:25:48 2021 +1000
+
+    mobile responsiveness header,title, main-picture and footer
+
+commit 6da72945f214964cf5beb579d7d199428cff6aba
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 11 21:54:43 2021 +1000
+
+    create blog without the blog 2 section not working
+
+commit ffa0528673d5f670732a871f7b3d17a30e7599e6
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 11 15:58:36 2021 +1000
+
+    create a mobile phone responsive design
+
+commit 003d4cc0472bf67cd8e93b634811f2d693a40c96
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 11 15:40:02 2021 +1000
+
+    create responsive project for history section
+
+commit 19a4efc6bbd4774a97ef8ac9fa9520f2a94d40e3
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 11 15:31:51 2021 +1000
+
+    create responsive project section for mobile
+
+commit 5cff1ba2b737ccdd61c1e06141ead38d6c8b35a6
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sun Apr 11 14:55:26 2021 +1000
+
+    create mobile inspire quote
+
+commit 6729264361217fe7b2947da9514d98f86a64aae8
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 10 23:23:29 2021 +1000
+
+    fix up footer tags copyright and quote
+
+commit 3cfcd36cc05927ef0ad2da6223591005681618ae
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 10 22:02:09 2021 +1000
+
+    finish footer and lower nav bar
+
+commit e74904300c90ae0e71087017d8c7fc5d8d044e53
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 10 20:56:10 2021 +1000
+
+    finish basic layout of footer and comment sections
+
+commit 27cc64fedc583b326c6c9ab8c1b8f1d6435ddc01
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 10 18:52:39 2021 +1000
+
+    create blog page with not picture and complete contact page questions
+
+commit 7710b6a850a777da50a88c085519fa2950167ae7
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 10 17:35:46 2021 +1000
+
+    create basic layout for projects wihtout pictures
+
+commit 08081863efb6bf24bd7877097d184b61891e7019
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 10 16:22:05 2021 +1000
+
+    create homepage, nav, header and inspre basic text decoration and colour scheme
+
+commit af9686955d1db47e948ae3a2b3bafafb4cd7fad7
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 10 15:15:16 2021 +1000
+
+    create margins around the whole webpage
+
+commit e0517274fff21edf5ff8bab73c009db0f44b4a0d
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Sat Apr 10 13:42:17 2021 +1000
+
+    create box layout for destop responsiveness
+
+commit 3fb49f534ef062d3ce62abef0f4f69324dc91d5c
+Merge: fb15c8c f859880
+Author: Shahid-Developer <79388102+Shahid0120@users.noreply.github.com>
+Date:   Thu Apr 8 11:38:19 2021 +1000
+
+    Merge pull request #3 from Shahid0120/website_title_page_resopnsive_all_devices
+    
+    create git.log file
+
+commit f85988072ebfaccd45d097c9e27852af61bd6c19
+Merge: 20a90c5 fb15c8c
+Author: Shahid-Developer <79388102+Shahid0120@users.noreply.github.com>
+Date:   Thu Apr 8 11:38:11 2021 +1000
+
+    Merge branch 'main' into website_title_page_resopnsive_all_devices
+
+commit fb15c8ce5f6cd8c7fd9bdd80739f8e65d37b8cb2
+Merge: 7a59a8d d3475e1
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 8 11:07:53 2021 +1000
+
+    create a gitlog.txt
+
+commit 7a59a8d59eb3c8b10481e31ecdeb68284bd2a8cc
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 8 10:50:09 2021 +1000
+
+    Create a gitlog.txt file
+
+commit 20a90c5e4ee0a8dc1e4a88534b4b37188355af61
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 8 10:45:42 2021 +1000
+
+    create git.log file
+
+commit d3475e167a5af13cf8a781a3d3fa8dafb9cbe22e
+Merge: a71638f e78c7ef
+Author: Shahid-Developer <79388102+Shahid0120@users.noreply.github.com>
+Date:   Thu Apr 8 10:35:38 2021 +1000
+
+    Merge pull request #2 from Shahid0120/website_title_page_resopnsive_all_devices
+    
+    Create basic box layout of the responsive layout for mobile phone
+
+commit e78c7efc0bf92cafc731f41da546c4f7ef2edb74
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 8 10:34:16 2021 +1000
+
+    Create basic box layout of the responsive layout for mobile phone
+
+commit a71638f3b5ca02d99781ca849e3ef171e426d6cb
+Merge: 493952c 504c9c2
+Author: Shahid-Developer <79388102+Shahid0120@users.noreply.github.com>
+Date:   Thu Apr 8 00:46:54 2021 +1000
+
+    Merge pull request #1 from Shahid0120/mobile-layout-branch
+    
+    create basic responsive webstie layout
+
+commit 504c9c29ab174e25e868a551e84e693f5bbc69b9
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 8 00:40:24 2021 +1000
+
+    create basic responsive webstie layout
+
+commit 493952c4a309e753710e31c1bad2372b091fe1a5
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 7 23:15:49 2021 +1000
+
+    second commit, create basic index layout with links to scss files with mapping for css file
+
+commit 297d23b773a4c029e17e8c61afcc6cbe2f54a64f
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 7 23:02:11 2021 +1000
+
+    Second commit, create files wireframes, html, css and images with empyty folders
+
+commit ff388eeb4d0f67edc1772164290b7a7652cb8b59
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Wed Apr 7 23:00:46 2021 +1000
+
+    first commit
