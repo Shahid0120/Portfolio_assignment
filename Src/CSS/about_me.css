@@ -384,6 +384,7 @@ html {
   -webkit-transition: left 0s 0.75s;
   transition: left 0s 0.75s;
   padding: 8rem 1.2rem 0;
+  padding-right: 2rem;
 }
 
 #life--history--runthrough .slider--container [id^="slide"]:checked + .slide {
@@ -723,6 +724,15 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   #life--history--why #life--hisotry--why--body #reasoning__ux_design #box--over #reasoning__ux_design__paragraph p {
     font-size: 4rem;
   }
+  #life--history--runthrough .slider--container .slide .slide-one h3, #life--history--runthrough .slider--container .slide .slide-two h3, #life--history--runthrough .slider--container .slide .slide-three h3, #life--history--runthrough .slider--container .slide .slide-four h3 {
+    font-size: 7rem;
+  }
+  #life--history--runthrough .slider--container .slide .slide-one h4, #life--history--runthrough .slider--container .slide .slide-two h4, #life--history--runthrough .slider--container .slide .slide-three h4, #life--history--runthrough .slider--container .slide .slide-four h4 {
+    font-size: 7rem;
+  }
+  #life--history--runthrough .slider--container .slide .slide-one p, #life--history--runthrough .slider--container .slide .slide-two p, #life--history--runthrough .slider--container .slide .slide-three p, #life--history--runthrough .slider--container .slide .slide-four p {
+    font-size: 5rem;
+  }
   footer {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -805,6 +815,13 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
 
 /* laptops version */
 @media only screen and (min-width: 1200px) {
+  #life--history--why #hi__quote {
+    z-index: 200;
+    position: absolute;
+  }
+  #life--history--runthrough .slider--container .slide-one h3, #life--history--runthrough .slider--container .slide-two h3, #life--history--runthrough .slider--container .slide-three h3 {
+    font-size: 15rem;
+  }
   footer {
     padding-left: 8rem;
     padding-right: 8rem;
