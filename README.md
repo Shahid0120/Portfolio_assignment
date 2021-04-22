@@ -153,27 +153,27 @@ I have broken down the Home page into sections pages on viewing ports
 ### Screenshots
 - Ios
   - Homepage
-![Alt text](/Src/images/screenshot/Ios/home_title.png?.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/Home_inspiration.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/home_inspiration_hover.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/home_projects.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/home_project_two.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/home_project_three.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/home_about_me.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/home_about_me_hover.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/home_blog_contact.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/home_blog_contact?raw=true "Optional Title")
+![Alt text](/docs/Ios/home_title.png "Optional Title")
+![Alt text](/docs/Ios/Home_inspiration.png"Optional Title")
+![Alt text](/docs/Ios/home_inspiration_hover.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/home_projects.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/home_project_two.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/home_project_three.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/home_about_me.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/home_about_me_hover.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/home_blog.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/home_blog_contact.png?raw=true "Optional Title")
   - Inspiration
-![Alt text](/Src/images/screenshot/Ios/Inspiration%20page/Home.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/Inspiration%20page/Inspo_hobbies.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/Inspiration%20page/Home.png "Optional Title")
+![Alt text](/docs/Ios/Inspiration%20page/Inspo_hobbies.png?raw=true "Optional Title")
   - Projects  
 ![Alt text](/Src/images/screenshot/Ios/Projects/title.png "Optional Title")
 ![Alt text](/Src/images/screenshot/Ios/Projects/summary.png?raw=true "Optional Title")
 ![Alt text](/Src/images/screenshot/Ios/Projects/extended_description.png?raw=true "Optional Title")
   - History 
-![Alt text](/Src/images/screenshot/Ios/About%20me/Title.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/About%20me/Slider.png?raw=true "Optional Title")
-![Alt text](/Src/images/screenshot/Ios/About%20me/slider_2.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/About%20me/Title.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/About%20me/Slider.png?raw=true "Optional Title")
+![Alt text](/docs/Ios/About%20me/slider_2.png?raw=true "Optional Title")
 
 
 ### Target audience

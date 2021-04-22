@@ -497,7 +497,7 @@ html {
 
 .background header .text #projects__about__me__link .projects__names__header p a {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
 .background header .text #projects__about__me__link .projects__names__header #last__project {
@@ -539,7 +539,7 @@ html {
   background-color: #f4d03f;
   padding-top: 6rem;
   padding-bottom: 0;
-  color: #fff;
+  color: white;
 }
 
 .background header .text #stuff__i__line p {
@@ -656,7 +656,7 @@ html {
 /* Project section with pictures */
 #projects {
   width: 100%;
-  min-height: 150vh;
+  min-height: 100vh;
   background-color: #17181C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,7 +690,7 @@ html {
 #projects .project {
   width: 100%;
   height: 100rem;
-  background-color: aliceblue;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1790,18 +1790,11 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     letter-spacing: 5rem;
   }
   .background header .text #contact__link {
-    width: 100%;
-    height: 25%;
-    background-color: #f4d03f;
-    text-align: right;
-    color: #cf000f;
     padding-right: 4rem;
   }
   .background header .text #contact__link p {
-    text-transform: uppercase;
     font-size: 6rem;
     letter-spacing: 0.4rem;
-    line-height: 1;
     font-weight: 800;
   }
   .background header .text #contact__link #contact {
@@ -1816,9 +1809,6 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     font-weight: 800;
   }
   .background header .text #projects__about__me__link {
-    width: 100%;
-    height: 25%;
-    background-color: #f4d03f;
     padding-left: 4rem;
   }
   .background header .text #projects__about__me__link .projects__names__header {
@@ -1828,24 +1818,10 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     text-decoration: line-through;
   }
   .background header .text #projects__about__me__link .projects__names__header p {
-    text-transform: uppercase;
     font-size: 5rem;
-    letter-spacing: 0.4rem;
-    line-height: 1;
-    font-weight: 800;
   }
   .background header .text #projects__about__me__link .projects__names__header p a {
     text-decoration: none;
-    color: #fff;
-  }
-  .background header .text #projects__about__me__link .projects__names__header #last__project {
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: 1rem;
-    padding-bottom: 0.5rem;
-  }
-  .background header .text #projects__about__me__link .contact__me__header {
-    text-align: right;
   }
   .background header .text #projects__about__me__link .contact__me__header p {
     text-transform: uppercase;
@@ -1857,28 +1833,14 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-right: 4rem;
   }
   .background header .text #projects__about__me__link .contact__me__header a p {
-    text-transform: uppercase;
     font-size: 6rem;
-    letter-spacing: 0.4rem;
-    line-height: 1;
-    font-weight: 800;
-    color: #cf000f;
     padding-right: 4rem;
   }
   .background header .text #stuff__i__line {
-    width: 100%;
-    height: 25%;
-    background-color: #f4d03f;
-    padding-top: 6rem;
-    padding-bottom: 0;
     padding-left: 4rem;
-    color: #fff;
   }
   .background header .text #stuff__i__line p {
     font-size: 5rem;
-    position: relative;
-    text-transform: uppercase;
-    padding-top: 2rem;
   }
   .background header .text #stuff__i__line p #ux {
     font-size: 3rem;
@@ -1903,52 +1865,8 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     z-index: 1;
     display: inline-block;
   }
-  #inspirational--quote .quote__container #inspire::after {
-    top: -0.25rem;
-    bottom: -0.25rem;
-    left: -2rem;
-    /* Cal tingo maybe add */
-    background-color: #f4d03f;
-    content: "";
-    position: absolute;
-    width: calc(100% + 5rem);
-    z-index: -1;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    -webkit-transition: -webkit-transform 250ms ease-in;
-    transition: -webkit-transform 250ms ease-in;
-    transition: transform 250ms ease-in;
-    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  }
-  #inspirational--quote .quote__container .quote {
-    font-weight: 300;
-    font-style: italic;
-    font-size: 3rem;
-    line-height: 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  #inspirational--quote .quote__container .quote span {
-    font-weight: 700;
-    font-style: normal;
-  }
-  #inspirational--quote .quote__container:hover #inspire::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  .inspirations--hobbies--container {
-    height: 75rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-  .inspirations--hobbies--container .inspirations__hobbies {
-    width: 50%;
-    margin: 0;
-  }
   #projects {
-    min-height: 90vh;
+    min-height: 100vh;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1960,7 +1878,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     color: white;
   }
   #projects .project {
-    height: 20%;
+    height: 33.3%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1977,6 +1895,8 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   #projects .project .project__background .project__name {
     height: 60%;
@@ -2006,7 +1926,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     background-color: #17181C;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    color: aliceblue;
+    color: white;
   }
   #projects .project .project__background .project__name .project--decription .project__name {
     height: 20%;

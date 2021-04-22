@@ -39,6 +39,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 10001;
   /* Middle line */
   /* Top and middle line again */
   /* hidden menu */
