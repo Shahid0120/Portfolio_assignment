@@ -1,16 +1,18 @@
+/* Ensure the children contains stays in the parent unless specified */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General formammting for the whole page  */
 html {
     font-size: 62.5%; /* This means 1 rem is 10 pixels */
     background-color:rgb(255, 255, 255);
     font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
 }
-
+/* Nav bar */
 #background {
     width: 100vw;
     height: 10vh;
@@ -199,98 +201,7 @@ html {
     }
 }
 
-#life--history--title {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(244, 208, 63, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .history--title--brief {
-        width: 50%;
-        height: 40%;
-        background-color: white;
-        .history__title__header {
-            width: 100%;
-            height: 10%;
-            background-color: aqua;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .history__title__body {
-            width: 100%;
-            height: 80%;
-            background-color: antiquewhite;
-            display: flex;
-            .history__title__body__date {
-                width: 20%;
-                height: 100%;
-                background-color: #17181C;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                h4 {
-                    
-                    
-                    transform: rotate(90deg);
-                }
-            }
-            .history__title__body__body {
-                width: 60%;
-                height: 100%;
-                background-color: aquamarine;
-            }
-            .history__title__body__ending {
-                width: 20%;
-                height: 100%;
-                background-color: #17181C; 
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                h4 {
-                    transform: rotate(90deg);
-                    span {
-                        padding: 2rem;
-                    }
-                }
-            }
-            
-        }
-        .hisotry__title__footer {
-            width: 100%;
-            height: 10%;
-            background-color: pink;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .hisotry__title__footer, .history__title__body, .history__title__header {
-            h4 {
-                font-size: 5rem;
-                text-align: center;
-                color: #fff;
-                
-            }
-        }
-    }
-    #history--title--brief--layer--one {
-          
-    }
-    #history--title--brief--layer--two {
-        position: relative;
-        margin-bottom: 70rem;
-    }
-    #history--title--brief--layer--three {
-
-    }
-    #history--title--brief--layer--four {
-        
-    }
-
-}
-
+/* title section, why im doing ux design */
 #life--history--why {
     width: 100vw;
     height: 70vh;
@@ -353,6 +264,7 @@ html {
     }
 
 }
+/* History about me */
 #life--history--runthrough {
     background-color: transparent;
     width: 100vw;
@@ -476,6 +388,7 @@ html {
     }
 }
 
+/* name, quote, social media quotes */
 footer {
     width: 100%;
     height: 10vh;
@@ -645,6 +558,95 @@ footer {
     }
 }
 
+/* ipad versions */
+@media only screen and (min-width: 600px) {
+    #life--history--why {
+        #hi__quote {
+            font-size: 10rem;
+        }
+        #life--hisotry--why--body {
+            #reasoning__ux_design {
+                #box--over {
+                    h2 {
+                        font-size: 10rem;
+                    }
+                #reasoning__ux_design__paragraph {
+                    p {
+                        font-size: 4rem;
+                    }
+                }
+                }
+            }
+        }
+    }
+    footer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        background-color: #17181C;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        #name {
+            background-color: #17181C;
+            #name__container {
+                width: 100%;
+                height:50%;
+                background-color: #17181C;
+                p {
+                    padding-left: 2rem;
+                    font-size: 3rem;
+                    color: white;
+                    text-align:left;
+                }
+            }
+        }
+        #quote {
+            background-color: #17181C;
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 33.3%;
+            padding-bottom: 3rem;
+            #quote__container {
+                width: 100%;
+                height: 50%;
+                background-color: #17181C;
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 3rem;
+                }
+                span {
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+        }
+        
+        #icon {
+            background-color: #17181C;
+            display: flex;
+            justify-content:flex-end;
+            height: 100%;
+            width: 33.3%;
+            #icon__image__container {
+                width:75%;
+                height:50%;
+                background-color: #17181C;
+                margin-bottom: 16rem;
+
+                img {
+                    width:100%;
+                    height: 120%;
+                    
+                }
+            }
+        }
+    }
+}
+
+/* laptops version */
 @media only screen and (min-width: 1200px) {
     footer {
         padding-left: 8rem;

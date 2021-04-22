@@ -13,6 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Nav bar */
 #background {
   width: 100vw;
   height: 10vh;
@@ -250,12 +251,15 @@ html {
   background-color: #f4d03f;
 }
 
+/* Blogs titles */
 #blogs--titlepage {
   width: 100vw;
   height: 100vh;
   background-color: #f4d03f;
   padding-left: 8rem;
   padding-right: 8rem;
+  /* blogs contains black and white */
+  /* Mains blogs sections */
 }
 
 #blogs--titlepage #blogs__titlepage__upper__title {
@@ -298,6 +302,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  /* Blos contains contains two sections quote about coding and white containers */
+  /* blogs mains headers */
 }
 
 #blogs--titlepage #blogs__titlepage__lower__title #blogs__titlepage__lower__title__left {
@@ -358,14 +364,15 @@ html {
   font-weight: 900;
 }
 
+/* Attempt to make different pages */
 #blogs--title--one {
-  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/5d4eff85012935.5d6f050f3211a.jpg") no-repeat center;
+  background: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
   background-color: white;
-  color: balck;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,7 +388,7 @@ html {
 }
 
 #blogs--title--one #blog__title__name {
-  font-size: 5rem;
+  font-size: 9rem;
   font-weight: 900;
 }
 
@@ -393,6 +400,7 @@ html {
   text-decoration: line-through;
 }
 
+/* Blogs title */
 #blogs--title {
   width: 100vw;
   height: 100vh;
@@ -417,7 +425,7 @@ html {
 }
 
 #blogs--title #blog--title--one #blog__title__name {
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 900;
 }
 
@@ -448,6 +456,7 @@ html {
   text-decoration: line-through;
 }
 
+/* Blogs Mains Contains */
 #blogs--content {
   width: 100vw;
   min-height: 100vh;
@@ -473,6 +482,7 @@ html {
   font-weight: 900;
 }
 
+/* Social media icons, quotes, names */
 footer {
   width: 100%;
   height: 10vh;
@@ -712,10 +722,103 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   height: 5rem;
 }
 
+/* Ipad version */
 @media only screen and (min-width: 600px) {
   /* Target all devices from 600px to 769px */
+  #blogs--titlepage #blogs__titlepage__upper__title #blog__titlepage__upper__title__right p {
+    font-size: 4rem;
+  }
+  #blogs--titlepage #blogs__titlepage__lower__title #blogs__titlepage__lower__title__left #blogs__titlepage__lower__title__left__upper p {
+    font-size: 9rem;
+  }
+  #blogs--titlepage #blogs__titlepage__lower__title #blogs__titlepage__lower__title__left #blogs__titlepage__lower__title__left__button p {
+    font-size: 7rem;
+  }
+  #blogs--titlepage #blogs__titlepage__lower__title #blogs__titlepage__lower__title__right p {
+    font-size: 25rem;
+    font-weight: 900;
+  }
+  footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer #name {
+    background-color: #17181C;
+  }
+  footer #name #name__container {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  footer #name #name__container p {
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+  }
+  footer #quote {
+    background-color: #17181C;
+    font-size: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33.3%;
+    padding-bottom: 3rem;
+  }
+  footer #quote #quote__container {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  footer #quote #quote__container p {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+  }
+  footer #quote #quote__container span {
+    font-style: italic;
+    font-weight: 700;
+  }
+  footer #icon {
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+    width: 33.3%;
+  }
+  footer #icon #icon__image__container {
+    width: 75%;
+    height: 50%;
+    background-color: #17181C;
+    margin-bottom: 16rem;
+  }
+  footer #icon #icon__image__container img {
+    width: 100%;
+    height: 120%;
+  }
 }
 
+/* Laptop sections */
 @media only screen and (min-width: 1200px) {
   #blogs--titlepage {
     height: 110vh;

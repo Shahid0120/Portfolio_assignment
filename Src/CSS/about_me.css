@@ -1,3 +1,4 @@
+/* Ensure the children contains stays in the parent unless specified */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
           box-sizing: border-box;
 }
 
+/* General formammting for the whole page  */
 html {
   font-size: 62.5%;
   /* This means 1 rem is 10 pixels */
@@ -13,6 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Nav bar */
 #background {
   width: 100vw;
   height: 10vh;
@@ -250,131 +253,7 @@ html {
   background-color: #f4d03f;
 }
 
-#life--history--title {
-  width: 100vw;
-  height: 100vh;
-  background-color: #f4d03f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#life--history--title .history--title--brief {
-  width: 50%;
-  height: 40%;
-  background-color: white;
-}
-
-#life--history--title .history--title--brief .history__title__header {
-  width: 100%;
-  height: 10%;
-  background-color: aqua;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#life--history--title .history--title--brief .history__title__body {
-  width: 100%;
-  height: 80%;
-  background-color: antiquewhite;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#life--history--title .history--title--brief .history__title__body .history__title__body__date {
-  width: 20%;
-  height: 100%;
-  background-color: #17181C;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#life--history--title .history--title--brief .history__title__body .history__title__body__date h4 {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#life--history--title .history--title--brief .history__title__body .history__title__body__body {
-  width: 60%;
-  height: 100%;
-  background-color: aquamarine;
-}
-
-#life--history--title .history--title--brief .history__title__body .history__title__body__ending {
-  width: 20%;
-  height: 100%;
-  background-color: #17181C;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#life--history--title .history--title--brief .history__title__body .history__title__body__ending h4 {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#life--history--title .history--title--brief .history__title__body .history__title__body__ending h4 span {
-  padding: 2rem;
-}
-
-#life--history--title .history--title--brief .hisotry__title__footer {
-  width: 100%;
-  height: 10%;
-  background-color: pink;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#life--history--title .history--title--brief .hisotry__title__footer h4, #life--history--title .history--title--brief .history__title__body h4, #life--history--title .history--title--brief .history__title__header h4 {
-  font-size: 5rem;
-  text-align: center;
-  color: #fff;
-}
-
-#life--history--title #history--title--brief--layer--two {
-  position: relative;
-  margin-bottom: 70rem;
-}
-
+/* title section, why im doing ux design */
 #life--history--why {
   width: 100vw;
   height: 70vh;
@@ -447,6 +326,7 @@ html {
   /* SAME DIMENSION FOR CONTAINER + SLIDES */
 }
 
+/* History about me */
 #life--history--runthrough {
   background-color: transparent;
   width: 100vw;
@@ -591,6 +471,7 @@ html {
   line-height: 1;
 }
 
+/* name, quote, social media quotes */
 footer {
   width: 100%;
   height: 10vh;
@@ -830,6 +711,98 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   height: 5rem;
 }
 
+/* ipad versions */
+@media only screen and (min-width: 600px) {
+  #life--history--why #hi__quote {
+    font-size: 10rem;
+  }
+  #life--history--why #life--hisotry--why--body #reasoning__ux_design #box--over h2 {
+    font-size: 10rem;
+  }
+  #life--history--why #life--hisotry--why--body #reasoning__ux_design #box--over #reasoning__ux_design__paragraph p {
+    font-size: 4rem;
+  }
+  footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer #name {
+    background-color: #17181C;
+  }
+  footer #name #name__container {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  footer #name #name__container p {
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+  }
+  footer #quote {
+    background-color: #17181C;
+    font-size: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33.3%;
+    padding-bottom: 3rem;
+  }
+  footer #quote #quote__container {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  footer #quote #quote__container p {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+  }
+  footer #quote #quote__container span {
+    font-style: italic;
+    font-weight: 700;
+  }
+  footer #icon {
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+    width: 33.3%;
+  }
+  footer #icon #icon__image__container {
+    width: 75%;
+    height: 50%;
+    background-color: #17181C;
+    margin-bottom: 16rem;
+  }
+  footer #icon #icon__image__container img {
+    width: 100%;
+    height: 120%;
+  }
+}
+
+/* laptops version */
 @media only screen and (min-width: 1200px) {
   footer {
     padding-left: 8rem;

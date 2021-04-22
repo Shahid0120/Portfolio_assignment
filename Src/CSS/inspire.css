@@ -250,6 +250,7 @@ html {
   background-color: #f4d03f;
 }
 
+/* titlepage for inspirations */
 #inspire--title {
   width: 100vw;
   height: 100vh;
@@ -313,6 +314,7 @@ html {
   color: black;
 }
 
+/* mains information about the information */
 #inspire--column {
   width: 100vw;
   height: 100vh;
@@ -330,6 +332,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* inspiration people that inspire me */
+  /* Hobbies i particpate in */
 }
 
 #inspire--column #inspire--people {
@@ -421,6 +425,7 @@ html {
   line-height: 1.8;
 }
 
+/* Resume, name and social media links */
 footer {
   width: 100%;
   height: 10vh;
@@ -660,6 +665,89 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   height: 5rem;
 }
 
+/* Ipad links  */
+@media only screen and (min-width: 600px) {
+  footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer #name {
+    background-color: #17181C;
+  }
+  footer #name #name__container {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  footer #name #name__container p {
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+  }
+  footer #quote {
+    background-color: #17181C;
+    font-size: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33.3%;
+    padding-bottom: 3rem;
+  }
+  footer #quote #quote__container {
+    width: 100%;
+    height: 50%;
+    background-color: #17181C;
+  }
+  footer #quote #quote__container p {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+  }
+  footer #quote #quote__container span {
+    font-style: italic;
+    font-weight: 700;
+  }
+  footer #icon {
+    background-color: #17181C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+    width: 33.3%;
+  }
+  footer #icon #icon__image__container {
+    width: 75%;
+    height: 50%;
+    background-color: #17181C;
+    margin-bottom: 16rem;
+  }
+  footer #icon #icon__image__container img {
+    width: 100%;
+    height: 120%;
+  }
+}
+
+/* Laptop links */
 @media only screen and (min-width: 1200px) {
   #inspire--column {
     width: 100vw;
