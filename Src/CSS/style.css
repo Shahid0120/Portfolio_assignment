@@ -131,7 +131,7 @@ html {
   z-index: 1;
   width: 100%;
   height: 0.25rem;
-  background: black;
+  background: #17181C;
 }
 
 .background .nav .menu-wrap .hamburger > div::after {
@@ -141,7 +141,7 @@ html {
   z-index: 1;
   width: 100%;
   height: 0.25rem;
-  background: yellow;
+  background: #f4d03f;
 }
 
 .background .nav .menu-wrap .toggler:checked + .hamburger > div {
@@ -433,7 +433,7 @@ html {
   letter-spacing: 2rem;
   font-size: 2rem;
   padding-left: 2rem;
-  color: black;
+  color: #17181C;
 }
 
 .background header .text #contact__link {
@@ -618,7 +618,7 @@ html {
   bottom: -0.25rem;
   left: -2rem;
   /* Cal tingo maybe add */
-  background-color: yellow;
+  background-color: #f4d03f;
   content: "";
   position: absolute;
   width: calc(100% + 5rem);
@@ -736,7 +736,7 @@ html {
 
 #projects .project .project__background .project__name h2 {
   font-size: 9rem;
-  color: yellow;
+  color: #f4d03f;
 }
 
 #projects .project .project__background .project__name .project--decription {
@@ -1018,12 +1018,12 @@ html {
 
 #blog--container .blog__post .blog__name__date .blog__summary .blog__sum {
   font-size: 2rem;
-  color: yellow;
+  color: #f4d03f;
 }
 
 #blog--container .blog__post .blog__name__date .blog__summary .blog__date {
   font-size: 2rem;
-  color: yellow;
+  color: #f4d03f;
 }
 
 #blog--container .blog__post .blog__picture {
@@ -1530,25 +1530,53 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
 /* For ipad */
 @media only screen and (min-width: 600px) {
   /* Target all devices from 600px to 769px */
-  header {
+  .background header {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  nav {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .background header .pictures .name .second--name p, .background header .pictures .name .first--name p {
+    font-size: 4rem;
+    line-height: 1.4;
   }
-  .main-picture {
+  .background header .text #designer__syd {
     padding-left: 2rem;
-    padding-right: 2rem;
   }
-  .inspirational-quote {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .background header .text #designer__syd h4 {
+    font-size: 13rem;
+  }
+  .background header .text #designer__syd p {
+    font-size: 3rem;
+  }
+  .background header .text #contact__link p {
+    font-size: 6rem;
+  }
+  .background header .text #contact__link a p {
+    font-size: 6rem;
+  }
+  .background header .text #projects__about__me__link .projects__names__header p {
+    font-size: 7rem;
+  }
+  #inspirational--quote .quote__container #inspire {
+    font-size: 6rem;
+  }
+  #inspirational--quote .quote__container .quote {
+    font-size: 4rem;
   }
   #projects {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  #projects #title__header {
+    font-size: 6rem;
+  }
+  #projects .project {
+    min-height: 100vh;
+  }
+  #projects .project .project__background .project__name .project--decription .project__description__tag .project__tag {
+    font-size: 4rem;
+  }
+  #projects .project .project__background .project__name .project--decription .project__description__tag .project__decription {
+    font-size: 4rem;
   }
   #life--history--why {
     padding-left: 0;
@@ -1558,10 +1586,50 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  #blog--container h2 {
+    font-size: 6rem;
+  }
+  #blog--container .blog__post .blog__name__date .blog__name {
+    font-size: 6rem;
+  }
+  #blog--container .blog__post .blog__name__date .blog__summary .blog__date {
+    font-size: 4rem;
+  }
+  #blog--container .blog__post .blog__name__date .blog__summary .blog__sum {
+    font-size: 4rem;
+  }
   #contact--section {
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #17181C;
+  }
+  #contact--section #footer__icon {
+    padding-bottom: 3rem;
+  }
+  #contact--section #footer__icon #email #email__text a {
+    font-size: 4rem;
+  }
+  #contact--section #footer__icon #email #butn-resume {
+    font-size: 4rem;
+  }
+  #life--history--why .quote__container a {
+    font-size: 6rem;
+  }
+  #life--history--why .quote__container .quote {
+    font-size: 4rem;
+  }
+  footer .name {
+    padding-right: 3rem;
+  }
+  footer .name #name__container p {
+    font-size: 2.5rem;
+  }
+  footer .quote {
+    font-size: 3rem;
+    padding-left: 5rem;
+  }
+  footer .icon .icon__image__container {
+    margin-left: 15rem;
   }
 }
 
@@ -1840,7 +1908,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     bottom: -0.25rem;
     left: -2rem;
     /* Cal tingo maybe add */
-    background-color: yellow;
+    background-color: #f4d03f;
     content: "";
     position: absolute;
     width: calc(100% + 5rem);
@@ -1880,7 +1948,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     margin: 0;
   }
   #projects {
-    min-height: 90rem;
+    min-height: 90vh;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1929,13 +1997,13 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     background-color: #17181C;
   }
   #projects .project .project__background .project__name h2 {
-    color: yellow;
+    color: #f4d03f;
     font-size: 14rem;
   }
   #projects .project .project__background .project__name .project--decription {
     width: 92.5%;
     height: 90%;
-    background-color: black;
+    background-color: #17181C;
     -ms-flex-item-align: end;
         align-self: flex-end;
     color: aliceblue;
@@ -2009,7 +2077,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
   #life--history--why #history__quote {
     width: 100%;
     height: 50%;
-    background: yellow;
+    background: #f4d03f;
     position: relative;
   }
   #life--history--why #history__quote a {
@@ -2117,14 +2185,14 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     width: 30%;
     height: 100%;
     background-color: #17181C;
-    color: yellow;
+    color: #f4d03f;
     font-size: 3.5rem;
   }
   #blog--container .blog__post .blog__name__date .blog__summary .blog__date, #blog--container .blog__post .blog__name__date--two .blog__summary .blog__date {
     width: 70%;
     height: 100%;
     background-color: #17181C;
-    color: yellow;
+    color: #f4d03f;
     text-align: end;
     font-size: 3.5rem;
   }
@@ -2180,7 +2248,7 @@ footer .icon .icon__image__container .top__row__box__three .Linkin span a img {
     padding-top: 2rem;
     height: 10%;
     font-size: 5rem;
-    color: yellow;
+    color: #f4d03f;
     line-height: 4;
     background-color: #17181C;
     line-height: 1.6;

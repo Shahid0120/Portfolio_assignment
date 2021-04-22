@@ -27,7 +27,7 @@ html {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
-  color: #fff;
+  color: white;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +127,7 @@ html {
   z-index: 1;
   width: 100%;
   height: 0.25rem;
-  background: black;
+  background: #17181C;
 }
 
 #background #nav .menu-wrap .hamburger > div::after {
@@ -137,7 +137,7 @@ html {
   z-index: 1;
   width: 100%;
   height: 0.25rem;
-  background: yellow;
+  background: #f4d03f;
 }
 
 #background #nav .menu-wrap .toggler:checked + .hamburger > div {
@@ -199,7 +199,7 @@ html {
 }
 
 #background #nav .menu-wrap .menu > div {
-  background: black;
+  background: #17181C;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -224,7 +224,7 @@ html {
   text-align: center;
   max-width: 100vw;
   max-height: 100vh;
-  color: aliceblue;
+  color: white;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
@@ -232,7 +232,7 @@ html {
 
 #background #nav .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: #fff;
+  color: white;
   font-size: 2rem;
   padding: 1rem;
 }
@@ -311,14 +311,14 @@ html {
   position: absolute;
   margin-bottom: 2rem;
   margin-left: 1.2rem;
-  color: black;
+  color: #17181C;
 }
 
 /* mains information about the information */
 #inspire--column {
   width: 100vw;
   height: 100vh;
-  background-color: blanchedalmond;
+  background-color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -379,7 +379,7 @@ html {
 #inspire--column #inspire--people #inspire--people--body p {
   padding-left: 2rem;
   font-size: 3.5rem;
-  color: #fff;
+  color: white;
   font-weight: 700;
   line-height: 1.8;
 }
@@ -420,7 +420,7 @@ html {
 #inspire--column #inspire--hobbies #inspire--hobbies--body p {
   padding-left: 2rem;
   font-size: 3.5rem;
-  color: #fff;
+  color: white;
   font-weight: 700;
   line-height: 1.8;
 }
@@ -463,7 +463,7 @@ footer #name #name__container {
 }
 
 footer #name #name__container p {
-  color: aliceblue;
+  color: white;
   text-align: center;
 }
 
@@ -543,7 +543,7 @@ footer #icon #icon__image__container {
 footer #icon #icon__image__container #top__row__box__one {
   width: 35%;
   height: 33.3%;
-  background-color: aliceblue;
+  background-color: white;
   /* Bad image */
 }
 
@@ -596,7 +596,7 @@ footer #icon #icon__image__container #top__row__box__one #facebook span a img {
 footer #icon #icon__image__container #top__row__box__two {
   width: 35%;
   height: 33.3%;
-  background-color: bisque;
+  background-color: white;
 }
 
 footer #icon #icon__image__container #top__row__box__two #Github {
@@ -643,7 +643,7 @@ footer #icon #icon__image__container #top__row__box__three #Linkin {
 
 footer #icon #icon__image__container #top__row__box__three #Linkin p {
   text-align: center;
-  color: aliceblue;
+  color: white;
   font-size: 2rem;
   opacity: 0;
 }
@@ -667,6 +667,12 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
 
 /* Ipad links  */
 @media only screen and (min-width: 600px) {
+  #inspire--column #inspire--people #inspire--people--title h3 {
+    font-size: 6rem;
+  }
+  #inspire--column #inspire--people #inspire--people--body p {
+    font-size: 4rem;
+  }
   footer {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -752,7 +758,7 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   #inspire--column {
     width: 100vw;
     height: 100vh;
-    background-color: blanchedalmond;
+    background-color: white;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -770,7 +776,7 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   #inspire--column #inspire--people {
     width: 100%;
     height: 50%;
-    background-color: pink;
+    background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -806,7 +812,7 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   #inspire--column #inspire--people #inspire--people--body p {
     padding-left: 2rem;
     font-size: 3.5rem;
-    color: #fff;
+    color: white;
     font-weight: 700;
     line-height: 1.8;
   }
@@ -842,7 +848,7 @@ footer #icon #icon__image__container #top__row__box__three #Linkin span a img {
   #inspire--column #inspire--hobbies #inspire--hobbies--body p {
     padding-left: 2rem;
     font-size: 3.5rem;
-    color: #fff;
+    color: white;
     font-weight: 700;
     line-height: 1.8;
   }
