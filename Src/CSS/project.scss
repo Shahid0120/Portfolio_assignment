@@ -10,7 +10,7 @@ html {
     font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
 }
-
+/* Nav */
 #background {
     width: 100vw;
     height: 10vh;
@@ -199,12 +199,14 @@ html {
     }
 }
 
+/* Projects title */
 #project--title {
     width: 100vw;
     height: 100vh;
     background-color: rgba(244, 208, 63, 1);
     background-size: cover;
     background-attachment: fixed;
+    /* Effects on the ipad title page */
     #project--cool {
         width: 100%;
         height: 100%;
@@ -247,7 +249,7 @@ html {
     
 
 }
-
+/* Summary of the project */
 #project--info {
     width: 100%;
     min-height: 100vh;
@@ -348,11 +350,22 @@ html {
                 }
                 
             }
+            #picture__one {
+                width: 100%;
+                height: 30%;
+                a {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
         }
     }
 }
 
-
+¸/* Mains section of the porject goes indepth about he proejct */
 #project--summary {
     width: 100vw;
     height: 100vh;
@@ -381,6 +394,8 @@ html {
         line-height: 1;
     }
 }
+
+/* Resume section of the porject = */
 footer {
     width: 100%;
     height: 10vh;
@@ -550,10 +565,122 @@ footer {
     }
 }
 
-
+/* Ipad veriosnof the porjects */
 @media only screen and (min-width: 600px) {
+    #project--title {
+        #project--cool {
+            h2 {
+                font-size: 10rem;
+            }
+        }
+    }
+    #project--info {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        #project__background {
+            .project__name {
+                h2 {
+                    font-size: 9rem;
+                }
+                #project--decription {
+                    font-size: 4rem;
+                    .project__name {
+                        font-size: 20rem;
+                    }
+                }
+            }
+            #picture__one {
+                width: 100%;
+                height: 80rem;
+                a {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
 
+        }
+    }
+    #project--summary {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        h3 {
+            font-size: 10rem;
+        }
+        p {
+            font-size: 4rem;
+            padding-left: 4rem;
+        }
+    }
+    footer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        background-color: #17181C;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        #name {
+            background-color: #17181C;
+            #name__container {
+                width: 100%;
+                height:50%;
+                background-color: #17181C;
+                p {
+                    padding-left: 2rem;
+                    font-size: 3rem;
+                    color: white;
+                    text-align:left;
+                }
+            }
+        }
+        #quote {
+            background-color: #17181C;
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 33.3%;
+            padding-bottom: 3rem;
+            #quote__container {
+                width: 100%;
+                height: 50%;
+                background-color: #17181C;
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 3rem;
+                }
+                span {
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+        }
+        
+        #icon {
+            background-color: #17181C;
+            display: flex;
+            justify-content:flex-end;
+            height: 100%;
+            width: 33.3%;
+            #icon__image__container {
+                width:75%;
+                height:50%;
+                background-color: #17181C;
+                margin-bottom: 16rem;
+
+                img {
+                    width:100%;
+                    height: 120%;
+                    
+                }
+            }
+        }
+    }
 }
+/* laptops version of the verions */
 @media only screen and (min-width: 1200px) {
     #project--title {
         width: 100vw;
@@ -561,7 +688,6 @@ footer {
         background-color: rgba(244, 208, 63, 1);
         background-size: cover;
         background-attachment: fixed;
-        
         #project--cool {
             width: 100%;
             height: 100%;

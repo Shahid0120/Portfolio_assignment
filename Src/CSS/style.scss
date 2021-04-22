@@ -1,15 +1,17 @@
+/* Ensure children box stays within parent unless specified */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Basic formatting settings*/
 html {
     font-size: 62.5%; /* This means 1 rem is 10 pixels */
     background-color:rgb(255, 255, 255);
     font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
 }
+/* Nac bar, background section title page */
 .background {
     width: 100vw;
     height: 120vh;
@@ -457,7 +459,7 @@ html {
     
 }
 
-
+/* Inspiration section contains parralex effect */
 #inspirational--quote {
     width:100%;
     height: 100vh;
@@ -526,7 +528,7 @@ html {
 }
 
 
-
+/* Project section with pictures */
 #projects {
     width: 100%;
     min-height: 150vh;
@@ -546,6 +548,7 @@ html {
            font-style: italic; 
         }
     }
+    /* Projects sections */
     .project {
         width: 100%;
         height: 100rem;
@@ -629,7 +632,7 @@ html {
         }
     }
 }
-
+/* Zoom in effect on the image of the porjects */
 #projects {
     z-index: 3; 
     .project {
@@ -653,6 +656,8 @@ html {
         }
     }
 }
+
+/* Page break, parralex effect hover effect, about me */
 #life--history--why {
     width: 100%;
     height: 100vh;
@@ -713,6 +718,7 @@ html {
                 }
             }
     }
+    /* Yellow animation creations */
     .quote__container:hover {
         a::after {
             transform: scaleX(1);
@@ -720,6 +726,7 @@ html {
     }
 }
 
+/* Blogs sections */
 #blog--container {
     width: 100%;
     min-height: 150rem;
@@ -728,6 +735,7 @@ html {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    /* header of the title */
     h2 {
         text-align: center;
         padding-top: 2rem;
@@ -772,11 +780,13 @@ html {
             }
 
         }
+        
         .blog__picture {
             width: 100%;
             height: 70%;
             background-color: antiquewhite;
         }
+        /* issiues with sizing */
         #blog--one, #blog--four {
             img {
                 width: 100%;
@@ -797,29 +807,14 @@ html {
 
 }
 
-
-.inspirations--hobbies--container {
-    width: 100%;
-    height: 50rem;
-    background-color: rgb(194, 143, 160);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    .inspirations__hobbies {
-        width: 40%;
-        height: 40rem;
-        background-color: aquamarine;
-        margin: 1rem;
-    }
-}
-
+/* Contact section, includes ending quote, resume, gmail, and professional social media links */
 #contact--section {
     width: 100%;
-    min-height: 100rem;
-    background-color: rgb(233, 180, 180);
+    min-height: 70rem;
+    background-color:#17181C;
     font-size: 4.5rem;
     line-height: 1.3;
+    /* Quotes */
     #contact__questions__upper {
         width: 100%;
         height: 30%; 
@@ -830,6 +825,7 @@ html {
         padding-top: 5rem;
         line-height: 1.2;
     }
+
     #contact__questions__lower {
         height: 10%;
         padding-left: 2rem;
@@ -837,6 +833,7 @@ html {
         color: yellow;
         background-color: #17181C;
     }
+    /* Emails links, and resume links, professional social media links */
     #footer__icon {
         width: 100%;
         height: 60%;
@@ -994,7 +991,7 @@ html {
     }
 }
 
-
+/* Ending links including name,quote, social media links */
 footer {
     width: 100%;
     height: 10vh;
@@ -1164,7 +1161,7 @@ footer {
     }
 }
 
-
+/* For ipad */
 @media only screen and (min-width: 600px) {
 /* Target all devices from 600px to 769px */
     header {
@@ -1202,6 +1199,7 @@ footer {
     }
 }
 
+/* For laptop */
 @media only screen and (min-width: 1200px) {
 /* Target all devices from 769px up */ 
     .background {
