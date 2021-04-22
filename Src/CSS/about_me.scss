@@ -316,6 +316,7 @@ html {
             background-position: 50% 50%;
             transition: left 0s 0.75s;
             padding: 8rem 1.2rem 0;
+            padding-right: 2rem;
         }
         [id^="slide"]:checked + .slide {
             left: 0;
@@ -580,6 +581,23 @@ footer {
             }
         }
     }
+    #life--history--runthrough {
+        .slider--container {
+            .slide {
+                .slide-one, .slide-two, .slide-three, .slide-four {
+                    h3 {
+                        font-size: 7rem;
+                    }
+                    h4 {
+                        font-size: 7rem;
+                    }
+                    p {
+                        font-size: 5rem;
+                    }
+                }
+            }
+        }
+    }
     footer {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -649,6 +667,21 @@ footer {
 
 /* laptops version */
 @media only screen and (min-width: 1200px) {
+    #life--history--why {
+        #hi__quote {
+            z-index: 200;
+            position:absolute;
+        }
+    } 
+    #life--history--runthrough {
+        .slider--container {
+            .slide-one, .slide-two, .slide-three {
+                h3 {
+                    font-size: 15rem;
+                }
+            }
+        }
+    }
     footer {
         padding-left: 8rem;
         padding-right: 8rem;

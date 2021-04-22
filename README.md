@@ -1,8 +1,10 @@
 # Portfolio Assignment
 
 ## Portfolio Link
-
+https://friendly-jones-53bab9.netlify.app/
+<!-- Isnt functioning properly work -->
 ## GitHub Repository Link
+https://github.com/Shahid0120/Portfolio_assignment
 ## Description of your portfolio website 
 ### Purpose
 The purpose of the website porfolio can be summaried into -- main groups 

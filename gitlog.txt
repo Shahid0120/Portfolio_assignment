@@ -1,3 +1,45 @@
+commit 1d51f6d1a7817ead4d9167b004f95527aa08f7b9
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 23:15:25 2021 +1000
+
+    update links in Readme.md v2
+
+commit e1126fb2692cc529cd343e2a2a2229b46cd58a92
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 23:13:59 2021 +1000
+
+    update links in Readme.md
+
+commit be142bdaef8cafd4fc727d0a4e57e6bae8783e1b
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 23:01:27 2021 +1000
+
+    create a pdf resume, finalise ipad version bugs on blogs lower sections, laptop bugs fix for funtionality and aesthetics, fix Hi bug on about page, fix parrallax effect on blogs page
+
+commit e9f6b10aa2b2adb9f668b67fa1596c290342e9ef
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 20:21:12 2021 +1000
+
+    final ipad width port design complete
+
+commit fd60719d0a994a1ed161f55987469256755a670d
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 13:31:51 2021 +1000
+
+    create SRI and implement to html documents
+
+commit 57eaed8b0cf2ceaaee2898185c1de14e050a0e4b
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 06:31:43 2021 +1000
+
+    Create final version of Readme.md document
+
+commit b9693a9f297c5135a244af314002c188c700d383
+Author: Shahid0120 <shahid.hussain0120@gmail.com>
+Date:   Thu Apr 22 05:07:05 2021 +1000
+
+    create a image on the blogs page based on assignment description
+
 commit 098951f7831b0a30e45891018c01ba9dc3b1f9ab
 Author: Shahid0120 <shahid.hussain0120@gmail.com>
 Date:   Wed Apr 21 10:57:24 2021 +1000

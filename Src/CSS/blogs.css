@@ -574,10 +574,6 @@ footer #icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  /* padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem; */
 }
 
 footer #icon #icon__image__container {
