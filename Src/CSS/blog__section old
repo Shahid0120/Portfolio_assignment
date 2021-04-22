@@ -1,0 +1,124 @@
+.blog--container {
+    width: 100%;
+    height: 300rem;
+    background-color:#17181C;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    h2 {
+        font-size: 4.5rem;
+        color: white;
+        font-weight: 700;
+        span {
+            font-style: italic;
+        }
+    }
+    #blog__two {
+        width: 100%;
+        height:25%;
+        #blog__two__one {
+            width:100%;
+            height: 25%;
+            .blog__picture__two {
+                width: 100%;
+                height: 50%;
+                background-color: antiquewhite;
+            }
+            .blog__name__date--two {
+                width: 100%;
+                height: 5rem;
+                background-color:burlywood;
+            }
+        }
+    }
+    .blog__post {
+        width:100%;
+        height: 25%;
+        background-color:#17181C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        .blog__name__date {
+            background-color: #17181C;
+            .blog__name {
+                font-size: 3.5rem;
+                color: white;
+                background-color: #17181C;
+            }
+            .blog__summary {
+                display: flex;
+                justify-content: space-between;
+                background-color: #17181C;
+                .blog__sum {
+                    font-size: 2rem;
+                    color: yellow;
+                }
+                .blog__date {
+                    font-size: 2rem;
+                    color: yellow;
+                }
+            }
+
+        }
+        .blog__picture {
+            width: 100%;
+            height: 50%;
+            background-color: antiquewhite;
+        }
+        .blog__name__date {
+            width: 100%;
+            height: 5rem;
+            background-color:burlywood;
+        }
+    }
+
+    
+    
+
+}
+<section class = 'blog--container'>
+            <h2 id='blogs__title'>Blogs <span>from</span> me.</h2>
+            <div class='blog__post'>
+                <div class='blog__picture'></div>
+                <div class='blog__name__date'>
+                    <div class='blog__name'>M-ost</div>
+                    <div class='blog__summary'>
+                        <div class='blog__sum'>Visual Studio</div>
+                        <div class='blog__date'>2021</div>
+                    </div>
+                </div>
+            </div>
+            <div class='blog__post' id='blog--two'>
+                <div id='blog__two__one' class='blog__picture__two'></div>
+                <div id='blog__two__one' class='blog__name__date--two'>
+                    <div class='blog__name'>M-ost</div>
+                    <div class='blog__summary'>
+                        <div class='blog__sum'>Visual Studio</div>
+                        <div class='blog__date'>2021</div>
+                    </div>
+                </div>
+                <div class='blog__picture__two'></div>
+                <div class='blog__name__date--two'>
+                    <div class='blog__name'>M-ost</div>
+                    <div class='blog__summary'>
+                        <div class='blog__sum'>Visual Studio</div>
+                        <div class='blog__date'>2021</div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class='blog__post'>
+                <div class='blog__picture'></div>
+                <div class='blog__name__date'>
+                    <div class='blog__name'>M-ost</div>
+                    <div class='blog__summary'>
+                        <div class='blog__sum'>Visual Studio</div>
+                        <div class='blog__date'>2021</div>
+                    </div>
+                </div>
+            </div>
+        </section>

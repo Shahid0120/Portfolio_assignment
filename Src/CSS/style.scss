@@ -105,7 +105,7 @@ html {
             z-index:1;
             width: 100%;
             height: 0.25rem;
-            background: black;
+            background: #17181C;
         }
 
         .menu-wrap .hamburger > div::after {
@@ -115,7 +115,7 @@ html {
             z-index:1;
             width: 100%;
             height: 0.25rem;
-            background: yellow;
+            background: rgba(244, 208, 63, 1);
         } 
 
         .menu-wrap .toggler:checked + .hamburger > div {
@@ -342,7 +342,7 @@ html {
                     letter-spacing: 2rem;
                     font-size: 2rem;
                     padding-left: 2rem;
-                    color:black;
+                    color:#17181C;
                 }
             }
             #contact__link {
@@ -497,7 +497,7 @@ html {
                 bottom: -0.25rem;
                 left: -2rem;
                 /* Cal tingo maybe add */
-                background-color: yellow;
+                background-color: rgba(244, 208, 63, 1);
                 content: "";
                 position: absolute;
                 width: calc(100% + 5rem);
@@ -575,7 +575,7 @@ html {
                 order: 2;
                 h2 {
                     font-size: 9rem;
-                    color: yellow;
+                    color: rgba(244, 208, 63, 1);
                 }
                 .project--decription {
                     line-height: 1.6;
@@ -771,11 +771,11 @@ html {
                 background-color: #17181C;
                 .blog__sum {
                     font-size: 2rem;
-                    color: yellow;
+                    color: rgba(244, 208, 63, 1);
                 }
                 .blog__date {
                     font-size: 2rem;
-                    color: yellow;
+                    color: rgba(244, 208, 63, 1);
                 }
             }
 
@@ -1164,25 +1164,83 @@ footer {
 /* For ipad */
 @media only screen and (min-width: 600px) {
 /* Target all devices from 600px to 769px */
-    header {
-        padding-left: 2rem;
-        padding-right: 2rem;
+    .background {
+        header {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            .pictures {
+                .name {
+                    .second--name , .first--name {
+                        p {
+                            font-size: 4rem;
+                            line-height: 1.4;
+                        }
+                    }
+                }
+            } 
+            .text {
+                #designer__syd {
+                    padding-left: 2rem;
+                    h4 {
+                        font-size: 13rem;
+                    }
+                    p {
+                        font-size: 3rem;
+                    }
+                }
+                #contact__link {
+                    p {
+                        font-size: 6rem;
+                    }
+                    a {
+                        p {
+                            font-size: 6rem;
+                        }
+                    }
+                }
+                #projects__about__me__link {
+                    .projects__names__header {
+                        p {
+                            font-size: 7rem;
+                        }
+                    }
+                }
+            }
+        }
     }
-    nav {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .main-picture {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .inspirational-quote {
-        padding-left: 2rem;
-        padding-right: 2rem;
+    #inspirational--quote {
+        .quote__container {
+            #inspire {
+                font-size: 6rem;
+            }
+            .quote {
+                font-size: 4rem;
+            }
+        }
     }
     #projects {
         padding-left: 2rem;
         padding-right: 2rem;
+        #title__header {
+            font-size: 6rem;
+        }
+        .project {
+            min-height: 100vh;
+            .project__background {
+                .project__name {
+                    .project--decription {
+                        .project__description__tag {
+                            .project__tag {
+                                font-size: 4rem;
+                            }
+                            .project__decription {
+                                font-size: 4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     #life--history--why {
         padding-left: 0;
@@ -1191,11 +1249,75 @@ footer {
     #blog--container {
         padding-left: 2rem;
         padding-right: 2rem;
+        h2 {
+            font-size: 6rem;
+        }
+        .blog__post {
+            .blog__name__date {
+                .blog__name {
+                    font-size: 6rem;
+                }
+                .blog__summary {
+                    .blog__date {
+                        font-size: 4rem;
+                    }
+                    .blog__sum {
+                        font-size: 4rem;
+                    }
+                }
+            }
+            
+        }
     }
     #contact--section {
         padding-left: 2rem;
         padding-right: 2rem;
         background-color: #17181C;
+        #footer__icon {
+            padding-bottom: 3rem;
+            #email {
+                #email__text {
+                    a {
+                        font-size: 4rem;
+                    }
+                }
+                #butn-resume {
+                    font-size: 4rem;
+                }
+            }
+
+        }
+    }
+    #life--history--why {
+        .quote__container {
+            a {
+                font-size: 6rem;
+            }
+            .quote {
+                font-size: 4rem;
+            }
+        }
+    }
+    footer {
+        .name {
+            padding-right: 3rem;
+            #name__container {
+                
+                p {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .quote {
+            font-size: 3rem;
+            padding-left: 5rem;
+        }
+        .icon {
+            .icon__image__container {
+                margin-left: 15rem;
+            }
+        }
+
     }
 }
 
@@ -1469,7 +1591,7 @@ footer {
                 bottom: -0.25rem;
                 left: -2rem;
                 /* Cal tingo maybe add */
-                background-color: yellow;
+                background-color: rgba(244, 208, 63, 1);
                 content: "";
                 position: absolute;
                 width: calc(100% + 5rem);
@@ -1509,7 +1631,7 @@ footer {
     }
 
     #projects {
-        min-height: 90rem;
+        min-height: 90vh;
         justify-content: flex-start;
         background-color:#17181C;
         #title__header {
@@ -1539,14 +1661,14 @@ footer {
                     background-color: #17181C;
                     
                     h2 {
-                        color: yellow;
+                        color: rgba(244, 208, 63, 1);
                         font-size: 14rem;
                     }
 
                     .project--decription{
                         width: 92.5%;
                         height: 90%;
-                        background-color: black;
+                        background-color: #17181C;
                         align-self: flex-end;
                         color: aliceblue;
                         .project__name {
@@ -1617,7 +1739,7 @@ footer {
         #history__quote {
             width: 100%;
             height: 50%;
-            background: yellow;
+            background: rgba(244, 208, 63, 1);
             position: relative;
             a {
                 font-style: italic;
@@ -1717,14 +1839,14 @@ footer {
                         width: 30%;
                         height: 100%;
                         background-color: #17181C;
-                        color: yellow;
+                        color: rgba(244, 208, 63, 1);
                         font-size: 3.5rem;
                     }
                     .blog__date {
                         width: 70%;
                         height: 100%;
                         background-color: #17181C;
-                        color: yellow;
+                        color: rgba(244, 208, 63, 1);
                         text-align: end;
                         font-size: 3.5rem;
                     }
@@ -1779,7 +1901,7 @@ footer {
             padding-top: 2rem;
             height: 10%;
             font-size: 5rem;
-            color: yellow;
+            color: rgba(244, 208, 63, 1);
             line-height: 4;
             background-color: #17181C;
             line-height: 1.6;

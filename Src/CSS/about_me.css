@@ -30,7 +30,7 @@ html {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
-  color: #fff;
+  color: white;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,7 +130,7 @@ html {
   z-index: 1;
   width: 100%;
   height: 0.25rem;
-  background: black;
+  background: #17181C;
 }
 
 #background #nav .menu-wrap .hamburger > div::after {
@@ -202,7 +202,7 @@ html {
 }
 
 #background #nav .menu-wrap .menu > div {
-  background: black;
+  background: #17181C;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -227,7 +227,7 @@ html {
   text-align: center;
   max-width: 100vw;
   max-height: 100vh;
-  color: aliceblue;
+  color: white;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
@@ -235,7 +235,7 @@ html {
 
 #background #nav .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: #fff;
+  color: white;
   font-size: 2rem;
   padding: 1rem;
 }
@@ -292,7 +292,7 @@ html {
   width: 100%;
   height: 100%;
   background-color: #f4d03f;
-  color: #fff;
+  color: white;
 }
 
 #life--history--why #life--hisotry--why--body #reasoning__ux_design #box--over h2 {
@@ -356,7 +356,7 @@ html {
   width: 3rem;
   height: 3rem;
   display: inline-block;
-  background: #fff;
+  background: white;
   border-radius: 3.3rem;
   margin: 0 0.3em 1em;
   cursor: pointer;
@@ -394,7 +394,7 @@ html {
 
 #life--history--runthrough .slider--container .slide-one {
   background-color: #17181C;
-  color: #fff;
+  color: white;
 }
 
 #life--history--runthrough .slider--container .slide-one h3 {
@@ -409,7 +409,7 @@ html {
 }
 
 #life--history--runthrough .slider--container .slide-two {
-  background-color: #fff;
+  background-color: white;
 }
 
 #life--history--runthrough .slider--container .slide-two h4 {
@@ -440,7 +440,7 @@ html {
 
 #life--history--runthrough .slider--container .slide-four {
   background-color: #17181C;
-  color: #fff;
+  color: white;
 }
 
 #life--history--runthrough .slider--container .slide-four h4 {

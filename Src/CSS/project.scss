@@ -23,7 +23,7 @@ html {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-top: 2rem;
-        color: #fff;
+        color: rgb(255, 255, 255);
         position: fixed;
         display: flex;
         flex-direction: row-reverse;
@@ -42,7 +42,7 @@ html {
             margin: auto;
             overflow: hidden;
             margin-right: 2rem;
-            background-color:white;
+            background-color:rgb(255, 255, 255);
         }
 
 
@@ -87,7 +87,7 @@ html {
             align-items: center;
             width: 100%;
             height: 0.25em;
-            background: white;
+            background: rgb(255, 255, 255);
             position: relative;
             flex: none;
 
@@ -102,7 +102,7 @@ html {
             z-index:1;
             width: 100%;
             height: 0.25rem;
-            background: black;
+            background: #17181C;
         }
 
         .menu-wrap .hamburger > div::after {
@@ -112,7 +112,7 @@ html {
             z-index:1;
             width: 100%;
             height: 0.25rem;
-            background: yellow;
+            background: rgba(244, 208, 63, 1);
         } 
 
         .menu-wrap .toggler:checked + .hamburger > div {
@@ -159,7 +159,7 @@ html {
         }
 
         .menu-wrap .menu > div {
-            background: black;
+            background: #17181C;
             width: 100vw;
             height: 100vh;
             display: flex;
@@ -174,14 +174,14 @@ html {
             text-align: center;
             max-width: 100vw;
             max-height: 100vh;
-            color: aliceblue;
+            color: rgb(255, 255, 255);
             opacity: 0;
             transition: opacity 0.2s ease;
         }
 
         .menu-wrap .menu > div > div > ul > li {
             list-style: none;
-            color: #fff;
+            color: rgb(255, 255, 255);
             font-size: 2rem;
             padding: 1rem;
         }
@@ -234,7 +234,7 @@ html {
             height: 20%;
             position: absolute;
             margin-top: 50%;
-            background-color: black;
+            background-color: #17181C;
             object-fit: cover;
     
             img {
@@ -273,7 +273,7 @@ html {
     #project {
         width: 100%;
         height: 100rem;
-        background-color: aliceblue;
+        background-color: rgb(255, 255, 255);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -296,20 +296,20 @@ html {
                 order: 2;
                 h2 {
                     font-size: 9rem;
-                    color: yellow;
+                    color: rgba(244, 208, 63, 1);
                 }
                 #project--decription {
                     line-height: 1.6;
                     .project__name {
                         font-size: 6rem;
                         font-weight: 550;
-                        color: white;
+                        color: rgb(255, 255, 255);
                     }
                     #project__description__tag{
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        color: white;
+                        color: rgb(255, 255, 255);
                         
                         #project__tag {
                            font-weight: 800;
@@ -334,7 +334,7 @@ html {
             #project__picture {
                 width : 100%;
                 height: 30%;
-                background-color: aliceblue;
+                background-color: rgb(255, 255, 255);
                 a {
                     text-decoration: none;
                     overflow:hidden;
@@ -383,12 +383,12 @@ html {
     
     h3 {
         font-size: 8rem;
-        color: #fff;
+        color: rgb(255, 255, 255);
         padding-bottom: 4rem;
         line-height: 1;
     }
     p {
-        color: #fff;
+        color: rgb(255, 255, 255);
         font-size: 3rem;
         padding-bottom: 2rem;
         line-height: 1;
@@ -419,7 +419,7 @@ footer {
             height:50%;
             background-color: #17181C;
             p {
-                color: aliceblue;
+                color: rgb(255, 255, 255);
                 text-align: center;
             }
         }
@@ -437,7 +437,7 @@ footer {
             background-color: #17181C;
             
             p {
-                color: white;
+                color: rgb(255, 255, 255);
                 text-align: center;
 
             }
@@ -470,7 +470,7 @@ footer {
             #top__row__box__one {
                 width: 35%;
                 height: 33.3%;
-                background-color: aliceblue;
+                background-color: rgb(255, 255, 255);
                 /* Bad image */
                 #facebook {
                     width: 100%;
@@ -483,7 +483,7 @@ footer {
                         opacity: 0;
                         transition: all 0.4s ease-in;
                         text-align: center;
-                        color: white;
+                        color: rgb(255, 255, 255);
                     }
                     span {
                         display: flex;
@@ -516,7 +516,7 @@ footer {
                     p {
                         text-align: center;
                         font-size: 2rem;
-                        color: white;
+                        color: rgb(255, 255, 255);
                         opacity: 0;
                     }
                     span {
@@ -543,7 +543,7 @@ footer {
                     background-color: #17181C;
                     p {
                         text-align: center;
-                        color: aliceblue;
+                        color: rgb(255, 255, 255);
                 
                         font-size: 2rem;
                         opacity: 0;
@@ -681,6 +681,22 @@ footer {
     }
 }
 /* laptops version of the verions */
+@media only screen and (min-width: 600px) {
+    #project--summary {
+        min-height: 70vh;
+        background-color: #17181C;
+        color: rgb(255, 255, 255);
+        padding-top: 10rem;
+        padding-left: 4rem;
+        h3 {
+            padding-left: 4rem;
+            font-size: 6rem;
+        }
+        p {
+            font-size: 4rem;
+        }
+    }
+}
 @media only screen and (min-width: 1200px) {
     #project--title {
         width: 100vw;
@@ -697,7 +713,7 @@ footer {
             padding-left: 2rem;
             padding-right: 2rem;
             word-spacing: -1.3rem;
-            color: #fff;
+            color: rgb(255, 255, 255);
             overflow: hidden;
             h2 {
                 overflow: hidden;
@@ -748,16 +764,16 @@ footer {
                     background-color: #17181C;
                     
                     h2 {
-                        color: yellow;
+                        color: rgba(244, 208, 63, 1);
                         font-size: 14rem;
                     }
 
                     #project--decription{
                         width: 92.5%;
                         height: 90%;
-                        background-color: black;
+                        background-color: #17181C;
                         align-self: flex-end;
-                        color: aliceblue;
+                        color: rgb(255, 255, 255);
                         .project__name {
                             height: 20%;
                             width: 100%;
@@ -774,7 +790,7 @@ footer {
                                 width: 30%;
                                 height: 100%;
                                 background-color: #17181C;
-                                color: white;
+                                color: rgb(255, 255, 255);
                                 font-size: 2.4rem;
                                 line-height: 3;
                             }
@@ -829,12 +845,12 @@ footer {
         
         h3 {
             font-size: 8rem;
-            color: #fff;
+            color: rgb(255, 255, 255);
             padding-bottom: 4rem;
             line-height: 1;
         }
         p {
-            color: #fff;
+            color: rgb(255, 255, 255);
             font-size: 3rem;
             padding-bottom: 2rem;
             line-height: 1;
@@ -856,7 +872,7 @@ footer {
                 p {
                     padding-left: 2rem;
                     font-size: 3rem;
-                    color: white;
+                    color: rgb(255, 255, 255);
                     text-align:left;
                 }
             }
@@ -873,7 +889,7 @@ footer {
                 height: 50%;
                 background-color: #17181C;
                 p {
-                    color: white;
+                    color: rgb(255, 255, 255);
                     text-align: center;
                     font-size: 3rem;
                 }
